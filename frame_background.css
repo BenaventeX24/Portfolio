@@ -1,0 +1,221 @@
+#frame-ts {
+  width: 6.869%;
+  height: 22.108%;
+  left: 40.4285714%;
+  top: 1.032%;
+  transform: rotate(-9.27deg);
+}
+
+#frame-react {
+  min-width: 20px;
+  min-height: 20px;
+  width: 10.642%;
+  height: 29.655%;
+  left: 33.214%;
+  top: 41.668%;
+  transform: rotate(-31.24deg);
+}
+
+#frame-java {
+  width: 8.12%;
+  height: 26.133%;
+  left: 67%;
+  top: 37.712%;
+  transform: rotate(-12.21deg);
+}
+
+#frame-centos {
+  width: 6.575%;
+  height: 21.163%;
+  left: 49.5%;
+  top: 43.731%;
+  transform: rotate(102.69deg);
+}
+
+#frame-mui {
+  width: 7.996%;
+  height: 19.471%;
+  left: 76.642%;
+  top: 73.294%;
+  transform: rotate(-13.34deg);
+}
+
+#frame-css {
+  width: 8.682%;
+  height: 27.942%;
+  left: 93.384%;
+  top: -6%;
+  transform: rotate(29.24deg);
+}
+
+#frame-sass {
+  width: 9.78%;
+  height: 18.089%;
+  left: 41.628%;
+  top: 80.266%;
+  transform: rotate(-22.84deg);
+}
+
+#frame-formik {
+  width: 12.357%;
+  height: 42.298%;
+  left: 24.785%;
+  top: 69.885%;
+}
+
+#frame-vite {
+  width: 10%;
+  height: 25.747%;
+  left: 60%;
+  top: 76.367%;
+  transform: rotate(-6.56deg);
+}
+
+#frame-sql {
+  width: 12.999%;
+  height: 43.482%;
+  left: 55.93%;
+  top: -15.655%;
+  transform: rotate(-104deg);
+}
+
+#frame-js {
+  width: 17.712%;
+  height: 25.048%;
+  left: 87.785%;
+  top: 76.829%;
+  transform: rotate(-24.47deg);
+}
+
+#frame-pa {
+  width: 9.285%;
+  height: 26.206%;
+  left: 83.142%;
+  top: 40.979%;
+  transform: rotate(-8.99deg);
+}
+
+#frame-styled {
+  width: 8.795%;
+  height: 28.908%;
+  left: 74.428%;
+  top: -5.227%;
+  transform: rotate(-9deg);
+}
+
+#frame-html {
+  width: 7.785%;
+  height: 28.735%;
+  left: -1%;
+  top: -2.5%;
+  transform: rotate(-28.96deg);
+}
+
+#frame-csharp {
+  width: 8.785%;
+  height: 29.735%;
+  left: -1%;
+  top: 78%;
+  transform: rotate(28.96deg);
+}
+
+#frame-springboot {
+  width: 8.785%;
+  height: 29.735%;
+  left: 22%;
+  top: -5%;
+  transform: rotate(28.96deg);
+}
+
+#frame-prisma {
+  width: 8.785%;
+  height: 29.735%;
+  left: 95%;
+  top: 23%;
+  transform: rotate(-45deg);
+}
+
+#frame-rectanglegreenone {
+  position: absolute;
+  width: 1.071%;
+  height: 54.942%;
+  left: 15.508%;
+  top: 66.439%;
+  background: #20bc39;
+  border-radius: 30px;
+  transform: rotate(-160.25deg);
+}
+
+#frame-rectanglegreentwo {
+  position: absolute;
+  width: 1.071%;
+  height: 54.942%;
+  left: 15.508%;
+  top: 16%;
+  background: #20bc39;
+  border-radius: 30px;
+  transform: rotate(-160.25deg);
+}
+
+#frame-rectangleyellow {
+  position: absolute;
+  width: 1.071%;
+  height: 54.942%;
+  left: 1%;
+  top: 16%;
+  background: #eac400;
+  border-radius: 30px;
+  transform: rotate(-117.72deg);
+}
+
+#frame-squarered {
+  position: absolute;
+  width: 3%;
+  height: 7%;
+  left: 1%;
+  top: 60%;
+  background: #ff5555;
+}
+
+#frame-circlepinktwo {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  left: 24%;
+  top: 49%;
+  border-radius: 50%;
+  background: #ff71e0;
+}
+
+#frame-rectangleblue {
+  position: absolute;
+  width: 1.071%;
+  height: 54.942%;
+  left: 55.5%;
+  top: 75%;
+  background: #5f96ea;
+  border-radius: 30px;
+  transform: rotate(175.07deg);
+}
+
+#frame-rectanglegreenthree {
+  position: absolute;
+  width: 1.071%;
+  height: 20%;
+  left: 61.5%;
+  top: 41%;
+  background: #5feaaf;
+  border-radius: 30px;
+  transform: rotate(157.17deg);
+}
+
+#frame-rectanglebluetwo {
+  position: absolute;
+  width: 1.071%;
+  height: 54.942%;
+  left: 89%;
+  top: -22%;
+  background: #5f96ea;
+  border-radius: 30px;
+  transform: rotate(19deg);
+}/*# sourceMappingURL=frame_background.css.map */

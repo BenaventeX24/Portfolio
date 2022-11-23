@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.main-navbar {
+  background: #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.main-navbar a:nth-child(1) {
+  margin-right: auto;
+}
+.main-navbar a {
+  text-decoration: none;
+  margin-right: 68px;
+}
+.main-navbar a.navbar-element {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: #ffffff;
+}
+.main-navbar .navbar-logo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+#frame-container {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 5px solid #000000;
+  width: 97.2vw;
+  height: 41.9921875vh;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+#frame-container #frame-background {
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#frame-container #frame-background img {
+  position: absolute;
+  min-width: 30px;
+  min-height: 30px;
+}
+#frame-container #frame-profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#frame-container #frame-profile #profile-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+#frame-container #frame-profile #profile-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+#frame-container #frame-profile #profile-info-container h1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 73px;
+  color: #000000;
+  text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
+}
+#frame-container #frame-profile #profile-info-container span {
+  display: flex;
+  flex-direction: row;
+}
+#frame-container #frame-profile #profile-info-container span h2 {
+  font-family: "Ubuntu";
+  font-size: 52px;
+  line-height: 60px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#frame-container #frame-profile #profile-info-container span h2:nth-child(1) {
+  color: #0e0c7b;
+  margin-right: 10px;
+}
+#frame-container #frame-profile #profile-info-container span h2:nth-child(2) {
+  color: #057a26;
+}
+#frame-container #frame-profile #profile-info-container span img:nth-child(1) {
+  margin-right: 50px;
+}
+#frame-container #frame-profile #profile-info-container p {
+  margin-top: 10px;
+  font-family: "Ubuntu";
+  font-size: 32px;
+  line-height: 37px;
+}
+#frame-container #frame-profile #separator {
+  width: 4px;
+  height: 180px;
+  background: rgba(0, 150, 150, 0.7);
+  border-radius: 30px;
+}
+#frame-container #frame-profile #profile-image {
+  box-sizing: border-box;
+  width: 380px;
+  height: 380px;
+  border: 3px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 870px) {
+  #frame-container {
+    margin-top: 80px;
+    width: 97.2vw;
+    height: 41.9921875vh !important;
+  }
+  #frame-container #frame-profile {
+    position: relative;
+  }
+  #frame-container #frame-profile #profile-image-container #profile-image {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #separator {
+    display: none;
+  }
+  #profile-info-container h1 {
+    font-size: 53px !important;
+  }
+  #profile-info-container span#profile-position h2 {
+    font-size: 35px !important;
+  }
+  #profile-info-container p#profile-contact-title {
+    font-size: 25px !important;
+  }
+  #profile-info-container span#profile-contact-container img {
+    width: 80px;
+    height: 80px;
+  }
+}/*# sourceMappingURL=indexStyles.css.map */
