@@ -38,7 +38,7 @@ body {
   color: #ffffff;
 }
 
-#frame-container {
+#hero-container {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border: 5px solid #000000;
   margin-top: 40px;
@@ -49,7 +49,7 @@ body {
   display: flex;
   align-content: center;
 }
-#frame-container #frame-background {
+#hero-container #hero-background {
   overflow: hidden;
   filter: blur(5px);
   position: absolute;
@@ -59,25 +59,25 @@ body {
   bottom: 0;
   z-index: -1;
 }
-#frame-container #frame-background img {
+#hero-container #hero-background img {
   position: absolute;
   min-width: 30px;
   min-height: 30px;
 }
-#frame-container #frame-profile {
+#hero-container #hero-profile {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 10px;
 }
-#frame-container #frame-profile #profile-image-container {
+#hero-container #hero-profile #profile-image-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 60%;
 }
-#frame-container #frame-profile #profile-info-container {
+#hero-container #hero-profile #profile-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,46 +86,46 @@ body {
   width: 100%;
   height: 100%;
 }
-#frame-container #frame-profile #profile-info-container h1 {
+#hero-container #hero-profile #profile-info-container h1 {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 73px;
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
-#frame-container #frame-profile #profile-info-container span {
+#hero-container #hero-profile #profile-info-container span {
   display: flex;
   flex-direction: row;
 }
-#frame-container #frame-profile #profile-info-container span h2 {
+#hero-container #hero-profile #profile-info-container span h2 {
   font-family: "Ubuntu";
   font-size: 52px;
   line-height: 60px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#frame-container #frame-profile #profile-info-container span h2:nth-child(1) {
+#hero-container #hero-profile #profile-info-container span h2:nth-child(1) {
   color: #0e0c7b;
   margin-right: 10px;
 }
-#frame-container #frame-profile #profile-info-container span h2:nth-child(2) {
+#hero-container #hero-profile #profile-info-container span h2:nth-child(2) {
   color: #057a26;
 }
-#frame-container #frame-profile #profile-info-container span img:nth-child(1) {
+#hero-container #hero-profile #profile-info-container span img:nth-child(1) {
   margin-right: 50px;
 }
-#frame-container #frame-profile #profile-info-container p {
+#hero-container #hero-profile #profile-info-container p {
   margin-top: 10px;
   font-family: "Ubuntu";
   font-size: 32px;
   line-height: 37px;
 }
-#frame-container #frame-profile #separator {
+#hero-container #hero-profile #separator {
   width: 4px;
   height: 180px;
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 }
-#frame-container #frame-profile #profile-image {
+#hero-container #hero-profile #profile-image {
   box-sizing: border-box;
   width: 380px;
   height: 380px;
@@ -138,6 +138,38 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+#content-section #experience-section {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+#content-section #experience-section #experience-text p {
+  position: absolute;
+  top: 100px;
+  left: 180px;
+  font-family: "Ubuntu";
+  font-size: 46px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#content-section #experience-section #experience-text h4#experience-years {
+  display: flex;
+  font-family: "Ubuntu";
+  font-size: 410px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#content-section #experience-section #company-logos {
+  position: absolute;
+  display: flex;
+  left: 180px;
+  bottom: 150px;
+}
+#content-section #experience-section #company-logos img:nth-child(2) {
+  margin-left: 15px;
 }
 
 @media only screen and (max-width: 870px) {
@@ -155,15 +187,15 @@ body {
     text-decoration: none;
     margin-right: 32px;
   }
-  #frame-container {
+  #hero-container {
     margin-top: 86px;
     width: 97.2vw;
     height: 28vh !important;
   }
-  #frame-container #frame-profile {
+  #hero-container #hero-profile {
     position: relative;
   }
-  #frame-container #frame-profile #profile-image-container #profile-image {
+  #hero-container #hero-profile #profile-image-container #profile-image {
     height: 160px;
     width: auto;
     position: absolute;
@@ -173,7 +205,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  #frame-container #profile-info-container {
+  #hero-container #profile-info-container {
     margin-top: 100px;
     position: absolute;
     left: 0;
@@ -181,15 +213,15 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  #frame-container #profile-info-container h1 {
+  #hero-container #profile-info-container h1 {
     font-size: 34px !important;
   }
-  #frame-container #profile-info-container h2 {
+  #hero-container #profile-info-container h2 {
     font-size: 12px !important;
     margin-top: -20px;
   }
-  #frame-container p,
-#frame-container span#profile-contact-container img {
+  #hero-container p,
+#hero-container span#profile-contact-container img {
     display: none;
   }
 }
