@@ -28,12 +28,19 @@
   }
 
   #hero-profile {
+    .separator {
+      width: 4px;
+      height: 190px;
+      margin: 0 auto;
+      background: rgba(0, 150, 150, 0.7);
+      border-radius: 30px;
+    }
+
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 
     #profile-image-container {
       width: 100%;
@@ -41,6 +48,8 @@
       align-items: center;
       justify-content: center;
       height: 100%;
+      padding: 10px;
+
       img {
         width: auto;
         height: 100%;
@@ -49,7 +58,6 @@
 
     #profile-info-container {
       display: flex;
-      justify-content: center;
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -64,10 +72,9 @@
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
       }
 
-      span {
+      span#profile-position {
         display: flex;
         flex-direction: row;
-
         h2 {
           font-family: "Ubuntu";
           font-size: 52px;
@@ -83,15 +90,25 @@
         h2:nth-child(2) {
           color: #057a26;
         }
-        img:nth-child(1) {
-          margin-right: 50px;
-        }
       }
-      p {
-        margin-top: 10px;
-        font-family: "Ubuntu";
-        font-size: 32px;
-        line-height: 37px;
+
+      div#profile-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          margin: 0 auto;
+        }
+
+        img:nth-child(1) {
+          margin-right: 20px;
+        }
+
+        p {
+          margin-top: 10px;
+          font-family: "Ubuntu";
+          font-size: 32px;
+        }
       }
     }
 
@@ -107,12 +124,26 @@
   }
 }
 
-.separator {
-  width: 4px;
-  height: 190px;
-  margin: 0 auto;
-  background: rgba(0, 150, 150, 0.7);
-  border-radius: 30px;
+@media only screen and (max-width: 1440px) {
+  #profile-info-container {
+    h1 {
+      font-size: 44px !important;
+    }
+    span#profile-position {
+      h2 {
+        font-size: 40px !important;
+      }
+    }
+
+    span#profile-contact-container {
+      margin-top: -10px !important;
+    }
+
+    div#profile-contact-container img {
+      width: 80px !important;
+      height: auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 870px) {
@@ -156,8 +187,8 @@
       }
     }
 
-    p,
-    span#profile-contact-container img {
+    div#profile-contact-container img,
+    p {
       display: none;
     }
   }

@@ -35,6 +35,16 @@
   }
 }
 
+@media only screen and (min-width: 870px) {
+  #experience-section {
+    #desktop-experience-image {
+      display: block;
+    }
+    #mobile-experience-image {
+      display: none;
+    }
+  }
+}
 @media only screen and (max-width: 870px) {
   .separatorTwo {
     display: none;
