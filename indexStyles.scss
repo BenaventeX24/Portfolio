@@ -1,188 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Ubuntu&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
 }
 
-.main-navbar {
-  display: flex;
-  align-items: center;
-
-  padding: 0;
-  width: 99vw;
-  margin: 0;
-  height: 80px;
-
-  #nav-logo {
-    margin-left: 28px;
-    img {
-      width: 98px;
-      height: auto;
-    }
-  }
-
-  background: #000000;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 0 0 20px 20px;
-  a:nth-child(1) {
-    margin-right: auto;
-  }
-  a {
-    text-decoration: none;
-    margin-right: 68px;
-  }
-  a.navbar-element {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-
-    color: #ffffff;
-  }
-}
-
-#hero-container {
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  border: 5px solid #000000;
-  margin-top: 40px;
-  width: 97.2vw; //1400
-  height: 41.9921875vh; //435
-  border-radius: 15px;
-  position: relative;
-
-  display: flex;
-  align-content: center;
-
-  #hero-background {
-    overflow: hidden;
-
-    filter: blur(5px);
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-
-    img {
-      position: absolute;
-      min-width: 30px;
-      min-height: 30px;
-    }
-  }
-
-  #hero-profile {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-
-    #profile-image-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 60%;
-    }
-
-    #profile-info-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-
-      h1 {
-        font-family: "Montserrat";
-        font-weight: 600;
-        font-size: 73px;
-        color: #000000;
-
-        text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
-      }
-
-      span {
-        display: flex;
-        flex-direction: row;
-
-        h2 {
-          font-family: "Ubuntu";
-          font-size: 52px;
-          line-height: 60px;
-
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        h2:nth-child(1) {
-          color: #0e0c7b;
-          margin-right: 10px;
-        }
-
-        h2:nth-child(2) {
-          color: #057a26;
-        }
-        img:nth-child(1) {
-          margin-right: 50px;
-        }
-      }
-      p {
-        margin-top: 10px;
-        font-family: "Ubuntu";
-        font-size: 32px;
-        line-height: 37px;
-      }
-    }
-
-    #profile-image {
-      box-sizing: border-box;
-      width: 380px;
-      height: 380px;
-
-      border: 3px solid #000000;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      border-radius: 50%;
-    }
-  }
-}
-
-.separator {
+.separatorTwo {
   width: 4px;
-  height: 180px;
+  height: 220px;
+
+  margin-right: auto;
+  margin-left: -50%;
 
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 }
-
-#experience-section {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  img {
-    height: auto;
-  }
-}
-
 .container-center {
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-#content-section {
+#experience-section {
+  width: fit-content;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-self: center;
+  img {
+    height: auto;
+  }
+}
+
+#content-section {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.1fr) minmax(0, 1fr);
+  place-items: center;
 }
 
 #presentation-text {
-  width: 100%;
+  margin-right: 15px;
   p {
     font-family: "Nunito Sans";
     font-size: 32px;
