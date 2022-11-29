@@ -8,46 +8,10 @@ body {
   box-sizing: content-box;
 }
 
-.separatorTwo {
-  width: 4px;
-  height: 220px;
-
-  margin-right: auto;
-  margin-left: -50%;
-
-  background: rgba(0, 150, 150, 0.7);
-  border-radius: 30px;
-}
 .container-center {
   display: flex;
   justify-content: center;
   align-content: center;
-}
-
-#experience-section {
-  width: fit-content;
-  display: flex;
-  justify-self: center;
-  img {
-    height: auto;
-  }
-}
-
-#content-section {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.1fr) minmax(0, 1fr);
-  place-items: center;
-}
-
-#presentation-text {
-  margin-right: 15px;
-  p {
-    font-family: "Nunito Sans";
-    font-size: 32px;
-    line-height: 44px;
-    text-align: right;
-  }
 }
 
 @media only screen and (max-width: 870px) {
