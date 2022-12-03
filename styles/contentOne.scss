@@ -47,6 +47,36 @@
   }
 }
 @media only screen and (max-width: 870px) {
+  #content-section {
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    #experience-section {
+      #experience-text {
+        p {
+          font-size: 26px !important;
+          right: 28px;
+          top: 45px;
+        }
+        h4 {
+          font-size: 200px !important;
+        }
+      }
+      #company-logos {
+        position: absolute;
+        display: flex;
+        left: 90px;
+        bottom: 65px;
+        img {
+          width: 90px;
+          height: auto;
+        }
+      }
+    }
+  }
+
   .separatorTwo {
     display: none;
   }
@@ -83,13 +113,5 @@
       display: block;
       height: 160px !important;
     }
-  }
-
-  #content-section {
-    margin-top: 15px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    place-items: center;
   }
 }

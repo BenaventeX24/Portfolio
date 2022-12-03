@@ -42,6 +42,31 @@
   }
 }
 @media only screen and (max-width: 870px) {
+  #content-section {
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  #content-section #experience-section #experience-text p {
+    font-size: 26px !important;
+    right: 28px;
+    top: 45px;
+  }
+  #content-section #experience-section #experience-text h4 {
+    font-size: 200px !important;
+  }
+  #content-section #experience-section #company-logos {
+    position: absolute;
+    display: flex;
+    left: 90px;
+    bottom: 65px;
+  }
+  #content-section #experience-section #company-logos img {
+    width: 90px;
+    height: auto;
+  }
   .separatorTwo {
     display: none;
   }
@@ -72,12 +97,5 @@
   #experience-section #mobile-experience-image {
     display: block;
     height: 160px !important;
-  }
-  #content-section {
-    margin-top: 15px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    place-items: center;
   }
 }/*# sourceMappingURL=contentOne.css.map */
