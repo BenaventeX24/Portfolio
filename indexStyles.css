@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Ubuntu&display=swap");
-body {
+body * {
+  margin: 0;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   top: 0;
-  box-sizing: content-box;
 }/*# sourceMappingURL=indexStyles.css.map */

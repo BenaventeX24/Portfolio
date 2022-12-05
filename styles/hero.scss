@@ -110,14 +110,19 @@
           margin: 0 auto;
         }
 
-        img:nth-child(1) {
-          margin-right: 20px;
-        }
-
         p {
-          margin-top: 10px;
+          margin-top: 30px;
           font-family: "Ubuntu";
           font-size: 32px;
+        }
+
+        #profile-contact-logos {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          img:nth-child(1) {
+            margin-right: 35px;
+          }
         }
       }
     }
@@ -133,35 +138,13 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
-  #profile-info-container {
-    h1 {
-      font-size: 44px !important;
-    }
-    span#profile-position {
-      h2 {
-        font-size: 40px !important;
-      }
-    }
-
-    span#profile-contact-container {
-      margin-top: -10px !important;
-    }
-
-    div#profile-contact-container img {
-      width: 80px !important;
-      height: auto;
-    }
-  }
-}
-
 @media only screen and (max-width: 870px) {
   .separator {
     display: none;
   }
   #hero-section {
     margin-top: 140px;
-    width: 97.2vw; //1400
+    width: 97.2vw;
     height: 28vh !important;
 
     #hero-profile {

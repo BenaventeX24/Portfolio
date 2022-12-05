@@ -51,20 +51,4 @@
     text-decoration: none;
     margin-right: 32px;
   }
-}
-@media only screen and (min-width: 870px) {
-  nav {
-    height: 55px !important;
-  }
-  nav #nav-logo {
-    margin-left: 28px;
-  }
-  nav #nav-logo img {
-    width: 60px !important;
-  }
-  nav a.navbar-element {
-    font-size: 20px !important;
-    text-decoration: none;
-    margin-right: 32px;
-  }
 }/*# sourceMappingURL=navbar.css.map */
