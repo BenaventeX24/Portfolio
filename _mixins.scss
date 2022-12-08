@@ -24,3 +24,9 @@
     @content;
   }
 }
+
+@mixin custom($value) {
+  @media (max-width: #{$value}) {
+    @content;
+  }
+}
