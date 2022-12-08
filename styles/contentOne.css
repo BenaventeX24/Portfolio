@@ -25,9 +25,14 @@
 #content-section #experience {
   display: flex;
   position: relative;
-  left: 10%;
   width: 100%;
   height: 100%;
+  left: 10%;
+}
+@media (max-width: 870px) {
+  #content-section #experience {
+    display: none;
+  }
 }
 #content-section #experience #experience-text {
   display: flex;

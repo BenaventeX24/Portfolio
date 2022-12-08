@@ -1,24 +1,31 @@
+@import "../mixins";
+
 #hero-section {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  border: 5px solid #000000;
+
   margin-top: 100px;
+
   width: 95.2vw;
   height: 41.9921875vh;
+
   border-radius: 15px;
-  position: relative;
+  border: 5px solid #000000;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @include sm {
+    margin-top: 140px;
+
+    width: 90vw;
+    height: 28vh;
+  }
 
   #hero-background {
     overflow: hidden;
-
-    filter: blur(5px);
 
     position: absolute;
     top: 0;
@@ -27,8 +34,11 @@
     bottom: 0;
     z-index: -1;
 
+    filter: blur(5px);
+
     img {
       position: absolute;
+
       min-width: 30px;
       min-height: 30px;
     }
@@ -41,6 +51,14 @@
       margin: 0 auto;
       background: rgba(0, 150, 150, 0.7);
       border-radius: 30px;
+
+      @include sm {
+        display: none;
+      }
+
+      @include desktop-sm {
+        display: none;
+      }
     }
 
     width: 100%;
@@ -61,6 +79,17 @@
       img {
         width: auto;
         height: 95%;
+
+        @include sm {
+          height: 160px;
+          width: auto;
+          position: absolute;
+          top: -70px;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
 
@@ -73,6 +102,15 @@
       width: 100%;
       height: 100%;
 
+      @include sm {
+        margin-top: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       h1 {
         font-family: "Montserrat";
         font-weight: 600;
@@ -80,16 +118,33 @@
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
+
+        @include sm {
+          font-size: 34px;
+        }
+        @include desktop-sm {
+          font-size: 55px;
+        }
       }
 
       span#profile-position {
         display: flex;
         flex-direction: row;
+
         h2 {
           font-family: "Ubuntu";
           font-size: 52px;
           line-height: 60px;
           text-shadow: 2px 1px 1px white;
+
+          @include sm {
+            margin-top: -10px;
+            font-size: 38px !important;
+          }
+
+          @include desktop-sm {
+            font-size: 42px;
+          }
         }
 
         h2:nth-child(1) {
@@ -103,23 +158,42 @@
       }
 
       div#profile-contact-container {
+        position: relative;
+        top: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include sm {
+          display: none;
+        }
+
+        p {
+          margin-top: 10px;
+          font-family: "Ubuntu";
+          font-size: 28px;
+
+          @include desktop-sm {
+            font-size: 26px;
+          }
+        }
+
         span {
           margin: 0 auto;
         }
 
-        p {
-          margin-top: 30px;
-          font-family: "Ubuntu";
-          font-size: 32px;
-        }
-
         #profile-contact-logos {
-          margin-top: 20px;
+          margin-top: 10px;
           display: flex;
           align-items: center;
+          img {
+            width: 85px;
+            height: auto;
+
+            @include desktop-sm {
+              width: 75px;
+            }
+          }
           img:nth-child(1) {
             margin-right: 35px;
           }
@@ -138,54 +212,16 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  #profile-contact-logos {
+    img {
+      width: 75px !important;
+      height: auto;
+    }
+  }
+}
+
 @media only screen and (max-width: 870px) {
-  .separator {
-    display: none;
-  }
-  #hero-section {
-    margin-top: 140px;
-    width: 97.2vw;
-    height: 28vh !important;
-
-    #hero-profile {
-      position: relative;
-      #profile-image-container {
-        #profile-image {
-          height: 160px;
-          width: auto;
-          position: absolute;
-          top: -70px;
-          left: 0;
-          right: 0;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
-    #profile-info-container {
-      margin-top: 100px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      h1 {
-        font-size: 34px !important;
-      }
-      span {
-        h2 {
-          margin-top: -15px;
-          font-size: 28px !important;
-        }
-      }
-    }
-
-    div#profile-contact-container img,
-    p {
-      display: none;
-    }
-  }
-
   @media only screen and (max-height: 740px) {
     h1 {
       font-size: 30px;
