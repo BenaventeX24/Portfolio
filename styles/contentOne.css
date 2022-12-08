@@ -6,12 +6,97 @@
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 }
+@media (max-width: 870px) {
+  .separatorTwo {
+    height: 4px;
+    width: 450px;
+    margin: 25px 0;
+  }
+}
 
 #content-section {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.1fr) minmax(0, 1fr);
+  grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
+}
+@media (max-width: 870px) {
+  #content-section {
+    margin-top: 15px;
+    grid-template-rows: 1fr 0.1fr 0.5fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+#content-section #experience {
+  display: flex;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+@media (max-width: 870px) {
+  #content-section #experience {
+    left: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+#content-section #experience #experience-text {
+  display: flex;
+}
+#content-section #experience #experience-text h1 {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 410px;
+  color: #000000;
+  line-height: 270px;
+  width: 170px;
+  height: 292px;
+}
+@media (max-width: 870px) {
+  #content-section #experience #experience-text h1 {
+    font-size: 300px;
+    line-height: 200px;
+    height: 292px;
+    height: 217px;
+  }
+}
+#content-section #experience #experience-text p {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 870px) {
+  #content-section #experience #experience-text p {
+    font-size: 34px;
+    position: relative;
+    right: 42px;
+    top: -5px;
+  }
+}
+#content-section #experience #experience-company-logos {
+  display: flex;
+  position: absolute;
+  left: 190px;
+  top: 80px;
+}
+@media (max-width: 870px) {
+  #content-section #experience #experience-company-logos {
+    left: 150px;
+    top: 60px;
+  }
+}
+@media (max-width: 870px) {
+  #content-section #experience #experience-company-logos img {
+    width: 120px;
+    height: auto;
+  }
 }
 #content-section #presentation-text {
   margin-right: 4vw;
@@ -22,110 +107,31 @@
   line-height: 44px;
   text-align: right;
 }
-#content-section #experience {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  left: 10%;
+@media (max-width: 870px) {
+  #content-section #presentation-text p {
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media (max-width: 870px) {
-  #content-section #experience {
-    display: none;
-  }
-}
-#content-section #experience #experience-text {
-  display: flex;
-}
-#content-section #experience #experience-text h1 {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 410px;
-  color: #000000;
-  line-height: 270px;
-  width: 170px;
-  height: 292px;
-}
-#content-section #experience #experience-text p {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 53px;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#content-section #experience #experience-company-logos {
-  display: flex;
-  position: absolute;
-  left: 190px;
-  top: 80px;
-}
-
-@media only screen and (min-width: 870px) {
-  #experience-section #desktop-experience-image {
-    display: block;
-  }
-  #experience-section #mobile-experience-image {
-    display: none;
-  }
-}
-@media only screen and (max-width: 870px) {
-  #content-section {
-    margin-top: 15px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    place-items: center;
-  }
-  #content-section #experience-section #experience-text p {
-    font-size: 26px !important;
-    right: 28px;
-    top: 45px;
-  }
-  #content-section #experience-section #experience-text h4 {
-    font-size: 200px !important;
-  }
-  #content-section #experience-section #company-logos {
-    position: absolute;
-    display: flex;
-    left: 90px;
-    bottom: 65px;
-  }
-  #content-section #experience-section #company-logos img {
-    width: 90px;
-    height: auto;
-  }
-  .separatorTwo {
-    display: none;
-  }
-  #presentation-text p {
-    line-height: 25px !important;
-    font-size: 16px !important;
-    text-align: center !important;
-  }
-  #presentation-text #tech-word {
+  #content-section #presentation-text #tech-word {
     font-weight: bold;
   }
-  #presentation-text #sports-word {
+  #content-section #presentation-text #sports-word {
     font-weight: bold;
   }
-  #presentation-text #professional-word {
+  #content-section #presentation-text #professional-word {
     font-weight: bold;
   }
-  #presentation-text #short-version-text {
+  #content-section #presentation-text #short-version-text {
     display: none;
   }
-  #presentation-text #frontend-word {
+  #content-section #presentation-text #frontend-word {
     font-weight: bold;
     color: #0e0c7b;
-  }
-  #experience-section #desktop-experience-image {
-    display: none;
-  }
-  #experience-section #mobile-experience-image {
-    display: block;
-    height: 160px !important;
   }
 }/*# sourceMappingURL=contentOne.css.map */
