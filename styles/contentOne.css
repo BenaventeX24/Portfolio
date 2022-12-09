@@ -1,16 +1,21 @@
 .separatorTwo {
   width: 4px;
   height: 220px;
-  margin-right: auto;
+  margin-right: 50%;
   margin-left: -50%;
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 }
 @media (max-width: 870px) {
   .separatorTwo {
-    height: 4px;
-    width: 450px;
-    margin: 25px 0;
+    transform: rotate(90deg);
+    margin: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .separatorTwo {
+    margin-right: -8px;
+    height: 180px;
   }
 }
 
@@ -34,7 +39,6 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 100%;
 }
 @media (max-width: 870px) {
   #content-section #experience {
@@ -59,9 +63,13 @@
 @media (max-width: 870px) {
   #content-section #experience #experience-text h1 {
     font-size: 300px;
-    line-height: 200px;
     height: 292px;
     height: 217px;
+  }
+}
+@media (max-width: 1400px) {
+  #content-section #experience #experience-text h1 {
+    font-size: 350px;
   }
 }
 #content-section #experience #experience-text p {
@@ -80,6 +88,14 @@
     top: -5px;
   }
 }
+@media (max-width: 1400px) {
+  #content-section #experience #experience-text p {
+    font-size: 36px;
+    position: relative;
+    left: -15px;
+    top: 6px;
+  }
+}
 #content-section #experience #experience-company-logos {
   display: flex;
   position: absolute;
@@ -92,9 +108,21 @@
     top: 60px;
   }
 }
+@media (max-width: 1400px) {
+  #content-section #experience #experience-company-logos {
+    left: 170px;
+    top: 80px;
+  }
+}
 @media (max-width: 870px) {
   #content-section #experience #experience-company-logos img {
     width: 120px;
+    height: auto;
+  }
+}
+@media (max-width: 1400px) {
+  #content-section #experience #experience-company-logos img {
+    width: 130px;
     height: auto;
   }
 }
@@ -117,6 +145,11 @@
     transform: translateX(-50%);
   }
 }
+@media (max-width: 1200px) {
+  #content-section #presentation-text p {
+    font-size: 26px;
+  }
+}
 @media (max-width: 870px) {
   #content-section #presentation-text #tech-word {
     font-weight: bold;
@@ -126,9 +159,6 @@
   }
   #content-section #presentation-text #professional-word {
     font-weight: bold;
-  }
-  #content-section #presentation-text #short-version-text {
-    display: none;
   }
   #content-section #presentation-text #frontend-word {
     font-weight: bold;

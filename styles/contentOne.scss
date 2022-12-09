@@ -4,16 +4,20 @@
   width: 4px;
   height: 220px;
 
-  margin-right: auto;
+  margin-right: 50%;
   margin-left: -50%;
 
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 
   @include sm {
-    height: 4px;
-    width: 450px;
-    margin: 25px 0;
+    transform: rotate(90deg);
+    margin: 0;
+  }
+
+  @include custom(1100px) {
+    margin-right: -8px;
+    height: 180px;
   }
 }
 
@@ -36,7 +40,6 @@
     position: relative;
 
     width: fit-content;
-    height: 100%;
 
     @include sm {
       left: 0;
@@ -45,6 +48,7 @@
 
     #experience-text {
       display: flex;
+
       h1 {
         font-family: "Ubuntu";
         font-weight: 400;
@@ -57,9 +61,12 @@
 
         @include sm {
           font-size: 300px;
-          line-height: 200px;
           height: 292px;
           height: 217px;
+        }
+
+        @include custom(1400px) {
+          font-size: 350px;
         }
       }
       p {
@@ -77,6 +84,13 @@
           right: 42px;
           top: -5px;
         }
+
+        @include custom(1400px) {
+          font-size: 36px;
+          position: relative;
+          left: -15px;
+          top: 6px;
+        }
       }
     }
 
@@ -89,9 +103,18 @@
         left: 150px;
         top: 60px;
       }
+      @include custom(1400px) {
+        left: 170px;
+        top: 80px;
+      }
       img {
         @include sm {
           width: 120px;
+          height: auto;
+        }
+
+        @include custom(1400px) {
+          width: 130px;
           height: auto;
         }
       }
@@ -116,6 +139,9 @@
 
         transform: translateX(-50%);
       }
+      @include desktop-sm {
+        font-size: 26px;
+      }
     }
 
     @include sm {
@@ -127,9 +153,6 @@
       }
       #professional-word {
         font-weight: bold;
-      }
-      #short-version-text {
-        display: none;
       }
       #frontend-word {
         font-weight: bold;
