@@ -4,20 +4,16 @@
   width: 4px;
   height: 220px;
 
-  margin-right: 50%;
-  margin-left: -50%;
-
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 
-  @include sm {
-    transform: rotate(90deg);
-    margin: 0;
-  }
-
   @include custom(1100px) {
     margin-right: -8px;
-    height: 180px;
+  }
+  @include sm {
+    width: 220px;
+    height: 4px;
+    margin: 20px 0;
   }
 }
 
@@ -28,22 +24,18 @@
   place-items: center;
 
   @include sm {
-    margin-top: 15px;
-
-    grid-template-rows: 1fr 0.1fr 0.5fr;
+    margin-top: 20px;
     grid-template-columns: 1fr;
-    place-items: center;
   }
 
   #experience {
     display: flex;
     position: relative;
-
+    border: 1px solid black;
     width: fit-content;
 
     @include sm {
       left: 0;
-      width: fit-content;
     }
 
     #experience-text {
@@ -59,14 +51,13 @@
         width: 170px;
         height: 292px;
 
-        @include sm {
-          font-size: 300px;
-          height: 292px;
-          height: 217px;
+        @include custom(1400px) {
+          font-size: 550px;
         }
 
-        @include custom(1400px) {
-          font-size: 350px;
+        @include sm {
+          font-size: 300px;
+          height: fit-content;
         }
       }
       p {
@@ -78,18 +69,17 @@
         color: #000000;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-        @include sm {
-          font-size: 34px;
-          position: relative;
-          right: 42px;
-          top: -5px;
-        }
-
         @include custom(1400px) {
           font-size: 36px;
           position: relative;
           left: -15px;
           top: 6px;
+        }
+        @include sm {
+          font-size: 34px;
+          position: relative;
+          right: 42px;
+          top: -5px;
         }
       }
     }
@@ -108,13 +98,12 @@
         top: 80px;
       }
       img {
-        @include sm {
-          width: 120px;
-          height: auto;
-        }
-
         @include custom(1400px) {
           width: 130px;
+          height: auto;
+        }
+        @include sm {
+          width: 120px;
           height: auto;
         }
       }
@@ -122,25 +111,26 @@
   }
 
   #presentation-text {
+    border: 1px solid black;
     margin-right: 4vw;
+
+    @include sm {
+      margin: 0 60px;
+      width: 100%;
+    }
     p {
       font-family: "Nunito Sans";
       font-size: 32px;
       line-height: 44px;
       text-align: right;
 
+      @include desktop-sm {
+        font-size: 26px;
+      }
       @include sm {
         line-height: 30px;
         font-size: 24px;
         text-align: center;
-
-        width: 100%;
-        margin-left: 50%;
-
-        transform: translateX(-50%);
-      }
-      @include desktop-sm {
-        font-size: 26px;
       }
     }
 
