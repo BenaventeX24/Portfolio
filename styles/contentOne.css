@@ -4,6 +4,7 @@
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
   margin-left: -5vw;
+  margin-top: 15px;
 }
 @media (max-width: 870px) {
   .separatorTwo {
