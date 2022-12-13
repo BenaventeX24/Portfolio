@@ -100,7 +100,7 @@
 }
 @media (max-width: 1100px) {
   #content-section #experience #experience-text p {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 @media (max-width: 870px) {
@@ -148,7 +148,7 @@
 }
 @media (max-width: 1100px) {
   #content-section #experience #experience-company-logos img {
-    width: 110px;
+    width: 100px;
   }
 }
 @media (max-width: 870px) {
