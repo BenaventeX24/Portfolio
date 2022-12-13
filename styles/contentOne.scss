@@ -7,9 +7,8 @@
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 
-  @include custom(1100px) {
-    margin-right: -8px;
-  }
+  margin-left: -5vw;
+
   @include sm {
     width: 220px;
     height: 4px;
@@ -22,6 +21,11 @@
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
+  padding: 0 50px;
+
+  @include desktop-sm {
+    padding: 0 20px 0 0;
+  }
 
   @include sm {
     margin-top: 20px;
@@ -30,11 +34,12 @@
 
   #experience {
     display: flex;
+    justify-content: center;
     position: relative;
-    border: 1px solid black;
-    width: fit-content;
+    width: 100%;
 
     @include sm {
+      width: fit-content;
       left: 0;
     }
 
@@ -46,13 +51,16 @@
         font-weight: 400;
         font-size: 410px;
 
-        color: #000000;
+        color: #212529;
         line-height: 270px;
-        width: 170px;
         height: 292px;
 
         @include custom(1400px) {
-          font-size: 550px;
+          font-size: 350px;
+        }
+
+        @include desktop-sm {
+          font-size: 320px;
         }
 
         @include sm {
@@ -61,25 +69,33 @@
         }
       }
       p {
+        position: relative;
+        right: 65px;
         font-family: "Ubuntu";
         font-weight: 400;
         font-size: 46px;
         line-height: 53px;
 
-        color: #000000;
+        color: #212529;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         @include custom(1400px) {
           font-size: 36px;
-          position: relative;
-          left: -15px;
-          top: 6px;
+          right: 50px;
+          top: 8px;
+        }
+        @include desktop-sm {
+          font-size: 32px;
+          right: 50px;
+          top: 20px;
+        }
+        @include custom(1100px) {
+          font-size: 24px;
         }
         @include sm {
           font-size: 34px;
-          position: relative;
           right: 42px;
-          top: -5px;
+          top: 25px;
         }
       }
     }
@@ -87,33 +103,42 @@
     #experience-company-logos {
       display: flex;
       position: absolute;
-      left: 190px;
-      top: 80px;
-      @include sm {
-        left: 150px;
-        top: 60px;
-      }
+      left: calc(210% * 100% / 580%);
+      top: 70px;
+
       @include custom(1400px) {
-        left: 170px;
+        left: calc(200% * 100% / 580%);
         top: 80px;
       }
+      @include custom(1100px) {
+        left: calc(215% * 100% / 580%);
+      }
+
+      @include sm {
+        left: 140px;
+        top: 90px;
+      }
+
       img {
+        height: auto;
+
         @include custom(1400px) {
           width: 130px;
-          height: auto;
+        }
+        @include desktop-sm {
+          width: 120px;
+        }
+        @include custom(1100px) {
+          width: 110px;
         }
         @include sm {
           width: 120px;
-          height: auto;
         }
       }
     }
   }
 
   #presentation-text {
-    border: 1px solid black;
-    margin-right: 4vw;
-
     @include sm {
       margin: 0 60px;
       width: 100%;
