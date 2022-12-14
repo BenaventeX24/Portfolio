@@ -14,7 +14,7 @@
   width: 99vw;
   height: 60px;
 
-  @include sm {
+  @include phone {
     height: 50px;
     width: 98.5vw;
   }
@@ -30,7 +30,7 @@
       height: auto;
     }
 
-    @include sm {
+    @include phone {
       margin-left: 28px;
       img {
         width: 68px;
@@ -62,7 +62,7 @@
 
     color: #ffffff;
 
-    @include sm {
+    @include phone {
       font-size: 20px;
 
       text-decoration: none;

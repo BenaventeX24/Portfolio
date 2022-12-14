@@ -4,8 +4,8 @@
   }
 }
 
-@mixin sm {
-  @media (max-width: 870px) {
+@mixin phone {
+  @media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
     @content;
   }
 }

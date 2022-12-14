@@ -15,7 +15,7 @@
     padding: 0 20px 0 0;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section {
     margin-top: 20px;
     grid-template-columns: 1fr;
@@ -51,7 +51,7 @@
     font-size: 320px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section #experience #experience-text h1 {
     font-size: 300px;
     height: -webkit-fit-content;
@@ -93,7 +93,7 @@
     font-size: 25px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section #experience #experience-text p {
     font-size: 34px;
     right: 42px;
@@ -117,7 +117,7 @@
     left: 36.2068965517%;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section #experience #experience-company-logos {
     left: 140px;
     top: 90px;
@@ -141,7 +141,7 @@
     width: 100px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section #experience #experience-company-logos img {
     width: 120px;
   }
@@ -159,7 +159,7 @@
     margin: 0;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section .separatorTwo {
     width: 220px;
     height: 4px;
@@ -169,7 +169,7 @@
 #content-section #presentation-text {
   width: 100%;
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section #presentation-text {
     margin: 0 60px;
     width: 100%;
@@ -187,14 +187,14 @@
     font-size: 26px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section #presentation-text p {
     line-height: 30px;
     font-size: 24px;
     text-align: center;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
   #content-section #presentation-text #tech-word {
     font-weight: bold;
   }

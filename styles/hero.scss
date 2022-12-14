@@ -17,7 +17,7 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
-  @include sm {
+  @include phone {
     margin-top: 140px;
 
     width: 90vw;
@@ -52,7 +52,7 @@
       background: rgba(0, 150, 150, 0.7);
       border-radius: 30px;
 
-      @include sm {
+      @include phone {
         display: none;
       }
 
@@ -80,7 +80,7 @@
         width: auto;
         height: 95%;
 
-        @include sm {
+        @include phone {
           height: 160px;
           width: auto;
           position: absolute;
@@ -102,7 +102,7 @@
       width: 100%;
       height: 100%;
 
-      @include sm {
+      @include phone {
         margin-top: 40px;
         position: absolute;
         left: 0;
@@ -119,7 +119,7 @@
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 
-        @include sm {
+        @include phone {
           font-size: 34px;
         }
         @include desktop-sm {
@@ -137,7 +137,7 @@
           line-height: 60px;
           text-shadow: 2px 1px 1px white;
 
-          @include sm {
+          @include phone {
             margin-top: -10px;
             font-size: 38px !important;
           }
@@ -164,7 +164,7 @@
         flex-direction: column;
         align-items: center;
 
-        @include sm {
+        @include phone {
           display: none;
         }
 
