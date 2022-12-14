@@ -10,7 +10,7 @@
     padding: 0 50px 0 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #content-section {
     padding: 0 20px 0 0;
   }
@@ -46,7 +46,7 @@
     font-size: 350px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #content-section #experience #experience-text h1 {
     font-size: 320px;
   }
@@ -76,7 +76,7 @@
     top: 8px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #content-section #experience #experience-text p {
     font-size: 32px;
     right: 50px;
@@ -131,7 +131,7 @@
     width: 130px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #content-section #experience #experience-company-logos img {
     width: 120px;
   }
@@ -182,7 +182,7 @@
   line-height: 44px;
   text-align: right;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #content-section #presentation-text p {
     font-size: 26px;
   }

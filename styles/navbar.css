@@ -20,7 +20,7 @@
     width: 98.5vw;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   .main-navbar {
     height: 55px;
   }
@@ -40,7 +40,7 @@
     width: 68px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   .main-navbar #nav-logo {
     margin-left: 28px;
   }
@@ -69,7 +69,7 @@
     margin-right: 32px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   .main-navbar a.navbar-element {
     font-size: 22px;
   }

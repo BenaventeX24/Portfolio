@@ -52,7 +52,7 @@
     display: none;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #hero-section #hero-profile .separator {
     display: none;
   }
@@ -112,7 +112,7 @@
     font-size: 34px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: 55px;
   }
@@ -133,7 +133,7 @@
     font-size: 38px !important;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-size: 42px;
   }
@@ -162,7 +162,7 @@
   font-family: "Ubuntu";
   font-size: 28px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #hero-section #hero-profile #profile-info-container div#profile-contact-container p {
     font-size: 26px;
   }
@@ -179,7 +179,7 @@
   width: 85px;
   height: auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
   #hero-section #hero-profile #profile-info-container div#profile-contact-container #profile-contact-logos img {
     width: 75px;
   }
