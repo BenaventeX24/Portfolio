@@ -1,30 +1,15 @@
 @import "../mixins";
 
-.separatorTwo {
-  width: 4px;
-  height: 220px;
-
-  background: rgba(0, 150, 150, 0.7);
-  border-radius: 30px;
-
-  margin-left: -5vw;
-
-  margin-top: 15px;
-
-  @include sm {
-    width: 220px;
-    height: 4px;
-    margin: 20px 0;
-  }
-}
-
 #content-section {
   margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
-  padding: 0 50px;
+  padding: 0 80px 0 0;
 
+  @include custom(1300px) {
+    padding: 0 50px 0 0;
+  }
   @include desktop-sm {
     padding: 0 20px 0 0;
   }
@@ -38,12 +23,8 @@
     display: flex;
     justify-content: center;
     position: relative;
-    width: 100%;
-
-    @include sm {
-      width: fit-content;
-      left: 0;
-    }
+    width: fit-content;
+    left: 0;
 
     #experience-text {
       display: flex;
@@ -92,7 +73,10 @@
           top: 20px;
         }
         @include custom(1100px) {
-          font-size: 26px;
+          font-size: 28px;
+        }
+        @include custom(920px) {
+          font-size: 25px;
         }
         @include sm {
           font-size: 34px;
@@ -112,8 +96,9 @@
         left: calc(200% * 100% / 580%);
         top: 80px;
       }
+
       @include custom(1100px) {
-        left: calc(215% * 100% / 580%);
+        left: calc(210% * 100% / 580%);
       }
 
       @include sm {
@@ -140,12 +125,34 @@
     }
   }
 
+  .separatorTwo {
+    width: 4px;
+    height: 220px;
+
+    background: rgba(0, 150, 150, 0.7);
+    border-radius: 30px;
+    margin-right: auto;
+    margin-top: 15px;
+
+    @include custom(1000px) {
+      margin: 0;
+    }
+
+    @include sm {
+      width: 220px;
+      height: 4px;
+      margin: 20px 0;
+    }
+  }
+
   #presentation-text {
+    width: 100%;
     @include sm {
       margin: 0 60px;
       width: 100%;
     }
     p {
+      width: 100%;
       font-family: "Nunito Sans";
       font-size: 36px;
       line-height: 44px;

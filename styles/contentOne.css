@@ -1,25 +1,14 @@
-.separatorTwo {
-  width: 4px;
-  height: 220px;
-  background: rgba(0, 150, 150, 0.7);
-  border-radius: 30px;
-  margin-left: -5vw;
-  margin-top: 15px;
-}
-@media (max-width: 870px) {
-  .separatorTwo {
-    width: 220px;
-    height: 4px;
-    margin: 20px 0;
-  }
-}
-
 #content-section {
   margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
-  padding: 0 50px;
+  padding: 0 80px 0 0;
+}
+@media (max-width: 1300px) {
+  #content-section {
+    padding: 0 50px 0 0;
+  }
 }
 @media (max-width: 1200px) {
   #content-section {
@@ -36,15 +25,10 @@
   display: flex;
   justify-content: center;
   position: relative;
-  width: 100%;
-}
-@media (max-width: 870px) {
-  #content-section #experience {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    left: 0;
-  }
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 0;
 }
 #content-section #experience #experience-text {
   display: flex;
@@ -101,7 +85,12 @@
 }
 @media (max-width: 1100px) {
   #content-section #experience #experience-text p {
-    font-size: 26px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 920px) {
+  #content-section #experience #experience-text p {
+    font-size: 25px;
   }
 }
 @media (max-width: 870px) {
@@ -125,7 +114,7 @@
 }
 @media (max-width: 1100px) {
   #content-section #experience #experience-company-logos {
-    left: 37.0689655172%;
+    left: 36.2068965517%;
   }
 }
 @media (max-width: 870px) {
@@ -157,6 +146,29 @@
     width: 120px;
   }
 }
+#content-section .separatorTwo {
+  width: 4px;
+  height: 220px;
+  background: rgba(0, 150, 150, 0.7);
+  border-radius: 30px;
+  margin-right: auto;
+  margin-top: 15px;
+}
+@media (max-width: 1000px) {
+  #content-section .separatorTwo {
+    margin: 0;
+  }
+}
+@media (max-width: 870px) {
+  #content-section .separatorTwo {
+    width: 220px;
+    height: 4px;
+    margin: 20px 0;
+  }
+}
+#content-section #presentation-text {
+  width: 100%;
+}
 @media (max-width: 870px) {
   #content-section #presentation-text {
     margin: 0 60px;
@@ -164,6 +176,7 @@
   }
 }
 #content-section #presentation-text p {
+  width: 100%;
   font-family: "Nunito Sans";
   font-size: 36px;
   line-height: 44px;
