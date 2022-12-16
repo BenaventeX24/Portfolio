@@ -81,7 +81,8 @@
         width: 280px;
 
         @include phone-xl {
-          height: 80%;
+          min-height: 140px;
+          height: 85%;
           width: auto;
           position: absolute;
           top: -70px;
