@@ -10,15 +10,21 @@
     padding: 0 50px 0 0;
   }
 }
-@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #content-section {
     padding: 0 20px 0 0;
   }
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 870px) {
   #content-section {
-    margin-top: 20px;
+    margin-top: 15px;
+    padding: 0;
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 570px) {
+  #content-section {
+    margin-top: 5px;
   }
 }
 #content-section #experience {
@@ -46,17 +52,26 @@
     font-size: 350px;
   }
 }
-@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
-  #content-section #experience #experience-text h1 {
-    font-size: 320px;
-  }
-}
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #content-section #experience #experience-text h1 {
     font-size: 300px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  }
+}
+@media (max-width: 870px) {
+  #content-section #experience #experience-text h1 {
+    font-size: 300px;
+    height: 215px;
+    line-height: 195px;
+  }
+}
+@media (max-width: 570px) {
+  #content-section #experience #experience-text h1 {
+    font-size: 260px;
+  }
+}
+@media (max-width: 450px) {
+  #content-section #experience #experience-text h1 {
+    font-size: 230px;
   }
 }
 #content-section #experience #experience-text p {
@@ -72,55 +87,80 @@
 @media (max-width: 1400px) {
   #content-section #experience #experience-text p {
     font-size: 36px;
-    right: 50px;
-    top: 8px;
+    right: 48px;
+    top: 16px;
   }
 }
-@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #content-section #experience #experience-text p {
     font-size: 32px;
-    right: 50px;
-    top: 20px;
+    right: 46px;
+    top: 26px;
   }
 }
 @media (max-width: 1100px) {
   #content-section #experience #experience-text p {
+    top: 28px;
     font-size: 28px;
   }
 }
 @media (max-width: 920px) {
   #content-section #experience #experience-text p {
-    font-size: 25px;
+    font-size: 26px;
   }
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 870px) {
   #content-section #experience #experience-text p {
     font-size: 34px;
     right: 42px;
-    top: 25px;
+    top: 0;
+  }
+}
+@media (max-width: 570px) {
+  #content-section #experience #experience-text p {
+    font-size: 30px;
+    right: 38px;
+    top: 6px;
+  }
+}
+@media (max-width: 450px) {
+  #content-section #experience #experience-text p {
+    font-size: 25px;
+    right: 34px;
+    top: 8px;
   }
 }
 #content-section #experience #experience-company-logos {
   display: flex;
   position: absolute;
-  left: 36.2068965517%;
+  left: 32.7586206897%;
   top: 70px;
 }
 @media (max-width: 1400px) {
   #content-section #experience #experience-company-logos {
-    left: 34.4827586207%;
+    left: 31.0344827586%;
     top: 80px;
   }
 }
 @media (max-width: 1100px) {
   #content-section #experience #experience-company-logos {
-    left: 36.2068965517%;
+    left: 34.4827586207%;
   }
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 870px) {
   #content-section #experience #experience-company-logos {
     left: 140px;
-    top: 90px;
+    top: 60px;
+  }
+}
+@media (max-width: 570px) {
+  #content-section #experience #experience-company-logos {
+    left: 120px;
+  }
+}
+@media (max-width: 450px) {
+  #content-section #experience #experience-company-logos {
+    left: 110px;
   }
 }
 #content-section #experience #experience-company-logos img {
@@ -131,7 +171,7 @@
     width: 130px;
   }
 }
-@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #content-section #experience #experience-company-logos img {
     width: 120px;
   }
@@ -141,9 +181,19 @@
     width: 100px;
   }
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 870px) {
   #content-section #experience #experience-company-logos img {
     width: 120px;
+  }
+}
+@media (max-width: 570px) {
+  #content-section #experience #experience-company-logos img {
+    width: 110px;
+  }
+}
+@media (max-width: 450px) {
+  #content-section #experience #experience-company-logos img {
+    width: 100px;
   }
 }
 #content-section .separatorTwo {
@@ -159,20 +209,20 @@
     margin: 0;
   }
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 870px) {
   #content-section .separatorTwo {
     width: 220px;
     height: 4px;
-    margin: 20px 0;
+    margin: 4vw 0;
   }
 }
 #content-section #presentation-text {
   width: 100%;
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 870px) {
   #content-section #presentation-text {
-    margin: 0 60px;
-    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 #content-section #presentation-text p {
@@ -182,19 +232,32 @@
   line-height: 44px;
   text-align: right;
 }
-@media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #content-section #presentation-text p {
     font-size: 26px;
   }
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 870px) {
   #content-section #presentation-text p {
     line-height: 30px;
     font-size: 24px;
     text-align: center;
+    padding: 0 20px;
   }
 }
-@media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@media (max-width: 570px) {
+  #content-section #presentation-text p {
+    line-height: 26px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  #content-section #presentation-text p {
+    line-height: 26px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 870px) {
   #content-section #presentation-text #tech-word {
     font-weight: bold;
   }

@@ -1,18 +1,24 @@
-@mixin phone-lg {
-  @media (max-width: 600px) {
+@mixin phone-md {
+  @media (max-width: 450px) {
     @content;
   }
 }
 
-@mixin phone {
-  @media (max-width: 870px), (min-height: 1100px) and (max-width: 1050px) {
+@mixin phone-lg {
+  @media (max-width: 570px) {
+    @content;
+  }
+}
+
+@mixin phone-xl {
+  @media (max-width: 870px) {
     @content;
   }
 }
 
 // Medium devices
 @mixin desktop-sm {
-  @media (max-width: 1200px), (min-height: 1100px) and (max-width: 1250px) {
+  @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
     @content;
   }
 }

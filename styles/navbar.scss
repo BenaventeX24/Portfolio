@@ -14,13 +14,18 @@
   width: 99vw;
   height: 60px;
 
-  @include phone {
-    height: 50px;
+  @include desktop-sm {
+    height: 55px;
+  }
+
+  @include phone-lg {
+    height: 80px;
     width: 98.5vw;
   }
 
-  @include desktop-sm {
-    height: 55px;
+  @include phone-xl {
+    height: 50px;
+    width: 98.5vw;
   }
 
   #nav-logo {
@@ -30,7 +35,7 @@
       height: auto;
     }
 
-    @include phone {
+    @include phone-xl {
       margin-left: 28px;
       img {
         width: 68px;
@@ -62,7 +67,7 @@
 
     color: #ffffff;
 
-    @include phone {
+    @include phone-xl {
       font-size: 20px;
 
       text-decoration: none;
