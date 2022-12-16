@@ -1,0 +1,50 @@
+@import "../../mixins";
+
+#presentation-text {
+  width: 100%;
+  @include phone-xl {
+    height: 100%;
+    margin: 0;
+  }
+  p {
+    width: 100%;
+    font-family: "Nunito Sans";
+    font-size: 36px;
+    line-height: 44px;
+    text-align: right;
+
+    @include desktop-sm {
+      font-size: 26px;
+    }
+    @include phone-xl {
+      line-height: 30px;
+      font-size: 24px;
+      text-align: center;
+      padding: 0 20px;
+    }
+    @include phone-lg {
+      line-height: 26px;
+      font-size: 20px;
+    }
+    @include phone-md {
+      line-height: 24px;
+      font-size: 18px;
+    }
+  }
+
+  @include phone-xl {
+    #tech-word {
+      font-weight: bold;
+    }
+    #sports-word {
+      font-weight: bold;
+    }
+    #professional-word {
+      font-weight: bold;
+    }
+    #frontend-word {
+      font-weight: bold;
+      color: #0e0c7b;
+    }
+  }
+}

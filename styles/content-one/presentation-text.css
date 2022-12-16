@@ -1,0 +1,56 @@
+#presentation-text {
+  width: 100%;
+}
+@media (max-width: 870px) {
+  #presentation-text {
+    height: 100%;
+    margin: 0;
+  }
+}
+#presentation-text p {
+  width: 100%;
+  font-family: "Nunito Sans";
+  font-size: 36px;
+  line-height: 44px;
+  text-align: right;
+}
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+  #presentation-text p {
+    font-size: 26px;
+  }
+}
+@media (max-width: 870px) {
+  #presentation-text p {
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 570px) {
+  #presentation-text p {
+    line-height: 26px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  #presentation-text p {
+    line-height: 24px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 870px) {
+  #presentation-text #tech-word {
+    font-weight: bold;
+  }
+  #presentation-text #sports-word {
+    font-weight: bold;
+  }
+  #presentation-text #professional-word {
+    font-weight: bold;
+  }
+  #presentation-text #frontend-word {
+    font-weight: bold;
+    color: #0e0c7b;
+  }
+}/*# sourceMappingURL=presentation-text.css.map */

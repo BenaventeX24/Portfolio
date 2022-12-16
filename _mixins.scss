@@ -1,3 +1,9 @@
+@mixin phone-sm {
+  @media (max-width: 340px) {
+    @content;
+  }
+}
+
 @mixin phone-md {
   @media (max-width: 450px) {
     @content;
