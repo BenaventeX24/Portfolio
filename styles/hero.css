@@ -11,7 +11,7 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
-@media (max-width: 870px) {
+@media (min-height: 500px) and (max-width: 870px) {
   #hero-section {
     margin-top: 125px;
     width: 90vw;
@@ -47,7 +47,7 @@
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 }
-@media (max-width: 870px) {
+@media (min-height: 500px) and (max-width: 870px) {
   #hero-section #hero-profile .separator {
     display: none;
   }
@@ -69,7 +69,7 @@
   height: auto;
   width: 280px;
 }
-@media (max-width: 870px) {
+@media (min-height: 500px) and (max-width: 870px) {
   #hero-section #hero-profile #profile-image-container img {
     min-height: 140px;
     height: 85%;
@@ -91,7 +91,7 @@
   width: 100%;
   height: 100%;
 }
-@media (max-width: 870px) {
+@media (min-height: 500px) and (max-width: 870px) {
   #hero-section #hero-profile #profile-info-container {
     position: absolute;
     top: 22%;
@@ -109,17 +109,17 @@
     font-size: 55px;
   }
 }
-@media (max-width: 870px) {
+@media (min-height: 500px) and (max-width: 870px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: 48px;
   }
 }
-@media (max-width: 570px) {
+@media (min-height: 500px) and (max-width: 570px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: 42px;
   }
 }
-@media (max-width: 450px) {
+@media (min-height: 500px) and (max-width: 450px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: 32px;
   }
@@ -139,18 +139,18 @@
     font-size: 44px;
   }
 }
-@media (max-width: 870px) {
+@media (min-height: 500px) and (max-width: 870px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-size: 34px;
     line-height: 45px;
   }
 }
-@media (max-width: 570px) {
+@media (min-height: 500px) and (max-width: 570px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-size: 30px;
   }
 }
-@media (max-width: 450px) {
+@media (min-height: 500px) and (max-width: 450px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-size: 24px;
     line-height: 30px;
@@ -170,7 +170,7 @@
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 870px) {
+@media (min-height: 500px) and (max-width: 870px) {
   #hero-section #hero-profile #profile-info-container div#profile-contact-container {
     display: none;
   }

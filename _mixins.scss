@@ -1,24 +1,32 @@
 @mixin phone-sm {
-  @media (max-width: 340px) {
-    @content;
+  @include heightRequirement {
+    @media (max-width: 340px) {
+      @content;
+    }
   }
 }
 
 @mixin phone-md {
-  @media (max-width: 450px) {
-    @content;
+  @include heightRequirement {
+    @media (max-width: 450px) {
+      @content;
+    }
   }
 }
 
 @mixin phone-lg {
-  @media (max-width: 570px) {
-    @content;
+  @include heightRequirement {
+    @media (max-width: 570px) {
+      @content;
+    }
   }
 }
 
 @mixin phone-xl {
-  @media (max-width: 870px) {
-    @content;
+  @include heightRequirement {
+    @media (max-width: 870px) {
+      @content;
+    }
   }
 }
 
@@ -45,6 +53,18 @@
 
 @mixin custom($value) {
   @media (max-width: #{$value}) {
+    @content;
+  }
+}
+
+@mixin heightRequirement($value) {
+  @media (max-height: #{$value}) {
+    @content;
+  }
+}
+
+@mixin heightRequirement {
+  @media (min-height: 500px) {
     @content;
   }
 }

@@ -30,6 +30,10 @@
       line-height: 24px;
       font-size: 18px;
     }
+    @include phone-sm {
+      line-height: 22px;
+      font-size: 16px;
+    }
   }
 
   @include phone-xl {
