@@ -41,7 +41,14 @@
       height: 4px;
       margin: 4vw 0;
     }
+    @include phone-lg {
+      width: 180px;
+    }
     @include phone-md {
+      width: 160px;
+    }
+    @include phone-sm {
+      width: 140px;
     }
   }
 }

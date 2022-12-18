@@ -36,6 +36,11 @@
     height: 44px;
   }
 }
+@media (max-width: 340px) {
+  .main-navbar {
+    height: 42px;
+  }
+}
 .main-navbar #nav-logo {
   margin-left: 34px;
 }
@@ -58,6 +63,11 @@
     width: 58px;
   }
 }
+@media (max-width: 340px) {
+  .main-navbar #nav-logo img {
+    width: 50px;
+  }
+}
 .main-navbar a:nth-child(1) {
   margin-right: auto;
 }
@@ -72,6 +82,11 @@
   font-size: 26px;
   color: #ffffff;
 }
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+  .main-navbar a.navbar-element {
+    font-size: 22px;
+  }
+}
 @media (max-width: 870px) {
   .main-navbar a.navbar-element {
     font-size: 20px;
@@ -79,8 +94,10 @@
     margin-right: 32px;
   }
 }
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+@media (max-width: 340px) {
   .main-navbar a.navbar-element {
-    font-size: 22px;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 20px;
   }
 }/*# sourceMappingURL=navbar.css.map */

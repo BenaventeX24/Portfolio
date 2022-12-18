@@ -18,6 +18,13 @@
     height: 28vh;
   }
 }
+@media (max-width: 870px) {
+  #hero-section {
+    margin-top: 125px;
+    width: 90vw;
+    height: 22vh;
+  }
+}
 #hero-section #hero-background {
   overflow: hidden;
   position: absolute;
@@ -72,14 +79,19 @@
 @media (max-width: 870px) {
   #hero-section #hero-profile #profile-image-container img {
     min-height: 140px;
-    height: 85%;
+    height: 90%;
     width: auto;
     position: absolute;
-    top: -70px;
+    top: -75px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 340px) {
+  #hero-section #hero-profile #profile-image-container img {
+    min-height: 120px;
   }
 }
 #hero-section #hero-profile #profile-info-container {
@@ -124,6 +136,11 @@
     font-size: 32px;
   }
 }
+@media (max-width: 340px) {
+  #hero-section #hero-profile #profile-info-container h1 {
+    font-size: 26px;
+  }
+}
 #hero-section #hero-profile #profile-info-container span#profile-position {
   display: flex;
   flex-direction: row;
@@ -154,6 +171,11 @@
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-size: 24px;
     line-height: 30px;
+  }
+}
+@media (max-width: 340px) {
+  #hero-section #hero-profile #profile-info-container span#profile-position h2 {
+    font-size: 20px;
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-position h2:nth-child(1) {

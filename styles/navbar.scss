@@ -32,6 +32,10 @@
     height: 44px;
   }
 
+  @include phone-sm {
+    height: 42px;
+  }
+
   #nav-logo {
     margin-left: 34px;
 
@@ -47,6 +51,9 @@
       }
       @include phone-lg {
         width: 58px;
+      }
+      @include phone-sm {
+        width: 50px;
       }
     }
   }
@@ -68,6 +75,9 @@
 
     color: #ffffff;
 
+    @include desktop-sm {
+      font-size: 22px;
+    }
     @include phone-xl {
       font-size: 20px;
 
@@ -75,8 +85,11 @@
       margin-right: 32px;
     }
 
-    @include desktop-sm {
-      font-size: 22px;
+    @include phone-sm {
+      font-size: 17px;
+
+      text-decoration: none;
+      margin-right: 20px;
     }
   }
 }

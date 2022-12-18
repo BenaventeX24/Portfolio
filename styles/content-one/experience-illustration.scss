@@ -41,6 +41,11 @@
         height: 160px;
         line-height: 150px;
       }
+      @include phone-sm {
+        font-size: 190px;
+        height: 140px;
+        line-height: 130px;
+      }
     }
     p {
       position: relative;
@@ -83,6 +88,11 @@
         font-size: 22px;
         right: 30px;
       }
+      @include phone-sm {
+        font-size: 16px;
+        right: 30px;
+        top: -10px;
+      }
     }
   }
 
@@ -91,28 +101,6 @@
     position: absolute;
     left: calc(190% * 100% / 580%);
     top: 70px;
-
-    @include custom(1400px) {
-      left: calc(180% * 100% / 580%);
-      top: 80px;
-    }
-
-    @include custom(1100px) {
-      left: calc(200% * 100% / 580%);
-    }
-
-    @include phone-xl {
-      left: 140px;
-      top: 60px;
-    }
-
-    @include phone-lg {
-      left: 120px;
-    }
-    @include phone-md {
-      left: 90px;
-      top: 50px;
-    }
 
     img {
       height: auto;
@@ -135,6 +123,39 @@
       @include phone-md {
         width: 95px;
       }
+      @include phone-sm {
+        width: 75px;
+      }
+    }
+
+    @include custom(1400px) {
+      left: calc(180% * 100% / 580%);
+      top: 80px;
+    }
+
+    @include custom(1100px) {
+      left: calc(200% * 100% / 580%);
+    }
+
+    @include phone-xl {
+      left: 140px;
+      top: 60px;
+    }
+
+    @include phone-lg {
+      left: 120px;
+    }
+    @include phone-md {
+      left: 90px;
+      top: 50px;
+    }
+    @include phone-md {
+      left: 90px;
+      top: 50px;
+    }
+    @include phone-sm {
+      left: 72.5px;
+      top: 40px;
     }
   }
 }

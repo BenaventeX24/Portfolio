@@ -45,6 +45,12 @@
     font-size: 16px;
   }
 }
+@media (max-width: 340px) {
+  #presentation-text p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
 @media (max-width: 870px) {
   #presentation-text #tech-word {
     font-weight: bold;
@@ -56,6 +62,10 @@
     font-weight: bold;
   }
   #presentation-text #frontend-word {
+    font-weight: bold;
+    color: #0e0c7b;
+  }
+  #presentation-text #design-studio-word {
     font-weight: bold;
     color: #0e0c7b;
   }

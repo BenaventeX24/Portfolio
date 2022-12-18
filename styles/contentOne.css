@@ -46,4 +46,19 @@
     height: 4px;
     margin: 4vw 0;
   }
+}
+@media (max-width: 570px) {
+  #content-section .separatorTwo {
+    width: 180px;
+  }
+}
+@media (max-width: 450px) {
+  #content-section .separatorTwo {
+    width: 160px;
+  }
+}
+@media (max-width: 340px) {
+  #content-section .separatorTwo {
+    width: 140px;
+  }
 }/*# sourceMappingURL=contentOne.css.map */

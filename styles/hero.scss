@@ -23,6 +23,12 @@
     width: 90vw;
     height: 28vh;
   }
+  @include phone-xl {
+    margin-top: 125px;
+
+    width: 90vw;
+    height: 22vh;
+  }
 
   #hero-background {
     overflow: hidden;
@@ -82,14 +88,17 @@
 
         @include phone-xl {
           min-height: 140px;
-          height: 85%;
+          height: 90%;
           width: auto;
           position: absolute;
-          top: -70px;
+          top: -75px;
           left: 0;
           right: 0;
           margin-left: auto;
           margin-right: auto;
+        }
+        @include phone-sm {
+          min-height: 120px;
         }
       }
     }
@@ -128,6 +137,9 @@
         @include phone-md {
           font-size: 32px;
         }
+        @include phone-sm {
+          font-size: 26px;
+        }
       }
 
       span#profile-position {
@@ -156,6 +168,9 @@
           @include phone-md {
             font-size: 24px;
             line-height: 30px;
+          }
+          @include phone-sm {
+            font-size: 20px;
           }
         }
 

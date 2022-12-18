@@ -49,6 +49,13 @@
     line-height: 150px;
   }
 }
+@media (max-width: 340px) {
+  #experience #experience-text h1 {
+    font-size: 190px;
+    height: 140px;
+    line-height: 130px;
+  }
+}
 #experience #experience-text p {
   position: relative;
   right: 65px;
@@ -103,39 +110,18 @@
     right: 30px;
   }
 }
+@media (max-width: 340px) {
+  #experience #experience-text p {
+    font-size: 16px;
+    right: 30px;
+    top: -10px;
+  }
+}
 #experience #experience-company-logos {
   display: flex;
   position: absolute;
   left: 32.7586206897%;
   top: 70px;
-}
-@media (max-width: 1400px) {
-  #experience #experience-company-logos {
-    left: 31.0344827586%;
-    top: 80px;
-  }
-}
-@media (max-width: 1100px) {
-  #experience #experience-company-logos {
-    left: 34.4827586207%;
-  }
-}
-@media (max-width: 870px) {
-  #experience #experience-company-logos {
-    left: 140px;
-    top: 60px;
-  }
-}
-@media (max-width: 570px) {
-  #experience #experience-company-logos {
-    left: 120px;
-  }
-}
-@media (max-width: 450px) {
-  #experience #experience-company-logos {
-    left: 90px;
-    top: 50px;
-  }
 }
 #experience #experience-company-logos img {
   height: auto;
@@ -168,5 +154,50 @@
 @media (max-width: 450px) {
   #experience #experience-company-logos img {
     width: 95px;
+  }
+}
+@media (max-width: 340px) {
+  #experience #experience-company-logos img {
+    width: 75px;
+  }
+}
+@media (max-width: 1400px) {
+  #experience #experience-company-logos {
+    left: 31.0344827586%;
+    top: 80px;
+  }
+}
+@media (max-width: 1100px) {
+  #experience #experience-company-logos {
+    left: 34.4827586207%;
+  }
+}
+@media (max-width: 870px) {
+  #experience #experience-company-logos {
+    left: 140px;
+    top: 60px;
+  }
+}
+@media (max-width: 570px) {
+  #experience #experience-company-logos {
+    left: 120px;
+  }
+}
+@media (max-width: 450px) {
+  #experience #experience-company-logos {
+    left: 90px;
+    top: 50px;
+  }
+}
+@media (max-width: 450px) {
+  #experience #experience-company-logos {
+    left: 90px;
+    top: 50px;
+  }
+}
+@media (max-width: 340px) {
+  #experience #experience-company-logos {
+    left: 72.5px;
+    top: 40px;
   }
 }/*# sourceMappingURL=experience-illustration.css.map */
