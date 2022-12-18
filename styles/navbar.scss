@@ -18,34 +18,35 @@
     height: 55px;
   }
 
-  @include phone-lg {
-    height: 80px;
-    width: 98.5vw;
-  }
-
   @include phone-xl {
     height: 50px;
     width: 98.5vw;
   }
 
+  @include phone-lg {
+    height: 45px;
+    width: 96.5vw;
+  }
+
+  @include phone-md {
+    height: 44px;
+  }
+
   #nav-logo {
     margin-left: 34px;
-    img {
-      width: 88px;
-      height: auto;
-    }
-
-    @include phone-xl {
-      margin-left: 28px;
-      img {
-        width: 68px;
-      }
-    }
 
     @include desktop-sm {
       margin-left: 28px;
-      img {
+    }
+    img {
+      width: 88px;
+      height: auto;
+
+      @include desktop-sm {
         width: 68px;
+      }
+      @include phone-lg {
+        width: 58px;
       }
     }
   }

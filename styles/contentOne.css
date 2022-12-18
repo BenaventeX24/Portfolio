@@ -15,14 +15,14 @@
     padding: 0 20px 0 0;
   }
 }
-@media (min-height: 500px) and (max-width: 870px) {
+@media (max-width: 870px) {
   #content-section {
     margin-top: 15px;
     padding: 0;
     grid-template-columns: 1fr;
   }
 }
-@media (min-height: 500px) and (max-width: 570px) {
+@media (max-width: 570px) {
   #content-section {
     margin-top: 5px;
   }
@@ -40,7 +40,7 @@
     margin: 0;
   }
 }
-@media (min-height: 500px) and (max-width: 870px) {
+@media (max-width: 870px) {
   #content-section .separatorTwo {
     width: 220px;
     height: 4px;

@@ -1,32 +1,24 @@
 @mixin phone-sm {
-  @include heightRequirement {
-    @media (max-width: 340px) {
-      @content;
-    }
+  @media (max-width: 340px) {
+    @content;
   }
 }
 
 @mixin phone-md {
-  @include heightRequirement {
-    @media (max-width: 450px) {
-      @content;
-    }
+  @media (max-width: 450px) {
+    @content;
   }
 }
 
 @mixin phone-lg {
-  @include heightRequirement {
-    @media (max-width: 570px) {
-      @content;
-    }
+  @media (max-width: 570px) {
+    @content;
   }
 }
 
 @mixin phone-xl {
-  @include heightRequirement {
-    @media (max-width: 870px) {
-      @content;
-    }
+  @media (max-width: 870px) {
+    @content;
   }
 }
 
