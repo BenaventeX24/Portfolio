@@ -28,7 +28,7 @@
     font-size: 300px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 780px) {
   #experience #experience-text h1 {
     font-size: 300px;
     height: 215px;
@@ -49,7 +49,7 @@
     line-height: 150px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 370px) {
   #experience #experience-text h1 {
     font-size: 190px;
     height: 140px;
@@ -91,7 +91,7 @@
     font-size: 26px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 780px) {
   #experience #experience-text p {
     font-size: 34px;
     right: 42px;
@@ -110,7 +110,7 @@
     right: 30px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 370px) {
   #experience #experience-text p {
     font-size: 16px;
     right: 30px;
@@ -141,7 +141,7 @@
     width: 100px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 780px) {
   #experience #experience-company-logos img {
     width: 120px;
   }
@@ -156,7 +156,7 @@
     width: 95px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 370px) {
   #experience #experience-company-logos img {
     width: 75px;
   }
@@ -172,7 +172,7 @@
     left: 34.4827586207%;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 780px) {
   #experience #experience-company-logos {
     left: 140px;
     top: 60px;
@@ -195,7 +195,7 @@
     top: 50px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 370px) {
   #experience #experience-company-logos {
     left: 72.5px;
     top: 40px;

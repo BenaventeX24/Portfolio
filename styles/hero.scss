@@ -18,16 +18,16 @@
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
   @include phone-xl {
-    margin-top: 125px;
+    margin-top: 140px;
 
     width: 90vw;
     height: 28vh;
   }
-  @include phone-xl {
-    margin-top: 125px;
+  @include phone-lg {
+    margin-top: 135px;
 
     width: 90vw;
-    height: 22vh;
+    height: 24vh;
   }
 
   #hero-background {
@@ -53,20 +53,24 @@
   #hero-profile {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 0.6fr 4px 1fr;
+    place-items: center;
 
-    .separator {
-      width: 4px;
-      height: 190px;
-      margin: 0 auto;
+    @include desktop-sm {
+      grid-template-columns: 0.6fr 1fr;
+    }
+
+    @include phone-xl {
+      grid-template-columns: 1fr;
+    }
+
+    #separator-hero {
+      width: 5px;
+      height: 160px;
+
       background: rgba(0, 150, 150, 0.7);
       border-radius: 30px;
-
-      @include phone-xl {
-        display: none;
-      }
 
       @include desktop-sm {
         display: none;
@@ -74,9 +78,7 @@
     }
 
     #profile-image-container {
-      width: 60%;
-      height: 100%;
-
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -87,18 +89,14 @@
         width: 280px;
 
         @include phone-xl {
-          min-height: 140px;
-          height: 90%;
-          width: auto;
+          height: auto;
+          width: 80%;
+          max-width: 190px;
           position: absolute;
-          top: -75px;
+          top: -90px;
           left: 0;
           right: 0;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        @include phone-sm {
-          min-height: 120px;
+          margin: 0 auto;
         }
       }
     }
@@ -108,37 +106,26 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      width: 100%;
-      height: 100%;
 
       @include phone-xl {
-        position: absolute;
-        top: 22%;
+        align-self: flex-end;
       }
 
       h1 {
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 73px;
+        font-size: 5.5vw;
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 
-        @include desktop-sm {
-          font-size: 55px;
-        }
         @include phone-xl {
-          font-size: 48px;
-        }
-        @include phone-lg {
-          font-size: 42px;
-        }
-        @include phone-md {
-          font-size: 32px;
+          margin-bottom: -15px;
+          font-size: 8vw;
         }
         @include phone-sm {
-          font-size: 26px;
+          margin-bottom: -15px;
+          font-size: 9vw;
         }
       }
 
@@ -146,31 +133,14 @@
         display: flex;
         flex-direction: row;
 
-        @include phone-xl {
-        }
-
         h2 {
           font-family: "Ubuntu";
-          font-size: 52px;
+          font-size: 3.5vw;
           line-height: 60px;
           text-shadow: 2px 1px 1px white;
 
-          @include desktop-sm {
-            font-size: 44px;
-          }
           @include phone-xl {
-            font-size: 34px;
-            line-height: 45px;
-          }
-          @include phone-lg {
-            font-size: 30px;
-          }
-          @include phone-md {
-            font-size: 24px;
-            line-height: 30px;
-          }
-          @include phone-sm {
-            font-size: 20px;
+            font-size: 6vw;
           }
         }
 
@@ -184,46 +154,49 @@
         }
       }
 
-      div#profile-contact-container {
-        position: relative;
-        top: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      p {
+        margin-top: 1.5vh;
+        font-family: "Ubuntu";
+        font-size: 1.5vw;
+
+        @include minWmaxH(1300px, 700px) {
+          display: none;
+        }
+
+        @include desktop-sm {
+          font-size: 2.5vw;
+        }
 
         @include phone-xl {
           display: none;
         }
+      }
 
-        p {
-          margin-top: 10px;
-          font-family: "Ubuntu";
-          font-size: 28px;
+      #profile-contact-logos {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 6vw;
+          max-width: 10vh;
+          height: auto;
 
           @include desktop-sm {
-            font-size: 26px;
+            width: 75px;
           }
         }
 
-        span {
-          margin: 0 auto;
+        img:nth-child(1) {
+          margin-right: 35px;
         }
 
-        #profile-contact-logos {
-          margin-top: 10px;
-          display: flex;
-          align-items: center;
-          img {
-            width: 85px;
-            height: auto;
+        @include minWmaxH(1300px, 700px) {
+          display: none;
+        }
 
-            @include desktop-sm {
-              width: 75px;
-            }
-          }
-          img:nth-child(1) {
-            margin-right: 35px;
-          }
+        @include phone-xl {
+          display: none;
         }
       }
     }

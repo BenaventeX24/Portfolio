@@ -1,5 +1,5 @@
 @mixin phone-sm {
-  @media (max-width: 340px) {
+  @media (max-width: 370px) {
     @content;
   }
 }
@@ -17,7 +17,7 @@
 }
 
 @mixin phone-xl {
-  @media (max-width: 870px) {
+  @media (max-width: 780px) {
     @content;
   }
 }
@@ -55,8 +55,20 @@
   }
 }
 
-@mixin heightRequirement {
-  @media (min-height: 500px) {
+@mixin customWHeight($width, $height) {
+  @media (min-width: #{$width}) and (min-height: #{$height}) {
+    @content;
+  }
+}
+
+@mixin maxWminH($width, $height) {
+  @media (max-width: #{$width}) and (min-height: #{$height}) {
+    @content;
+  }
+}
+
+@mixin minWmaxH($width, $height) {
+  @media (min-width: #{$width}) and (max-height: #{$height}) {
     @content;
   }
 }

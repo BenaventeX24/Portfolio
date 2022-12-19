@@ -1,4 +1,4 @@
-@import "../mixins";
+@import "../../mixins";
 
 #content-section {
   margin-top: 50px;
@@ -23,7 +23,7 @@
     margin-top: 5px;
   }
 
-  .separatorTwo {
+  #separator-content {
     width: 4px;
     height: 220px;
 

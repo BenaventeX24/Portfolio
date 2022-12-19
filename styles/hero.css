@@ -11,18 +11,18 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
-@media (max-width: 870px) {
+@media (max-width: 780px) {
   #hero-section {
-    margin-top: 125px;
+    margin-top: 140px;
     width: 90vw;
     height: 28vh;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 570px) {
   #hero-section {
-    margin-top: 125px;
+    margin-top: 135px;
     width: 90vw;
-    height: 22vh;
+    height: 24vh;
   }
 }
 #hero-section #hero-background {
@@ -43,30 +43,33 @@
 #hero-section #hero-profile {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 0.6fr 4px 1fr;
+  place-items: center;
 }
-#hero-section #hero-profile .separator {
-  width: 4px;
-  height: 190px;
-  margin: 0 auto;
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+  #hero-section #hero-profile {
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media (max-width: 780px) {
+  #hero-section #hero-profile {
+    grid-template-columns: 1fr;
+  }
+}
+#hero-section #hero-profile #separator-hero {
+  width: 5px;
+  height: 160px;
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
 }
-@media (max-width: 870px) {
-  #hero-section #hero-profile .separator {
-    display: none;
-  }
-}
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #hero-section #hero-profile .separator {
+  #hero-section #hero-profile #separator-hero {
     display: none;
   }
 }
 #hero-section #hero-profile #profile-image-container {
-  width: 60%;
-  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,22 +79,16 @@
   height: auto;
   width: 280px;
 }
-@media (max-width: 870px) {
+@media (max-width: 780px) {
   #hero-section #hero-profile #profile-image-container img {
-    min-height: 140px;
-    height: 90%;
-    width: auto;
+    height: auto;
+    width: 80%;
+    max-width: 190px;
     position: absolute;
-    top: -75px;
+    top: -90px;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (max-width: 340px) {
-  #hero-section #hero-profile #profile-image-container img {
-    min-height: 120px;
+    margin: 0 auto;
   }
 }
 #hero-section #hero-profile #profile-info-container {
@@ -99,46 +96,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
 }
-@media (max-width: 870px) {
+@media (max-width: 780px) {
   #hero-section #hero-profile #profile-info-container {
-    position: absolute;
-    top: 22%;
+    align-self: flex-end;
   }
 }
 #hero-section #hero-profile #profile-info-container h1 {
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 73px;
+  font-size: 5.5vw;
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+@media (max-width: 780px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 55px;
+    margin-bottom: -15px;
+    font-size: 8vw;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 370px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 48px;
-  }
-}
-@media (max-width: 570px) {
-  #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 42px;
-  }
-}
-@media (max-width: 450px) {
-  #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 32px;
-  }
-}
-@media (max-width: 340px) {
-  #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 26px;
+    margin-bottom: -15px;
+    font-size: 9vw;
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-position {
@@ -147,35 +127,13 @@
 }
 #hero-section #hero-profile #profile-info-container span#profile-position h2 {
   font-family: "Ubuntu";
-  font-size: 52px;
+  font-size: 3.5vw;
   line-height: 60px;
   text-shadow: 2px 1px 1px white;
 }
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+@media (max-width: 780px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
-    font-size: 44px;
-  }
-}
-@media (max-width: 870px) {
-  #hero-section #hero-profile #profile-info-container span#profile-position h2 {
-    font-size: 34px;
-    line-height: 45px;
-  }
-}
-@media (max-width: 570px) {
-  #hero-section #hero-profile #profile-info-container span#profile-position h2 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 450px) {
-  #hero-section #hero-profile #profile-info-container span#profile-position h2 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
-@media (max-width: 340px) {
-  #hero-section #hero-profile #profile-info-container span#profile-position h2 {
-    font-size: 20px;
+    font-size: 6vw;
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-position h2:nth-child(1) {
@@ -185,47 +143,53 @@
 #hero-section #hero-profile #profile-info-container span#profile-position h2:nth-child(2) {
   color: #057a26;
 }
-#hero-section #hero-profile #profile-info-container div#profile-contact-container {
-  position: relative;
-  top: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#hero-section #hero-profile #profile-info-container p {
+  margin-top: 1.5vh;
+  font-family: "Ubuntu";
+  font-size: 1.5vw;
 }
-@media (max-width: 870px) {
-  #hero-section #hero-profile #profile-info-container div#profile-contact-container {
+@media (min-width: 1300px) and (max-height: 700px) {
+  #hero-section #hero-profile #profile-info-container p {
     display: none;
   }
 }
-#hero-section #hero-profile #profile-info-container div#profile-contact-container p {
-  margin-top: 10px;
-  font-family: "Ubuntu";
-  font-size: 28px;
-}
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #hero-section #hero-profile #profile-info-container div#profile-contact-container p {
-    font-size: 26px;
+  #hero-section #hero-profile #profile-info-container p {
+    font-size: 2.5vw;
   }
 }
-#hero-section #hero-profile #profile-info-container div#profile-contact-container span {
-  margin: 0 auto;
+@media (max-width: 780px) {
+  #hero-section #hero-profile #profile-info-container p {
+    display: none;
+  }
 }
-#hero-section #hero-profile #profile-info-container div#profile-contact-container #profile-contact-logos {
+#hero-section #hero-profile #profile-info-container #profile-contact-logos {
   margin-top: 10px;
   display: flex;
   align-items: center;
 }
-#hero-section #hero-profile #profile-info-container div#profile-contact-container #profile-contact-logos img {
-  width: 85px;
+#hero-section #hero-profile #profile-info-container #profile-contact-logos img {
+  width: 6vw;
+  max-width: 10vh;
   height: auto;
 }
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #hero-section #hero-profile #profile-info-container div#profile-contact-container #profile-contact-logos img {
+  #hero-section #hero-profile #profile-info-container #profile-contact-logos img {
     width: 75px;
   }
 }
-#hero-section #hero-profile #profile-info-container div#profile-contact-container #profile-contact-logos img:nth-child(1) {
+#hero-section #hero-profile #profile-info-container #profile-contact-logos img:nth-child(1) {
   margin-right: 35px;
+}
+@media (min-width: 1300px) and (max-height: 700px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-logos {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-logos {
+    display: none;
+  }
 }
 #hero-section #hero-profile #profile-image {
   width: 380px;
