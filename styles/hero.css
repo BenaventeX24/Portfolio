@@ -11,7 +11,7 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #hero-section {
     margin-top: 140px;
     width: 90vw;
@@ -45,7 +45,7 @@
     grid-template-columns: 0.6fr 1fr;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #hero-section #hero-profile {
     grid-template-columns: 1fr;
   }
@@ -72,7 +72,7 @@
   width: auto;
   height: calc(23vh + 48px);
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #hero-section #hero-profile #profile-image-container img {
     width: auto;
     height: calc(20vh + 36px);
@@ -89,7 +89,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #hero-section #hero-profile #profile-info-container {
     align-self: flex-end;
   }
@@ -101,7 +101,7 @@
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: calc(4.5vw + 16px);
     margin-bottom: -1.5vh;
@@ -117,7 +117,7 @@
   line-height: 60px;
   text-shadow: 2px 1px 2px white;
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-weight: bold;
     font-size: calc(3vw + 12px);
@@ -140,7 +140,7 @@
     display: none;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #hero-section #hero-profile #profile-info-container #profile-contact-section {
     display: none;
   }
