@@ -5,60 +5,24 @@
   place-items: center;
   padding: 0 80px 0 0;
 }
-@media (max-width: 1300px) {
-  #content-section {
-    padding: 0 50px 0 0;
-  }
-}
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #content-section {
-    padding: 0 20px 0 0;
-  }
-}
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   #content-section {
     margin-top: 15px;
     padding: 0;
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 570px) {
-  #content-section {
-    margin-top: 5px;
-  }
-}
 #content-section #separator-content {
   width: 4px;
-  height: 220px;
+  height: 20vh;
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
   margin-right: auto;
-  margin-top: 15px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
   #content-section #separator-content {
-    margin: 0;
-  }
-}
-@media (max-width: 780px) {
-  #content-section #separator-content {
-    width: 220px;
+    width: 18.5vw;
     height: 4px;
-    margin: 4vw 0;
-  }
-}
-@media (max-width: 570px) {
-  #content-section #separator-content {
-    width: 180px;
-  }
-}
-@media (max-width: 450px) {
-  #content-section #separator-content {
-    width: 160px;
-  }
-}
-@media (max-width: 370px) {
-  #content-section #separator-content {
-    width: 140px;
+    margin: calc(1vh + 4px) 0;
   }
 }/*# sourceMappingURL=contentOne.css.map */
