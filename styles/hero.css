@@ -18,13 +18,6 @@
     height: 28vh;
   }
 }
-@media (max-width: 570px) {
-  #hero-section {
-    margin-top: 135px;
-    width: 90vw;
-    height: 24vh;
-  }
-}
 #hero-section #hero-background {
   overflow: hidden;
   position: absolute;
@@ -76,14 +69,13 @@
   padding: 10px;
 }
 #hero-section #hero-profile #profile-image-container img {
-  height: auto;
-  width: 280px;
+  width: auto;
+  height: calc(23vh + 48px);
 }
 @media (max-width: 780px) {
   #hero-section #hero-profile #profile-image-container img {
-    height: auto;
-    width: 80%;
-    max-width: 190px;
+    width: auto;
+    height: calc(20vh + 36px);
     position: absolute;
     top: -90px;
     left: 0;
@@ -105,18 +97,14 @@
 #hero-section #hero-profile #profile-info-container h1 {
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 4.5vw;
+  font-size: calc(4vw + 16px);
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 6vw;
-  }
-}
 @media (max-width: 780px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 7vw;
+    font-size: calc(4.5vw + 16px);
+    margin-bottom: -1.5vh;
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-position {
@@ -125,18 +113,14 @@
 }
 #hero-section #hero-profile #profile-info-container span#profile-position h2 {
   font-family: "Ubuntu";
-  font-size: 3vw;
+  font-size: calc(3vw + 8px);
   line-height: 60px;
-  text-shadow: 2px 1px 1px white;
-}
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #hero-section #hero-profile #profile-info-container span#profile-position h2 {
-    font-size: 3.5vw;
-  }
+  text-shadow: 2px 1px 2px white;
 }
 @media (max-width: 780px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
-    font-size: 5vw;
+    font-weight: bold;
+    font-size: calc(3vw + 12px);
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-position h2:nth-child(1) {
@@ -164,12 +148,7 @@
 #hero-section #hero-profile #profile-info-container #profile-contact-section p {
   font-family: "Ubuntu";
   margin-top: 3.5vh;
-  font-size: 1.5vw;
-}
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #hero-section #hero-profile #profile-info-container #profile-contact-section p {
-    font-size: 2vw;
-  }
+  font-size: calc(1vw + 8px);
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos {
   margin-top: 0.5vh;
@@ -177,14 +156,8 @@
   align-items: center;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img {
-  width: 6vw;
-  max-width: 10vh;
+  width: calc(3vw + 28px);
   height: auto;
-}
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img {
-    width: 75px;
-  }
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img:nth-child(1) {
   margin-right: 35px;

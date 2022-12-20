@@ -23,12 +23,6 @@
     width: 90vw;
     height: 28vh;
   }
-  @include phone-lg {
-    margin-top: 135px;
-
-    width: 90vw;
-    height: 24vh;
-  }
 
   #hero-background {
     overflow: hidden;
@@ -85,13 +79,12 @@
       padding: 10px;
 
       img {
-        height: auto;
-        width: 280px;
+        width: auto;
+        height: calc(23vh + 48px);
 
         @include phone-xl {
-          height: auto;
-          width: 80%;
-          max-width: 190px;
+          width: auto;
+          height: calc(20vh + 36px);
           position: absolute;
           top: -90px;
           left: 0;
@@ -114,17 +107,14 @@
       h1 {
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: calc(100vw - 95.5vw);
+        font-size: calc(4vw + 16px);
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 
-        @include desktop-sm {
-          font-size: calc(100vw - 94vw);
-        }
-
         @include phone-xl {
-          font-size: calc(100vw - 93vw);
+          font-size: calc(4.5vw + 16px);
+          margin-bottom: -1.5vh;
         }
       }
 
@@ -134,16 +124,13 @@
 
         h2 {
           font-family: "Ubuntu";
-          font-size: calc(100vw - 97vw);
+          font-size: calc(3vw + 8px);
           line-height: 60px;
-          text-shadow: 2px 1px 1px white;
-
-          @include desktop-sm {
-            font-size: calc(100vw - 96.5vw);
-          }
+          text-shadow: 2px 1px 2px white;
 
           @include phone-xl {
-            font-size: calc(100vw - 95vw);
+            font-weight: bold;
+            font-size: calc(3vw + 12px);
           }
         }
 
@@ -174,11 +161,7 @@
           font-family: "Ubuntu";
 
           margin-top: calc(100vh - 96.5vh);
-          font-size: calc(100vw - 98.5vw);
-
-          @include desktop-sm {
-            font-size: calc(100vw - 98vw);
-          }
+          font-size: calc(1vw + 8px);
         }
 
         #profile-contact-logos {
@@ -187,13 +170,8 @@
           align-items: center;
 
           img {
-            width: 6vw;
-            max-width: 10vh;
+            width: calc(3vw + 28px);
             height: auto;
-
-            @include desktop-sm {
-              width: 75px;
-            }
           }
 
           img:nth-child(1) {
