@@ -43,20 +43,14 @@
   }
 }
 
-@mixin custom($value) {
+@mixin maxCustom($value) {
   @media (max-width: #{$value}) {
     @content;
   }
 }
 
-@mixin heightRequirement($value) {
-  @media (max-height: #{$value}) {
-    @content;
-  }
-}
-
-@mixin customWHeight($width, $height) {
-  @media (min-width: #{$width}) and (min-height: #{$height}) {
+@mixin minCustom($value) {
+  @media (min-width: #{$value}) {
     @content;
   }
 }

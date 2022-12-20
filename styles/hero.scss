@@ -114,18 +114,17 @@
       h1 {
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 5.5vw;
+        font-size: calc(100vw - 95.5vw);
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 
-        @include phone-xl {
-          margin-bottom: -15px;
-          font-size: 8vw;
+        @include desktop-sm {
+          font-size: calc(100vw - 94vw);
         }
-        @include phone-sm {
-          margin-bottom: -15px;
-          font-size: 9vw;
+
+        @include phone-xl {
+          font-size: calc(100vw - 93vw);
         }
       }
 
@@ -135,12 +134,16 @@
 
         h2 {
           font-family: "Ubuntu";
-          font-size: 3.5vw;
+          font-size: calc(100vw - 97vw);
           line-height: 60px;
           text-shadow: 2px 1px 1px white;
 
+          @include desktop-sm {
+            font-size: calc(100vw - 96.5vw);
+          }
+
           @include phone-xl {
-            font-size: 6vw;
+            font-size: calc(100vw - 95vw);
           }
         }
 
@@ -154,49 +157,48 @@
         }
       }
 
-      p {
-        margin-top: 1.5vh;
-        font-family: "Ubuntu";
-        font-size: 1.5vw;
+      #profile-contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @include minWmaxH(1300px, 700px) {
           display: none;
         }
 
-        @include desktop-sm {
-          font-size: 2.5vw;
-        }
-
         @include phone-xl {
           display: none;
         }
-      }
 
-      #profile-contact-logos {
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
+        p {
+          font-family: "Ubuntu";
 
-        img {
-          width: 6vw;
-          max-width: 10vh;
-          height: auto;
+          margin-top: calc(100vh - 96.5vh);
+          font-size: calc(100vw - 98.5vw);
 
           @include desktop-sm {
-            width: 75px;
+            font-size: calc(100vw - 98vw);
           }
         }
 
-        img:nth-child(1) {
-          margin-right: 35px;
-        }
+        #profile-contact-logos {
+          margin-top: 0.5vh;
+          display: flex;
+          align-items: center;
 
-        @include minWmaxH(1300px, 700px) {
-          display: none;
-        }
+          img {
+            width: 6vw;
+            max-width: 10vh;
+            height: auto;
 
-        @include phone-xl {
-          display: none;
+            @include desktop-sm {
+              width: 75px;
+            }
+          }
+
+          img:nth-child(1) {
+            margin-right: 35px;
+          }
         }
       }
     }
