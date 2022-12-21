@@ -13,7 +13,7 @@
   z-index: 999;
   padding: 0;
   width: 99vw;
-  height: calc(5vh + 12px);
+  height: calc(4.5vh + 16px);
   min-height: 40px;
 
   background-color: #212529;
@@ -29,7 +29,7 @@
     margin-left: 2vw;
     margin-right: auto;
     img {
-      height: calc(5vh + 16px);
+      height: calc(4vh + 16px);
       width: auto;
 
       @include phone-xl {
@@ -46,7 +46,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: calc(1.5vw + 8px);
+    font-size: calc(1vw + 12px);
 
     color: #ffffff;
 

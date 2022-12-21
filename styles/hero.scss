@@ -7,20 +7,31 @@
   left: 50%;
   transform: translateX(-50%);
 
-  margin-top: 100px;
-
+  margin-top: calc(3vh + 1.5vw + 20px);
   width: 95.2vw;
   height: 41.9921875vh;
-
   border-radius: 15px;
-  border: 5px solid #212529;
+  border: 0.5vw solid #212529;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
-  @include phone-xl {
-    margin-top: 140px;
+  @media (max-width: 1200px) {
+    @media (min-height: 800px) {
+      height: clamp(150px, 41vh, 360px);
+    }
+  }
 
-    width: 90vw;
+  @include desktop-sm {
+    @media (min-height: 800px) {
+      margin-top: calc(4vh + 2vw + 20px);
+    }
+  }
+
+  @include phone-xl {
+    margin-top: calc(4vh + 1.5vw + 100px);
+
+    border: 1vw solid #212529;
+    width: 92vw;
     height: 28vh;
   }
 
@@ -34,7 +45,7 @@
     bottom: 0;
     z-index: -1;
 
-    filter: blur(5px);
+    filter: blur(calc(0.325vw + 2px));
 
     img {
       position: absolute;
@@ -76,11 +87,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px;
+      padding: 0.5vh;
 
       img {
         width: auto;
         height: calc(23vh + 48px);
+
+        @include desktop-sm {
+          @media (min-height: 1000px) {
+            height: calc(26vw + 8px);
+          }
+        }
 
         @include phone-xl {
           width: auto;
@@ -105,6 +122,8 @@
       }
 
       h1 {
+        text-align: center;
+
         font-family: "Montserrat";
         font-weight: 600;
         font-size: calc(4vw + 16px);
@@ -121,6 +140,10 @@
       span#profile-position {
         display: flex;
         flex-direction: row;
+
+        @include desktop-sm {
+          margin-top: -1vh;
+        }
 
         h2 {
           font-family: "Ubuntu";
@@ -149,7 +172,39 @@
         flex-direction: column;
         align-items: center;
 
-        @include minWmaxH(1300px, 700px) {
+        margin-top: calc(2vh - 8px);
+
+        @include minWmaxH(1300px, 690px) {
+          display: none;
+        }
+        @include minWmaxH(1100px, 620px) {
+          display: none;
+        }
+        @include minWmaxH(950px, 550px) {
+          display: none;
+        }
+        @include minWmaxH(870px, 490px) {
+          display: none;
+        }
+        @include minWmaxH(800px, 480px) {
+          display: none;
+        }
+        @include minWmaxH(790px, 460px) {
+          display: none;
+        }
+        @include minWmaxH(720px, 450px) {
+          display: none;
+        }
+        @include minWmaxH(690px, 440px) {
+          display: none;
+        }
+        @include minWmaxH(660px, 430px) {
+          display: none;
+        }
+        @include minWmaxH(645px, 420px) {
+          display: none;
+        }
+        @include minWmaxH(635px, 406px) {
           display: none;
         }
 
@@ -160,17 +215,16 @@
         p {
           font-family: "Ubuntu";
 
-          margin-top: calc(100vh - 96.5vh);
           font-size: calc(1vw + 8px);
         }
 
         #profile-contact-logos {
-          margin-top: 0.5vh;
+          margin-top: calc(1.5vh - 4px);
           display: flex;
           align-items: center;
 
           img {
-            width: calc(3vw + 28px);
+            width: calc(4vw + 18px);
             height: auto;
           }
 

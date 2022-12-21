@@ -3,18 +3,29 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 100px;
+  margin-top: calc(3vh + 1.5vw + 20px);
   width: 95.2vw;
   height: 41.9921875vh;
   border-radius: 15px;
-  border: 5px solid #212529;
+  border: 0.5vw solid #212529;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
-@media (max-width: 720px) {
+@media (max-width: 1200px) and (min-height: 800px) {
   #hero-section {
-    margin-top: 140px;
-    width: 90vw;
+    height: clamp(150px, 41vh, 360px);
+  }
+}
+@media (max-width: 1200px) and (min-height: 800px), (min-height: 810px) and (max-width: 1250px) and (min-height: 800px) {
+  #hero-section {
+    margin-top: calc(4vh + 2vw + 20px);
+  }
+}
+@media (max-width: 634px) {
+  #hero-section {
+    margin-top: calc(4vh + 1.5vw + 100px);
+    border: 1vw solid #212529;
+    width: 92vw;
     height: 28vh;
   }
 }
@@ -26,7 +37,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(calc(0.325vw + 2px));
 }
 #hero-section #hero-background img {
   position: absolute;
@@ -45,7 +56,7 @@
     grid-template-columns: 0.6fr 1fr;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #hero-section #hero-profile {
     grid-template-columns: 1fr;
   }
@@ -66,13 +77,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 0.5vh;
 }
 #hero-section #hero-profile #profile-image-container img {
   width: auto;
   height: calc(23vh + 48px);
 }
-@media (max-width: 720px) {
+@media (max-width: 1200px) and (min-height: 1000px), (min-height: 810px) and (max-width: 1250px) and (min-height: 1000px) {
+  #hero-section #hero-profile #profile-image-container img {
+    height: calc(26vw + 8px);
+  }
+}
+@media (max-width: 634px) {
   #hero-section #hero-profile #profile-image-container img {
     width: auto;
     height: calc(20vh + 36px);
@@ -89,19 +105,20 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #hero-section #hero-profile #profile-info-container {
     align-self: flex-end;
   }
 }
 #hero-section #hero-profile #profile-info-container h1 {
+  text-align: center;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: calc(4vw + 16px);
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: calc(4.5vw + 16px);
     margin-bottom: -1.5vh;
@@ -111,13 +128,18 @@
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+  #hero-section #hero-profile #profile-info-container span#profile-position {
+    margin-top: -1vh;
+  }
+}
 #hero-section #hero-profile #profile-info-container span#profile-position h2 {
   font-family: "Ubuntu";
   font-size: calc(3vw + 8px);
   line-height: 60px;
   text-shadow: 2px 1px 2px white;
 }
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-weight: bold;
     font-size: calc(3vw + 12px);
@@ -134,29 +156,79 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: calc(2vh - 8px);
 }
-@media (min-width: 1300px) and (max-height: 700px) {
+@media (min-width: 1300px) and (max-height: 690px) {
   #hero-section #hero-profile #profile-info-container #profile-contact-section {
     display: none;
   }
 }
-@media (max-width: 720px) {
+@media (min-width: 1100px) and (max-height: 620px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 950px) and (max-height: 550px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 870px) and (max-height: 490px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 800px) and (max-height: 480px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 790px) and (max-height: 460px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 720px) and (max-height: 450px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 690px) and (max-height: 440px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 660px) and (max-height: 430px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 645px) and (max-height: 420px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (min-width: 635px) and (max-height: 406px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    display: none;
+  }
+}
+@media (max-width: 634px) {
   #hero-section #hero-profile #profile-info-container #profile-contact-section {
     display: none;
   }
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section p {
   font-family: "Ubuntu";
-  margin-top: 3.5vh;
   font-size: calc(1vw + 8px);
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos {
-  margin-top: 0.5vh;
+  margin-top: calc(1.5vh - 4px);
   display: flex;
   align-items: center;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img {
-  width: calc(3vw + 28px);
+  width: calc(4vw + 18px);
   height: auto;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img:nth-child(1) {

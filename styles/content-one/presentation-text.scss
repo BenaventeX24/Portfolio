@@ -1,7 +1,9 @@
 @import "../../mixins";
 
 #presentation-text {
+  display: flex;
   width: 100%;
+
   @include phone-xl {
     height: 100%;
     margin: 0;
@@ -9,34 +11,17 @@
   p {
     width: 100%;
     font-family: "Nunito Sans";
-    font-size: 36px;
-    line-height: 44px;
+    font-size: calc(16px + (34 - 16) * ((100vw - 720px) / (1900 - 720)));
+    line-height: 3vw;
     text-align: right;
 
-    @include desktop-sm {
-      font-size: 26px;
-    }
+    align-self: center;
+
     @include phone-xl {
       line-height: 30px;
       font-size: 24px;
       text-align: center;
       padding: 0 20px;
-    }
-    @include phone-lg {
-      line-height: 26px;
-      font-size: 20px;
-    }
-    @include phone-md {
-      line-height: 24px;
-      font-size: 18px;
-    }
-    @include phone-sm {
-      line-height: 22px;
-      font-size: 16px;
-    }
-    @include phone-sm {
-      line-height: 20px;
-      font-size: 14px;
     }
   }
 

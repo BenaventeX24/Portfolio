@@ -1,7 +1,8 @@
 #presentation-text {
+  display: flex;
   width: 100%;
 }
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #presentation-text {
     height: 100%;
     margin: 0;
@@ -10,16 +11,12 @@
 #presentation-text p {
   width: 100%;
   font-family: "Nunito Sans";
-  font-size: 36px;
-  line-height: 44px;
+  font-size: calc(16px + 18 * (100vw - 720px) / 1180);
+  line-height: 3vw;
   text-align: right;
+  align-self: center;
 }
-@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
-  #presentation-text p {
-    font-size: 26px;
-  }
-}
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #presentation-text p {
     line-height: 30px;
     font-size: 24px;
@@ -27,31 +24,7 @@
     padding: 0 20px;
   }
 }
-@media (max-width: 570px) {
-  #presentation-text p {
-    line-height: 26px;
-    font-size: 20px;
-  }
-}
-@media (max-width: 450px) {
-  #presentation-text p {
-    line-height: 24px;
-    font-size: 18px;
-  }
-}
-@media (max-width: 370px) {
-  #presentation-text p {
-    line-height: 22px;
-    font-size: 16px;
-  }
-}
-@media (max-width: 370px) {
-  #presentation-text p {
-    line-height: 20px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #presentation-text #tech-word {
     font-weight: bold;
   }

@@ -1,11 +1,16 @@
 #content-section {
-  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
-  padding: 0 80px 0 0;
+  margin-top: calc(1vh + 8px);
+  padding-right: calc(2vw + 30px);
 }
-@media (max-width: 720px) {
+@media (max-width: 1300px) {
+  #content-section {
+    padding: 0 30px 0 0;
+  }
+}
+@media (max-width: 634px) {
   #content-section {
     margin-top: 15px;
     padding: 0;
@@ -14,12 +19,12 @@
 }
 #content-section #separator-content {
   width: 4px;
-  height: 20vh;
+  height: 50%;
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
   margin-right: auto;
 }
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   #content-section #separator-content {
     width: 18.5vw;
     height: 4px;
