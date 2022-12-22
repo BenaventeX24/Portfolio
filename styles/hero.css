@@ -18,10 +18,10 @@
 }
 @media (max-width: 620px) {
   #hero-section {
-    margin-top: calc(4vh + 1.5vw + 100px);
+    margin-top: 145px;
     border: 1vw solid #212529;
     width: 92vw;
-    height: 28vh;
+    height: clamp(140px, 38vw, 390px);
   }
 }
 #hero-section #hero-background {
@@ -81,8 +81,8 @@
 }
 @media (max-width: 620px) {
   #hero-section #hero-profile #profile-image-container img {
-    width: auto;
-    height: calc(20vh + 36px);
+    height: auto;
+    width: clamp(160px, 36vw, 280px);
     position: absolute;
     top: -90px;
     left: 0;
@@ -111,8 +111,7 @@
 }
 @media (max-width: 620px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: calc(4.5vw + 16px);
-    margin-bottom: -1.5vh;
+    font-size: calc(4.2vw + 16px);
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-position {

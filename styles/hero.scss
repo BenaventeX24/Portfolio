@@ -21,11 +21,11 @@
   }
 
   @include phone-xl {
-    margin-top: calc(4vh + 1.5vw + 100px);
+    margin-top: 145px;
 
     border: 1vw solid #212529;
     width: 92vw;
-    height: 28vh;
+    height: clamp(140px, 38vw, 390px);
   }
 
   #hero-background {
@@ -89,8 +89,8 @@
         width: clamp(16vw, 20vw, 240px);
 
         @include phone-xl {
-          width: auto;
-          height: calc(20vh + 36px);
+          height: auto;
+          width: clamp(160px, 36vw, 280px);
           position: absolute;
           top: -90px;
           left: 0;
@@ -121,8 +121,7 @@
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 
         @include phone-xl {
-          font-size: calc(4.5vw + 16px);
-          margin-bottom: -1.5vh;
+          font-size: calc(4.2vw + 16px);
         }
       }
 

@@ -22,8 +22,8 @@
   border-radius: 0 0 20px 20px;
 
   @include phone-xl {
-    height: 6vh;
-    width: 97vw;
+    height: clamp(43px, 2vw, 59px);
+    width: 96vw;
   }
 
   #nav-logo {
@@ -34,7 +34,7 @@
       width: auto;
 
       @include phone-xl {
-        height: calc(4vh + 16px);
+        height: calc(6vw + 12px);
       }
     }
   }

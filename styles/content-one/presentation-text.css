@@ -12,14 +12,14 @@
   width: 100%;
   font-family: "Nunito Sans";
   font-size: calc(16px + 18 * (100vw - 720px) / 1180);
-  line-height: 3vw;
+  line-height: calc(2.5vw + 8px);
   text-align: right;
   align-self: center;
 }
 @media (max-width: 620px) {
   #presentation-text p {
-    line-height: 30px;
-    font-size: 24px;
+    line-height: calc(3vw + 12px);
+    font-size: calc(12px + 12 * (100vw - 320px) / 300);
     text-align: center;
     padding: 0 20px;
   }

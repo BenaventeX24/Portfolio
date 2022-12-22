@@ -17,8 +17,8 @@
 }
 @media (max-width: 620px) {
   .main-navbar {
-    height: 6vh;
-    width: 97vw;
+    height: clamp(43px, 2vw, 59px);
+    width: 96vw;
   }
 }
 .main-navbar #nav-logo {
@@ -31,7 +31,7 @@
 }
 @media (max-width: 620px) {
   .main-navbar #nav-logo img {
-    height: calc(4vh + 16px);
+    height: calc(6vw + 12px);
   }
 }
 .main-navbar a {
