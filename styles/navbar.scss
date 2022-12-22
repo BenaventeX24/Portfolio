@@ -10,10 +10,11 @@
   left: 50%;
   transform: translateX(-50%);
 
+  width: 98vw;
+  height: clamp(43px, 4vw, 59px);
   z-index: 999;
   padding: 0;
-  width: 99vw;
-  height: clamp(43px, 4vw, 63px);
+
   min-height: 40px;
 
   background-color: #212529;
@@ -22,7 +23,7 @@
 
   @include phone-xl {
     height: 6vh;
-    width: 98.5vw;
+    width: 97vw;
   }
 
   #nav-logo {

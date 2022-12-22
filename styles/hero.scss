@@ -69,7 +69,7 @@
 
       @include desktop-sm {
         margin-left: -4vw;
-        width: 3.5px;
+        width: 4px;
       }
 
       @include phone-xl {
@@ -87,12 +87,6 @@
       img {
         height: auto;
         width: clamp(18vw, 24vw, 260px);
-
-        /*@include desktop-sm {
-          @media (min-height: 1000px) {
-            height: calc(26vw + 8px);
-          }
-        }*/
 
         @include phone-xl {
           width: auto;
