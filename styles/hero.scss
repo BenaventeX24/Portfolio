@@ -14,10 +14,10 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
-  height: clamp(22vw, 41vw, 280px);
+  height: clamp(21vw, 40vw, 280px);
 
   @include desktop-sm {
-    height: clamp(28vw, 18vw, 280px);
+    height: clamp(27vw, 17vw, 280px);
   }
 
   @include phone-xl {
@@ -86,7 +86,7 @@
 
       img {
         height: auto;
-        width: clamp(18vw, 24vw, 260px);
+        width: clamp(16vw, 20vw, 240px);
 
         @include phone-xl {
           width: auto;
@@ -115,7 +115,7 @@
 
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: calc(4vw + 16px);
+        font-size: calc(3.5vw + 16px);
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
@@ -136,7 +136,7 @@
 
         h2 {
           font-family: "Ubuntu";
-          font-size: calc(3vw + 8px);
+          font-size: calc(2.8vw + 8px);
           text-shadow: 2px 1px 2px white;
 
           @include phone-xl {
@@ -159,8 +159,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        margin-top: calc(2vw - 8px);
+        position: relative;
+        top: calc(1vw + 8px);
 
         @include phone-xl {
           display: none;
@@ -169,7 +169,7 @@
         p {
           font-family: "Ubuntu";
 
-          font-size: calc(1vw + 8px);
+          font-size: calc(1vw + 6px);
         }
 
         #profile-contact-logos {
@@ -178,7 +178,7 @@
           align-items: center;
 
           img {
-            width: calc(4vw + 18px);
+            width: calc(3.2vw + 18px);
             height: auto;
           }
 

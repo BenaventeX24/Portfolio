@@ -12,9 +12,9 @@
     h1 {
       font-family: "Ubuntu";
       font-weight: 400;
-      font-size: calc(25.5vw + 14px);
-      line-height: calc(16.5vw + 8px);
-      height: calc(17.5vw + 8px);
+      font-size: calc(22vw + 23px);
+      line-height: 15vw;
+      height: 16vw;
 
       color: #212529;
 
@@ -29,7 +29,7 @@
     p {
       position: relative;
       left: -3.5vw;
-      top: calc(1.5vh + 0.5vw);
+      top: calc(0.5vh + 0.5vw);
       font-family: "Ubuntu";
       font-weight: 400;
       font-size: calc(2.5vw + 4px);
@@ -45,9 +45,8 @@
   #experience-company-logos {
     display: flex;
     position: absolute;
-    left: calc(190% * 100% / 580%);
-    top: calc(0.5vh + 3vw + 30px);
-    left: 14vw;
+    top: 5.2vw;
+    left: 12.5vw;
 
     img {
       height: auto;

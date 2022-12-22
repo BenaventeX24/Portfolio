@@ -9,14 +9,14 @@
   border: 0.5vw solid #212529;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  height: clamp(22vw, 41vw, 280px);
+  height: clamp(21vw, 40vw, 280px);
 }
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #hero-section {
-    height: clamp(28vw, 18vw, 280px);
+    height: clamp(27vw, 17vw, 280px);
   }
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section {
     margin-top: calc(4vh + 1.5vw + 100px);
     border: 1vw solid #212529;
@@ -46,7 +46,7 @@
   grid-template-columns: 0.6fr 4px 1fr;
   place-items: center;
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section #hero-profile {
     grid-template-columns: 1fr;
   }
@@ -63,7 +63,7 @@
     width: 4px;
   }
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section #hero-profile #separator-hero {
     display: none;
   }
@@ -77,9 +77,9 @@
 }
 #hero-section #hero-profile #profile-image-container img {
   height: auto;
-  width: clamp(18vw, 24vw, 260px);
+  width: clamp(16vw, 20vw, 240px);
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section #hero-profile #profile-image-container img {
     width: auto;
     height: calc(20vh + 36px);
@@ -96,7 +96,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section #hero-profile #profile-info-container {
     align-self: flex-end;
   }
@@ -105,11 +105,11 @@
   text-align: center;
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: calc(4vw + 16px);
+  font-size: calc(3.5vw + 16px);
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: calc(4.5vw + 16px);
     margin-bottom: -1.5vh;
@@ -126,10 +126,10 @@
 }
 #hero-section #hero-profile #profile-info-container span#profile-position h2 {
   font-family: "Ubuntu";
-  font-size: calc(3vw + 8px);
+  font-size: calc(2.8vw + 8px);
   text-shadow: 2px 1px 2px white;
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section #hero-profile #profile-info-container span#profile-position h2 {
     font-weight: bold;
     font-size: calc(3vw + 12px);
@@ -146,16 +146,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc(2vw - 8px);
+  position: relative;
+  top: calc(1vw + 8px);
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #hero-section #hero-profile #profile-info-container #profile-contact-section {
     display: none;
   }
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section p {
   font-family: "Ubuntu";
-  font-size: calc(1vw + 8px);
+  font-size: calc(1vw + 6px);
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos {
   margin-top: 1vw;
@@ -163,7 +164,7 @@
   align-items: center;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img {
-  width: calc(4vw + 18px);
+  width: calc(3.2vw + 18px);
   height: auto;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img:nth-child(1) {

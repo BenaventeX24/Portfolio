@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #presentation-text {
     height: 100%;
     margin: 0;
@@ -16,7 +16,7 @@
   text-align: right;
   align-self: center;
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #presentation-text p {
     line-height: 30px;
     font-size: 24px;
@@ -24,7 +24,7 @@
     padding: 0 20px;
   }
 }
-@media (max-width: 634px) {
+@media (max-width: 620px) {
   #presentation-text #tech-word {
     font-weight: bold;
   }
