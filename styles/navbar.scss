@@ -13,7 +13,7 @@
   z-index: 999;
   padding: 0;
   width: 99vw;
-  height: calc(4.5vh + 16px);
+  height: clamp(43px, 4vw, 63px);
   min-height: 40px;
 
   background-color: #212529;
@@ -29,7 +29,7 @@
     margin-left: 2vw;
     margin-right: auto;
     img {
-      height: calc(4vh + 16px);
+      height: calc(3vw + 16px);
       width: auto;
 
       @include phone-xl {
