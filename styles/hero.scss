@@ -21,11 +21,17 @@
   }
 
   @include phone-xl {
-    margin-top: 145px;
+    margin-top: clamp(135px, 10vw + 12vh, 180px);
+    padding-bottom: 8px;
 
     border: 1vw solid #212529;
     width: 92vw;
-    height: clamp(140px, 38vw, 390px);
+    height: clamp(140px, 37vw, 370px);
+  }
+
+  @include phone-xs {
+    width: 92vw;
+    height: clamp(140px, 37vw, 370px);
   }
 
   #hero-background {
@@ -86,11 +92,11 @@
 
       img {
         height: auto;
-        width: clamp(16vw, 20vw, 240px);
+        width: clamp(15vw + 1vh, 18vw + 2vh, 240px);
 
         @include phone-xl {
           height: auto;
-          width: clamp(160px, 36vw, 280px);
+          width: clamp(115px + 5.5vw, 27vw + 4vh, 210px);
           position: absolute;
           top: -90px;
           left: 0;
@@ -115,13 +121,17 @@
 
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: calc(3.5vw + 16px);
+        font-size: 4.2vw;
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 
         @include phone-xl {
-          font-size: calc(4.2vw + 16px);
+          font-size: 8vw;
+        }
+
+        @include phone-xs {
+          font-size: 9vw;
         }
       }
 
@@ -135,12 +145,12 @@
 
         h2 {
           font-family: "Ubuntu";
-          font-size: calc(2.8vw + 8px);
+          font-size: 3vw;
           text-shadow: 2px 1px 2px white;
 
           @include phone-xl {
             font-weight: bold;
-            font-size: calc(3vw + 12px);
+            font-size: 5.5vw;
           }
         }
 
@@ -159,7 +169,7 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: calc(1vw + 8px);
+        top: calc(0.8vw + 12px);
 
         @include phone-xl {
           display: none;
@@ -168,7 +178,7 @@
         p {
           font-family: "Ubuntu";
 
-          font-size: calc(1vw + 6px);
+          font-size: calc(0.8vw + 8px);
         }
 
         #profile-contact-logos {

@@ -5,11 +5,11 @@
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
 
-  margin-top: calc(1vh + 8px);
-  padding-right: calc(2vw + 30px);
+  margin-top: 2vh;
+  padding-right: 2.8vw;
 
   @include maxCustom(1300px) {
-    padding: 0 30px 0 0;
+    padding: 0 40px 0 0;
   }
 
   @include phone-xl {
@@ -29,7 +29,7 @@
     @include phone-xl {
       width: 18.5vw;
       height: 4px;
-      margin: calc(1vh + 4px) 0;
+      margin: 1.5vh;
     }
   }
 }

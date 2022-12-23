@@ -18,7 +18,7 @@
 }
 @media (max-width: 620px) {
   #presentation-text p {
-    line-height: calc(3vw + 12px);
+    line-height: calc(3vw + 8px);
     font-size: calc(12px + 12 * (100vw - 320px) / 300);
     text-align: center;
     padding: 0 20px;

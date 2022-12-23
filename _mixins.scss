@@ -1,17 +1,11 @@
+@mixin phone-xs {
+  @media (max-width: 300px) {
+    @content;
+  }
+}
+
 @mixin phone-sm {
   @media (max-width: 370px) {
-    @content;
-  }
-}
-
-@mixin phone-md {
-  @media (max-width: 450px) {
-    @content;
-  }
-}
-
-@mixin phone-lg {
-  @media (max-width: 570px) {
     @content;
   }
 }
