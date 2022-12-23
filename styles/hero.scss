@@ -121,17 +121,19 @@
 
         font-family: "Montserrat";
         font-weight: 600;
-        font-size: 4.2vw;
+        font-size: var(--fs-xl);
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 
+        @include desktop-sm;
+
         @include phone-xl {
-          font-size: 8vw;
+          font-size: clamp(1rem, 2.2rem + 2vw, 16rem);
         }
 
         @include phone-xs {
-          font-size: 9vw;
+          font-size: clamp(1rem, 1.2rem + 1vw, 2rem);
         }
       }
 

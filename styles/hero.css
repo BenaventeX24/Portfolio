@@ -13,6 +13,7 @@
 }
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #hero-section {
+    --fs-xl: clamp(0.8rem, 0.5rem + 4vw, 4rem);
     height: clamp(27vw, 17vw, 280px);
   }
 }
@@ -66,6 +67,7 @@
 }
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #hero-section #hero-profile #separator-hero {
+    --fs-xl: clamp(0.8rem, 0.5rem + 4vw, 4rem);
     margin-left: -4vw;
     width: 4px;
   }
@@ -112,18 +114,23 @@
   text-align: center;
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 4.2vw;
+  font-size: var(--fs-xl);
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
+@media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
+  #hero-section #hero-profile #profile-info-container h1 {
+    --fs-xl: clamp(0.8rem, 0.5rem + 4vw, 4rem);
+  }
+}
 @media (max-width: 620px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 8vw;
+    font-size: clamp(1rem, 2.2rem + 2vw, 16rem);
   }
 }
 @media (max-width: 330px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: 9vw;
+    font-size: clamp(1rem, 1.2rem + 1vw, 2rem);
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-position {
@@ -132,6 +139,7 @@
 }
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #hero-section #hero-profile #profile-info-container span#profile-position {
+    --fs-xl: clamp(0.8rem, 0.5rem + 4vw, 4rem);
     margin-top: 0.2vh;
   }
 }
