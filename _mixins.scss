@@ -1,5 +1,5 @@
 @mixin phone-xs {
-  @media (max-width: 300px) {
+  @media (max-width: 330px) {
     @content;
   }
 }
@@ -23,20 +23,6 @@
   }
 }
 
-// Large devices
-@mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-}
-
-// Extra large devices
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-    @content;
-  }
-}
-
 @mixin maxCustom($value) {
   @media (max-width: #{$value}) {
     @content;
@@ -45,18 +31,6 @@
 
 @mixin minCustom($value) {
   @media (min-width: #{$value}) {
-    @content;
-  }
-}
-
-@mixin maxWminH($width, $height) {
-  @media (max-width: #{$width}) and (min-height: #{$height}) {
-    @content;
-  }
-}
-
-@mixin minWmaxH($width, $height) {
-  @media (min-width: #{$width}) and (max-height: #{$height}) {
     @content;
   }
 }

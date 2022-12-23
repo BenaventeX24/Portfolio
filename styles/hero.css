@@ -9,7 +9,7 @@
   border: 0.5vw solid #212529;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  height: clamp(21vw, 40vw, 280px);
+  height: clamp(24vw, 26vw, 280px);
 }
 @media (max-width: 1200px), (min-height: 810px) and (max-width: 1250px) {
   #hero-section {
@@ -22,13 +22,13 @@
     padding-bottom: 8px;
     border: 1vw solid #212529;
     width: 92vw;
-    height: clamp(140px, 37vw, 370px);
+    height: clamp(140px, 32vw + 3vh, 370px);
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 330px) {
   #hero-section {
     width: 92vw;
-    height: clamp(140px, 37vw, 370px);
+    height: clamp(80px, 37vw, 140px);
   }
 }
 #hero-section #hero-background {
@@ -121,7 +121,7 @@
     font-size: 8vw;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 330px) {
   #hero-section #hero-profile #profile-info-container h1 {
     font-size: 9vw;
   }

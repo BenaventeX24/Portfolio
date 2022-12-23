@@ -14,7 +14,7 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
-  height: clamp(21vw, 40vw, 280px);
+  height: clamp(24vw, 26vw, 280px);
 
   @include desktop-sm {
     height: clamp(27vw, 17vw, 280px);
@@ -26,12 +26,12 @@
 
     border: 1vw solid #212529;
     width: 92vw;
-    height: clamp(140px, 37vw, 370px);
+    height: clamp(140px, 32vw + 3vh, 370px);
   }
 
   @include phone-xs {
     width: 92vw;
-    height: clamp(140px, 37vw, 370px);
+    height: clamp(80px, 37vw, 140px);
   }
 
   #hero-background {
