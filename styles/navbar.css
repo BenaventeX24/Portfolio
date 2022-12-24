@@ -1,3 +1,12 @@
+:root {
+  --ff-primary: "Montserrat";
+  --ff-secondary: "Ubuntu";
+  --ff-terciary: "Nunito Sans";
+  --fs-xl: 2rem;
+  --fs-lg: 1.5rem;
+  --fs-md: 2rem;
+}
+
 .main-navbar {
   display: flex;
   align-items: center;
@@ -7,9 +16,8 @@
   left: 50%;
   transform: translateX(-50%);
   width: 98vw;
-  height: clamp(43px, 2.5vw + 2vh, 180px);
+  height: clamp(33px, 2.2vw + 1vh, 103px);
   z-index: 999;
-  padding: 0;
   background-color: #212529;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 0 0 20px 20px;
@@ -21,11 +29,11 @@
   }
 }
 .main-navbar #nav-logo {
-  margin-left: calc(1.8vw + 10px);
+  margin-left: calc(1.6vw + 18px);
   margin-right: auto;
 }
 .main-navbar #nav-logo img {
-  width: calc(3vw + 32px);
+  width: calc(2.6vw + 32px);
   height: auto;
 }
 .main-navbar a {
@@ -33,10 +41,11 @@
   margin-right: 4.5vw;
 }
 .main-navbar a.navbar-element {
-  font-family: "Montserrat";
+  font-family: var(--ff-primary);
   font-style: normal;
   font-weight: 400;
   font-size: calc(1vw + 12px);
+  margin-bottom: 0.25vw;
   color: #ffffff;
 }
 @media (max-width: 620px) {

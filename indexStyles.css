@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Ubuntu&display=swap");
-:root {
-  --ff-primary: "Montserrat";
-  --ff-secondary: "Ubuntu";
-  --ff-terciary: "Nunito Sans";
-  --fs-xl: clamp(2.5rem, 2.2rem + 2vw, 16rem);
-  --fs-md: clamp(1rem, 1rem + 1.2vw, 4rem);
-}
-
 body * {
   margin: 0;
   box-sizing: border-box;

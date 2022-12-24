@@ -1,3 +1,12 @@
+:root {
+  --ff-primary: "Montserrat";
+  --ff-secondary: "Ubuntu";
+  --ff-terciary: "Nunito Sans";
+  --fs-xl: 2rem;
+  --fs-lg: 1.5rem;
+  --fs-md: 2rem;
+}
+
 #presentation-text {
   display: flex;
   width: 100%;
@@ -11,17 +20,27 @@
 #presentation-text p {
   width: 100%;
   font-family: "Nunito Sans";
-  font-size: calc(16px + 18 * (100vw - 720px) / 1180);
-  line-height: calc(2.5vw + 8px);
+  font-size: var(--fs-md);
+  line-height: calc(1rem + 2vw);
   text-align: right;
   align-self: center;
-}
-@media (max-width: 620px) {
-  #presentation-text p {
+  /*@include phone-xl {
     line-height: calc(3vw + 8px);
-    font-size: calc(12px + 12 * (100vw - 320px) / 300);
+    font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (620 - 320)));
     text-align: center;
     padding: 0 20px;
+  }*/
+}
+@media (max-width: 1650px) {
+  #presentation-text p {
+    --fs-md: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  #presentation-text p {
+    --fs-md: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (max-width: 620px) {

@@ -6,11 +6,9 @@
   place-items: center;
 
   margin-top: 2vh;
-  padding-right: 2.8vw;
+  height: fit-content;
 
-  @include maxCustom(1300px) {
-    padding: 0 40px 0 0;
-  }
+  padding-right: calc(1.8vw + 40px);
 
   @include phone-xl {
     margin-top: 15px;

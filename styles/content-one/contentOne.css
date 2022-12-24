@@ -1,14 +1,21 @@
+:root {
+  --ff-primary: "Montserrat";
+  --ff-secondary: "Ubuntu";
+  --ff-terciary: "Nunito Sans";
+  --fs-xl: 2rem;
+  --fs-lg: 1.5rem;
+  --fs-md: 2rem;
+}
+
 #content-section {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
   margin-top: 2vh;
-  padding-right: 2.8vw;
-}
-@media (max-width: 1300px) {
-  #content-section {
-    padding: 0 40px 0 0;
-  }
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: calc(1.8vw + 40px);
 }
 @media (max-width: 620px) {
   #content-section {
