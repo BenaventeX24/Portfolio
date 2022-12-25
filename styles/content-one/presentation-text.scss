@@ -7,24 +7,20 @@
   @include phone-xl {
     height: 100%;
     margin: 0;
+    padding: 0 4vw;
   }
   p {
     width: 100%;
     font-family: "Nunito Sans";
-    font-size: var(--presentation-text-fs);
-    line-height: var(--presentation-text-lh);
+    font-size: var(--pres-text-fs);
+    line-height: var(--pres-text-lh);
     text-align: right;
 
     align-self: center;
 
-    @include desktop-sm;
-
-    /*@include phone-xl {
-      line-height: calc(3vw + 8px);
-      font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (620 - 320)));
+    @include phone-xl {
       text-align: center;
-      padding: 0 20px;
-    }*/
+    }
   }
 
   @include phone-xl {

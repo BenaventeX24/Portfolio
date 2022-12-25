@@ -2,30 +2,59 @@
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
   --ff-terciary: "Nunito Sans";
-  --presentation-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
-  --experience-illustration-p-h1: clamp(1rem, 2.2rem + 18vw, 40rem);
-  --experience-illustration-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 12rem);
-  --experience-illustration-imgs-width: 7vw;
-  --experience-illustration-imgs-left: 11vw;
-  --experience-illustration-imgs-top: 5vw;
+  /*hero*/
+  --hero-name-fs: clamp(0.5rem, 1.3rem + 2.5vw, 16rem);
+  --hero-profession-fs: clamp(0.5rem, 1.2rem + 1.5vw, 8rem);
+  /*experience illustration*/
+  --exp-ill-h5-fs: clamp(1rem, 7.5rem + 12vw, 50rem);
+  --exp-ill-p-fs: clamp(0.5rem, 1.1em + 1.33vw, 12rem);
+  --exp-ill-imgs-width: calc(5vw + 55px);
+  --exp-ill-imgs-left: calc(8vw + 45px);
+  --exp-ill-imgs-top: 5vw;
+  /*presentation text*/
+  --pres-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
 }
 
 @media (max-width: 1200px) {
   :root {
-    --experience-illustration-imgs-left: 13vw;
+    /*experience-illustration*/
+    --exp-ill-imgs-width: calc(3.8vw + 50px);
   }
 }
 @media (max-width: 900px) {
   :root {
-    --presentation-text-fs: 1rem;
-    --experience-illustration-p-h1: clamp(1rem, 2rem + 16vw, 40rem);
-    --experience-illustration-p-fs: clamp(0.85rem, 0.75rem + 1.2vw, 2rem);
-    --experience-illustration-imgs-left: 11vw;
+    /*experience-illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 2.5rem + 16vw, 40rem);
+    --exp-ill-p-fs: clamp(0.75rem, 0.75rem + 1.2vw, 2rem);
+    --exp-ill-imgs-width: calc(4vw + 30px);
+    --exp-ill-imgs-left: calc(8vw + 30px);
+    /*presentation-text*/
+    --pres-text-fs: 1rem;
   }
 }
 @media (max-width: 750px) {
   :root {
-    --presentation-text-fs: 0.85rem;
+    --pres-text-fs: 0.85rem;
+  }
+}
+@media (max-width: 650px) {
+  :root {
+    --exp-ill-p-fs: clamp(0.75rem, 0.65rem + 1.2vw, 1.2rem);
+  }
+}
+@media (max-width: 370px) {
+  :root {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 0.2rem + 0.5vw, 4rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-: sclamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
   }
 }
 #hero-section {
@@ -33,9 +62,9 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: calc(1vw + 0.8vh + 40px);
+  margin-top: calc(2.2vw + 30px);
   width: 94vw;
-  border-radius: 15px;
+  border-radius: 1vw;
   border: 0.5vw solid #212529;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
@@ -44,12 +73,24 @@
   height: fit-content;
   padding: 1vw 0;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #hero-section {
-    margin-top: clamp(135px, 10vw + 12vh, 180px);
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
+    margin-top: 130px;
     padding-bottom: 8px;
     width: 92vw;
     height: clamp(140px, 32vw + 3vh, 370px);
+    border-radius: 15px;
     border: 1vw solid #212529;
   }
 }
@@ -81,8 +122,19 @@
   grid-template-columns: 0.6fr 4px 1fr;
   place-items: center;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #hero-section #hero-profile {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
     grid-template-columns: 1fr;
   }
 }
@@ -98,8 +150,19 @@
     width: 4px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #hero-section #hero-profile #separator-hero {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
     display: none;
   }
 }
@@ -117,12 +180,23 @@
   height: auto;
   width: clamp(10vw + 80px, 18vw, 240px);
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #hero-section #hero-profile #profile-image-container img {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
     height: auto;
     width: clamp(115px + 5.5vw, 27vw + 4vh, 210px);
     position: absolute;
-    top: -90px;
+    top: -82px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -134,8 +208,19 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #hero-section #hero-profile #profile-info-container {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
     align-self: flex-end;
   }
 }
@@ -143,38 +228,24 @@
   text-align: center;
   font-family: var(--ff-primary);
   font-weight: 600;
-  font-size: clamp(0.5rem, 1.3rem + 2.5vw, 16rem);
+  font-size: var(--hero-name-fs);
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
 }
-@media (max-width: 620px) {
-  #hero-section #hero-profile #profile-info-container h1 {
-    font-size: clamp(1rem, 2.2rem + 2vw, 16rem);
-  }
-}
-@media (max-width: 330px) {
-  #hero-section #hero-profile #profile-info-container h1 {
-    font-size: clamp(1rem, 1.2rem + 1vw, 2rem);
-  }
-}
-#hero-section #hero-profile #profile-info-container span#profile-position {
+#hero-section #hero-profile #profile-info-container span#profile-profession {
   display: flex;
   flex-direction: row;
 }
-#hero-section #hero-profile #profile-info-container span#profile-position h2 {
+#hero-section #hero-profile #profile-info-container span#profile-profession h2 {
   font-family: var(--ff-secondary);
-  font-size: clamp(0.5rem, 1.2rem + 1.5vw, 8rem);
+  font-size: var(--hero-profession-fs);
   text-shadow: 2px 1px 2px white;
-  /*@include phone-xl {
-    font-weight: bold;
-    font-size: 5.5vw;
-  }*/
 }
-#hero-section #hero-profile #profile-info-container span#profile-position h2:nth-child(1) {
+#hero-section #hero-profile #profile-info-container span#profile-profession h2:nth-child(1) {
   color: #0e0c7b;
   margin-right: 0.8vw;
 }
-#hero-section #hero-profile #profile-info-container span#profile-position h2:nth-child(2) {
+#hero-section #hero-profile #profile-info-container span#profile-profession h2:nth-child(2) {
   color: #057a26;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section {
@@ -183,8 +254,19 @@
   align-items: center;
   margin-top: calc(0.8vw + 12px);
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #hero-section #hero-profile #profile-info-container #profile-contact-section {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
     display: none;
   }
 }

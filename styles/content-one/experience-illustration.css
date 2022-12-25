@@ -2,30 +2,59 @@
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
   --ff-terciary: "Nunito Sans";
-  --presentation-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
-  --experience-illustration-p-h1: clamp(1rem, 2.2rem + 18vw, 40rem);
-  --experience-illustration-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 12rem);
-  --experience-illustration-imgs-width: 7vw;
-  --experience-illustration-imgs-left: 11vw;
-  --experience-illustration-imgs-top: 5vw;
+  /*hero*/
+  --hero-name-fs: clamp(0.5rem, 1.3rem + 2.5vw, 16rem);
+  --hero-profession-fs: clamp(0.5rem, 1.2rem + 1.5vw, 8rem);
+  /*experience illustration*/
+  --exp-ill-h5-fs: clamp(1rem, 7.5rem + 12vw, 50rem);
+  --exp-ill-p-fs: clamp(0.5rem, 1.1em + 1.33vw, 12rem);
+  --exp-ill-imgs-width: calc(5vw + 55px);
+  --exp-ill-imgs-left: calc(8vw + 45px);
+  --exp-ill-imgs-top: 5vw;
+  /*presentation text*/
+  --pres-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
 }
 
 @media (max-width: 1200px) {
   :root {
-    --experience-illustration-imgs-left: 13vw;
+    /*experience-illustration*/
+    --exp-ill-imgs-width: calc(3.8vw + 50px);
   }
 }
 @media (max-width: 900px) {
   :root {
-    --presentation-text-fs: 1rem;
-    --experience-illustration-p-h1: clamp(1rem, 2rem + 16vw, 40rem);
-    --experience-illustration-p-fs: clamp(0.85rem, 0.75rem + 1.2vw, 2rem);
-    --experience-illustration-imgs-left: 11vw;
+    /*experience-illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 2.5rem + 16vw, 40rem);
+    --exp-ill-p-fs: clamp(0.75rem, 0.75rem + 1.2vw, 2rem);
+    --exp-ill-imgs-width: calc(4vw + 30px);
+    --exp-ill-imgs-left: calc(8vw + 30px);
+    /*presentation-text*/
+    --pres-text-fs: 1rem;
   }
 }
 @media (max-width: 750px) {
   :root {
-    --presentation-text-fs: 0.85rem;
+    --pres-text-fs: 0.85rem;
+  }
+}
+@media (max-width: 650px) {
+  :root {
+    --exp-ill-p-fs: clamp(0.75rem, 0.65rem + 1.2vw, 1.2rem);
+  }
+}
+@media (max-width: 370px) {
+  :root {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 0.2rem + 0.5vw, 4rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-: sclamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
   }
 }
 #experience {
@@ -40,19 +69,29 @@
 #experience #experience-text {
   display: flex;
 }
-#experience #experience-text h1 {
+#experience #experience-text h5 {
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: var(--experience-illustration-p-h1);
-  line-height: 14vw;
-  height: 14vw;
+  font-size: var(--exp-ill-h5-fs);
+  line-height: calc(12vw + 20px);
+  height: calc(12vw + 30px);
   color: #212529;
 }
-@media (max-width: 620px) {
-  #experience #experience-text h1 {
-    font-size: 38vw;
-    line-height: 24vw;
-    height: 26.8vw;
+@media (max-width: 560px) {
+  #experience #experience-text h5 {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
+    line-height: calc(16vw + 40px);
+    height: calc(20vw + 35px);
   }
 }
 #experience #experience-text p {
@@ -61,13 +100,23 @@
   top: 0.5vw;
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: var(--experience-illustration-p-fs);
+  font-size: var(--exp-ill-p-fs);
   color: #212529;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #experience #experience-text p {
-    font-size: 6vw;
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
     left: -4.5vw;
     top: 0.5vw;
   }
@@ -75,18 +124,27 @@
 #experience #experience-company-logos {
   display: flex;
   position: absolute;
-  top: var(--experience-illustration-imgs-top);
-  left: var(--experience-illustration-imgs-left);
+  top: var(--exp-ill-imgs-top);
+  left: var(--exp-ill-imgs-left);
 }
 #experience #experience-company-logos img {
   height: auto;
-  width: var(--experience-illustration-imgs-width);
+  width: var(--exp-ill-imgs-width);
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #experience #experience-company-logos img {
+    /*hero*/
+    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
+    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
+    /*experience illustration*/
+    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
+    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
+    --exp-ill-imgs-width: calc(10vw + 20px);
+    --exp-ill-imgs-left: calc(12vw + 40px);
+    --exp-ill-imgs-top: calc(4.5vw + 15px);
+    /*presentation text*/
+    --pres-text-fs: 0.85rem;
     position: relative;
-    width: 16.5vw;
-    top: 4vw;
-    left: 12vw;
+    min-width: none;
   }
 }/*# sourceMappingURL=experience-illustration.css.map */
