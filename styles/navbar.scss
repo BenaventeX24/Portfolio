@@ -1,4 +1,4 @@
-@import "../mixins";
+@import "../_queries";
 
 .main-navbar {
   display: flex;
@@ -27,7 +27,7 @@
     margin-left: calc(1.6vw + 18px);
     margin-right: auto;
     img {
-      width: calc(2.6vw + 32px);
+      width: calc(2.2vw + 30px);
       height: auto;
     }
   }
@@ -40,7 +40,7 @@
     font-family: var(--ff-primary);
     font-style: normal;
     font-weight: 400;
-    font-size: calc(1vw + 12px);
+    font-size: calc(0.8vw + 12px);
 
     margin-bottom: 0.25vw;
 

@@ -2,11 +2,32 @@
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
   --ff-terciary: "Nunito Sans";
-  --fs-xl: 2rem;
-  --fs-lg: 1.5rem;
-  --fs-md: 2rem;
+  --presentation-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
+  --experience-illustration-p-h1: clamp(1rem, 2.2rem + 18vw, 40rem);
+  --experience-illustration-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 12rem);
+  --experience-illustration-imgs-width: 7vw;
+  --experience-illustration-imgs-left: 11vw;
+  --experience-illustration-imgs-top: 5vw;
 }
 
+@media (max-width: 1200px) {
+  :root {
+    --experience-illustration-imgs-left: 13vw;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --presentation-text-fs: 1rem;
+    --experience-illustration-p-h1: clamp(1rem, 2rem + 16vw, 40rem);
+    --experience-illustration-p-fs: clamp(0.85rem, 0.75rem + 1.2vw, 2rem);
+    --experience-illustration-imgs-left: 11vw;
+  }
+}
+@media (max-width: 750px) {
+  :root {
+    --presentation-text-fs: 0.85rem;
+  }
+}
 #experience {
   display: flex;
   justify-content: center;
@@ -22,7 +43,7 @@
 #experience #experience-text h1 {
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: clamp(2rem, 4rem + 17vw, 20rem);
+  font-size: var(--experience-illustration-p-h1);
   line-height: 14vw;
   height: 14vw;
   color: #212529;
@@ -36,11 +57,11 @@
 }
 #experience #experience-text p {
   position: relative;
-  left: -3.3vw;
+  left: -3vw;
   top: 0.5vw;
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: clamp(0.5rem, 0.8rem + 1.5vw, 4rem);
+  font-size: var(--experience-illustration-p-fs);
   color: #212529;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -54,12 +75,12 @@
 #experience #experience-company-logos {
   display: flex;
   position: absolute;
-  top: 5vw;
-  left: 11.5vw;
+  top: var(--experience-illustration-imgs-top);
+  left: var(--experience-illustration-imgs-left);
 }
 #experience #experience-company-logos img {
   height: auto;
-  width: 8vw;
+  width: var(--experience-illustration-imgs-width);
 }
 @media (max-width: 620px) {
   #experience #experience-company-logos img {

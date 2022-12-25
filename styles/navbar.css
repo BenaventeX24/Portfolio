@@ -2,11 +2,32 @@
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
   --ff-terciary: "Nunito Sans";
-  --fs-xl: 2rem;
-  --fs-lg: 1.5rem;
-  --fs-md: 2rem;
+  --presentation-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
+  --experience-illustration-p-h1: clamp(1rem, 2.2rem + 18vw, 40rem);
+  --experience-illustration-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 12rem);
+  --experience-illustration-imgs-width: 7vw;
+  --experience-illustration-imgs-left: 11vw;
+  --experience-illustration-imgs-top: 5vw;
 }
 
+@media (max-width: 1200px) {
+  :root {
+    --experience-illustration-imgs-left: 13vw;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --presentation-text-fs: 1rem;
+    --experience-illustration-p-h1: clamp(1rem, 2rem + 16vw, 40rem);
+    --experience-illustration-p-fs: clamp(0.85rem, 0.75rem + 1.2vw, 2rem);
+    --experience-illustration-imgs-left: 11vw;
+  }
+}
+@media (max-width: 750px) {
+  :root {
+    --presentation-text-fs: 0.85rem;
+  }
+}
 .main-navbar {
   display: flex;
   align-items: center;
@@ -33,7 +54,7 @@
   margin-right: auto;
 }
 .main-navbar #nav-logo img {
-  width: calc(2.6vw + 32px);
+  width: calc(2.2vw + 30px);
   height: auto;
 }
 .main-navbar a {
@@ -44,7 +65,7 @@
   font-family: var(--ff-primary);
   font-style: normal;
   font-weight: 400;
-  font-size: calc(1vw + 12px);
+  font-size: calc(0.8vw + 12px);
   margin-bottom: 0.25vw;
   color: #ffffff;
 }

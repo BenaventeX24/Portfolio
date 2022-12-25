@@ -2,6 +2,7 @@
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
   --ff-terciary: "Nunito Sans";
+
   --presentation-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
   --experience-illustration-p-h1: clamp(1rem, 2.2rem + 18vw, 40rem);
   --experience-illustration-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 12rem);
@@ -15,6 +16,7 @@
     --experience-illustration-imgs-left: 13vw;
   }
 }
+
 @media (max-width: 900px) {
   :root {
     --presentation-text-fs: 1rem;
@@ -23,39 +25,46 @@
     --experience-illustration-imgs-left: 11vw;
   }
 }
+
 @media (max-width: 750px) {
   :root {
     --presentation-text-fs: 0.85rem;
   }
 }
-#content-section {
-  display: grid;
-  grid-template-columns: 1fr 0.1fr 1fr;
-  place-items: center;
-  margin-top: 2vh;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-right: calc(1.8vw + 40px);
-}
-@media (max-width: 620px) {
-  #content-section {
-    margin-top: 15px;
-    padding: 0;
-    grid-template-columns: 1fr;
+
+@mixin phone-xs {
+  @media (max-width: 330px) {
+    @content;
   }
 }
-#content-section #separator-content {
-  width: 4px;
-  height: 50%;
-  background: rgba(0, 150, 150, 0.7);
-  border-radius: 30px;
-  margin-right: auto;
-}
-@media (max-width: 620px) {
-  #content-section #separator-content {
-    width: 18.5vw;
-    height: 4px;
-    margin: 1.5vh;
+
+@mixin phone-sm {
+  @media (max-width: 370px) {
+    @content;
   }
-}/*# sourceMappingURL=contentOne.css.map */
+}
+
+@mixin phone-xl {
+  @media (max-width: 620px) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin desktop-sm {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin maxCustom($value) {
+  @media (max-width: #{$value}) {
+    @content;
+  }
+}
+
+@mixin minCustom($value) {
+  @media (min-width: #{$value}) {
+    @content;
+  }
+}
