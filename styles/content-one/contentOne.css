@@ -1,62 +1,3 @@
-:root {
-  --ff-primary: "Montserrat";
-  --ff-secondary: "Ubuntu";
-  --ff-terciary: "Nunito Sans";
-  /*hero*/
-  --hero-name-fs: clamp(0.5rem, 1.3rem + 2.5vw, 16rem);
-  --hero-profession-fs: clamp(0.5rem, 1.2rem + 1.5vw, 8rem);
-  /*experience illustration*/
-  --exp-ill-h5-fs: clamp(1rem, 7.5rem + 12vw, 50rem);
-  --exp-ill-p-fs: clamp(0.5rem, 1.1em + 1.33vw, 12rem);
-  --exp-ill-imgs-width: calc(5vw + 55px);
-  --exp-ill-imgs-left: calc(8vw + 45px);
-  --exp-ill-imgs-top: 5vw;
-  /*presentation text*/
-  --pres-text-fs: clamp(1rem, 0.5rem + 1vw, 3rem);
-}
-
-@media (max-width: 1200px) {
-  :root {
-    /*experience-illustration*/
-    --exp-ill-imgs-width: calc(3.8vw + 50px);
-  }
-}
-@media (max-width: 900px) {
-  :root {
-    /*experience-illustration*/
-    --exp-ill-h5-fs: clamp(1rem, 2.5rem + 16vw, 40rem);
-    --exp-ill-p-fs: clamp(0.75rem, 0.75rem + 1.2vw, 2rem);
-    --exp-ill-imgs-width: calc(4vw + 30px);
-    --exp-ill-imgs-left: calc(8vw + 30px);
-    /*presentation-text*/
-    --pres-text-fs: 1rem;
-  }
-}
-@media (max-width: 750px) {
-  :root {
-    --pres-text-fs: 0.85rem;
-  }
-}
-@media (max-width: 650px) {
-  :root {
-    --exp-ill-p-fs: clamp(0.75rem, 0.65rem + 1.2vw, 1.2rem);
-  }
-}
-@media (max-width: 370px) {
-  :root {
-    /*hero*/
-    --hero-name-fs: clamp(0.5rem, 0.2rem + 0.5vw, 4rem);
-    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
-    /*experience illustration*/
-    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
-    --exp-ill-p-: sclamp(0.5rem, 0.8em + 1.8vw, 14rem);
-    --exp-ill-imgs-width: calc(10vw + 20px);
-    --exp-ill-imgs-left: calc(12vw + 40px);
-    --exp-ill-imgs-top: calc(4.5vw + 15px);
-    /*presentation text*/
-    --pres-text-fs: 0.85rem;
-  }
-}
 #content-section {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
@@ -69,17 +10,6 @@
 }
 @media (max-width: 560px) {
   #content-section {
-    /*hero*/
-    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
-    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
-    /*experience illustration*/
-    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
-    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
-    --exp-ill-imgs-width: calc(10vw + 20px);
-    --exp-ill-imgs-left: calc(12vw + 40px);
-    --exp-ill-imgs-top: calc(4.5vw + 15px);
-    /*presentation text*/
-    --pres-text-fs: 0.85rem;
     margin-top: 15px;
     padding: 0;
     grid-template-columns: 1fr;
@@ -94,17 +24,6 @@
 }
 @media (max-width: 560px) {
   #content-section #separator-content {
-    /*hero*/
-    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
-    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
-    /*experience illustration*/
-    --exp-ill-h5-fs: clamp(1rem, 5rem + 20vw, 30rem);
-    --exp-ill-p-fs: clamp(0.5rem, 0.8em + 1.8vw, 14rem);
-    --exp-ill-imgs-width: calc(10vw + 20px);
-    --exp-ill-imgs-left: calc(12vw + 40px);
-    --exp-ill-imgs-top: calc(4.5vw + 15px);
-    /*presentation text*/
-    --pres-text-fs: 0.85rem;
     width: 18.5vw;
     height: 4px;
     margin: calc(2vh - 5px);

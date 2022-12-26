@@ -6,7 +6,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: calc(2.2vw + 30px);
+  margin-top: calc(2.2vw + 40px);
 
   width: 94vw;
   border-radius: 1vw;
@@ -18,8 +18,8 @@
   padding: 1vw 0;
 
   @include phone-xl {
-    margin-top: 130px;
-    padding-bottom: 8px;
+    margin-top: 140px;
+    padding: 5px;
 
     width: 92vw;
     height: clamp(140px, 32vw + 3vh, 370px);
@@ -28,9 +28,9 @@
     border: 1vw solid #212529;
   }
 
-  @include phone-xs {
-    width: 92vw;
-    height: clamp(80px, 37vw, 140px);
+  @media (max-width: 370px) {
+    margin-top: 120px;
+    padding: 1.5vw 0;
   }
 
   #hero-background {
@@ -99,12 +99,17 @@
 
         @include phone-xl {
           height: auto;
-          width: clamp(115px + 5.5vw, 27vw + 4vh, 210px);
+          width: clamp(10vw + 115px, 35vw, 240px);
           position: absolute;
-          top: -82px;
+          top: -95px;
           left: 0;
           right: 0;
           margin: 0 auto;
+        }
+
+        @media (max-width: 370px) {
+          top: -70px;
+          width: clamp(140px, 38vw, 210px);
         }
       }
     }
@@ -162,7 +167,6 @@
 
         p {
           font-family: var(--ff-secondary);
-
           font-size: calc(0.5vw + 0.8rem);
         }
 
