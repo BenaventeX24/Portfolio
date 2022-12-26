@@ -2,29 +2,27 @@
   display: flex;
   width: 100%;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #presentation-text {
     height: 100%;
     margin: 0;
+    padding: 0 4vw;
   }
 }
 #presentation-text p {
   width: 100%;
   font-family: "Nunito Sans";
-  font-size: calc(16px + 18 * (100vw - 720px) / 1180);
-  line-height: calc(2.5vw + 8px);
+  font-size: var(--pres-text-fs);
+  line-height: var(--pres-text-lh);
   text-align: right;
   align-self: center;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #presentation-text p {
-    line-height: calc(3vw + 8px);
-    font-size: calc(12px + 12 * (100vw - 320px) / 300);
     text-align: center;
-    padding: 0 20px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #presentation-text #tech-word {
     font-weight: bold;
   }

@@ -1,4 +1,4 @@
-@import "../../mixins";
+@import "../../_queries";
 
 #content-section {
   display: grid;
@@ -6,11 +6,9 @@
   place-items: center;
 
   margin-top: 2vh;
-  padding-right: 2.8vw;
+  height: fit-content;
 
-  @include maxCustom(1300px) {
-    padding: 0 40px 0 0;
-  }
+  padding-right: calc(1.8vw + 40px);
 
   @include phone-xl {
     margin-top: 15px;
@@ -29,7 +27,7 @@
     @include phone-xl {
       width: 18.5vw;
       height: 4px;
-      margin: 1.5vh;
+      margin: calc(2vh - 5px);
     }
   }
 }

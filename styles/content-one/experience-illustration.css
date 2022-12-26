@@ -10,53 +10,59 @@
 #experience #experience-text {
   display: flex;
 }
-#experience #experience-text h1 {
+#experience #experience-text h5 {
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: 22.5vw;
-  line-height: 15vw;
-  height: 16vw;
+  font-size: var(--exp-ill-h5-fs);
+  line-height: calc(12vw + 20px);
+  height: calc(12vw + 30px);
   color: #212529;
 }
-@media (max-width: 620px) {
-  #experience #experience-text h1 {
-    font-size: 38vw;
-    line-height: 24vw;
-    height: 26.8vw;
+@media (max-width: 560px) {
+  #experience #experience-text h5 {
+    line-height: calc(16vw + 40px);
+    height: calc(20vw + 35px);
+  }
+}
+@media (max-width: 370px) {
+  #experience #experience-text h5 {
+    width: 18vw;
   }
 }
 #experience #experience-text p {
   position: relative;
-  left: -3.3vw;
+  left: -3vw;
   top: 0.5vw;
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: 2.6vw;
+  font-size: var(--exp-ill-p-fs);
   color: #212529;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #experience #experience-text p {
-    font-size: 6vw;
-    left: -4.5vw;
+    left: -4vw;
     top: 0.5vw;
+  }
+}
+@media (max-width: 370px) {
+  #experience #experience-text p {
+    left: -1vw;
   }
 }
 #experience #experience-company-logos {
   display: flex;
   position: absolute;
-  top: 5vw;
-  left: 11.5vw;
+  top: var(--exp-ill-imgs-top);
+  left: var(--exp-ill-imgs-left);
 }
 #experience #experience-company-logos img {
   height: auto;
-  width: 8vw;
+  width: var(--exp-ill-imgs-width);
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #experience #experience-company-logos img {
     position: relative;
-    width: 16.5vw;
-    top: 4vw;
-    left: 12vw;
+    min-width: none;
   }
 }/*# sourceMappingURL=experience-illustration.css.map */

@@ -1,0 +1,23 @@
+@mixin phone-xl {
+  @media (max-width: 560px) {
+    @content;
+  }
+}
+
+@mixin desktop-sm {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin maxCustom($value) {
+  @media (max-width: #{$value}) {
+    @content;
+  }
+}
+
+@mixin minCustom($value) {
+  @media (min-width: #{$value}) {
+    @content;
+  }
+}

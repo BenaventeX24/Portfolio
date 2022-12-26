@@ -1,4 +1,4 @@
-@import "../mixins";
+@import "../_queries";
 
 #hero-section {
   display: flex;
@@ -6,32 +6,31 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: calc(3vw + 1.5vh + 20px);
+  margin-top: calc(2.2vw + 40px);
 
-  width: 95.2vw;
-  border-radius: 15px;
+  width: 94vw;
+  border-radius: 1vw;
   border: 0.5vw solid #212529;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
-  height: clamp(24vw, 26vw, 280px);
-
-  @include desktop-sm {
-    height: clamp(27vw, 17vw, 280px);
-  }
+  height: fit-content;
+  padding: 1vw 0;
 
   @include phone-xl {
-    margin-top: clamp(135px, 10vw + 12vh, 180px);
-    padding-bottom: 8px;
+    margin-top: 140px;
+    padding: 5px;
 
-    border: 1vw solid #212529;
     width: 92vw;
     height: clamp(140px, 32vw + 3vh, 370px);
+
+    border-radius: 15px;
+    border: 1vw solid #212529;
   }
 
-  @include phone-xs {
-    width: 92vw;
-    height: clamp(80px, 37vw, 140px);
+  @media (max-width: 370px) {
+    margin-top: 120px;
+    padding: 1.5vw 0;
   }
 
   #hero-background {
@@ -88,20 +87,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0.5vh;
+      padding: 8px;
 
       img {
+        border: 3px solid #000000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 50%;
+
         height: auto;
-        width: clamp(15vw + 1vh, 18vw + 2vh, 240px);
+        width: clamp(10vw + 80px, 18vw, 240px);
 
         @include phone-xl {
           height: auto;
-          width: clamp(115px + 5.5vw, 27vw + 4vh, 210px);
+          width: clamp(10vw + 115px, 35vw, 240px);
           position: absolute;
-          top: -90px;
+          top: -95px;
           left: 0;
           right: 0;
           margin: 0 auto;
+        }
+
+        @media (max-width: 370px) {
+          top: -70px;
+          width: clamp(140px, 38vw, 210px);
         }
       }
     }
@@ -119,44 +127,27 @@
       h1 {
         text-align: center;
 
-        font-family: "Montserrat";
+        font-family: var(--ff-primary);
         font-weight: 600;
-        font-size: 4.2vw;
+        font-size: var(--hero-name-fs);
         color: #000000;
 
         text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
-
-        @include phone-xl {
-          font-size: 8vw;
-        }
-
-        @include phone-xs {
-          font-size: 9vw;
-        }
       }
 
-      span#profile-position {
+      span#profile-profession {
         display: flex;
         flex-direction: row;
 
-        @include desktop-sm {
-          margin-top: 0.2vh;
-        }
-
         h2 {
-          font-family: "Ubuntu";
-          font-size: 3vw;
+          font-family: var(--ff-secondary);
+          font-size: var(--hero-profession-fs);
           text-shadow: 2px 1px 2px white;
-
-          @include phone-xl {
-            font-weight: bold;
-            font-size: 5.5vw;
-          }
         }
 
         h2:nth-child(1) {
           color: #0e0c7b;
-          margin-right: 10px;
+          margin-right: 0.8vw;
         }
 
         h2:nth-child(2) {
@@ -168,17 +159,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        top: calc(0.8vw + 12px);
+        margin-top: calc(0.8vw + 12px);
 
         @include phone-xl {
           display: none;
         }
 
         p {
-          font-family: "Ubuntu";
-
-          font-size: calc(0.8vw + 8px);
+          font-family: var(--ff-secondary);
+          font-size: calc(0.5vw + 0.8rem);
         }
 
         #profile-contact-logos {
@@ -187,7 +176,7 @@
           align-items: center;
 
           img {
-            width: calc(3.2vw + 18px);
+            width: calc(3vw + 18px);
             height: auto;
           }
 
@@ -196,15 +185,6 @@
           }
         }
       }
-    }
-
-    #profile-image {
-      width: 380px;
-      height: 380px;
-
-      border: 3px solid #000000;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      border-radius: 50%;
     }
   }
 }

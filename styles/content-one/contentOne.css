@@ -3,14 +3,12 @@
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
   margin-top: 2vh;
-  padding-right: 2.8vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: calc(1.8vw + 40px);
 }
-@media (max-width: 1300px) {
-  #content-section {
-    padding: 0 40px 0 0;
-  }
-}
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #content-section {
     margin-top: 15px;
     padding: 0;
@@ -24,10 +22,10 @@
   border-radius: 30px;
   margin-right: auto;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   #content-section #separator-content {
     width: 18.5vw;
     height: 4px;
-    margin: 1.5vh;
+    margin: calc(2vh - 5px);
   }
 }/*# sourceMappingURL=contentOne.css.map */

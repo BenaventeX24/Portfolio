@@ -7,39 +7,45 @@
   left: 50%;
   transform: translateX(-50%);
   width: 98vw;
-  height: clamp(43px, 2.5vw + 2vh, 180px);
+  height: clamp(36px, 30px + 2vw, 180px);
   z-index: 999;
-  padding: 0;
   background-color: #212529;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 1.5vw 1.5vw;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   .main-navbar {
     height: clamp(40px, 5.5vw + 2vh, 66px);
     width: 96vw;
+    border-radius: 0 0 20px 20px;
   }
 }
 .main-navbar #nav-logo {
-  margin-left: calc(1.8vw + 10px);
+  margin-left: calc(1.6vw + 18px);
   margin-right: auto;
 }
 .main-navbar #nav-logo img {
-  width: calc(3vw + 32px);
+  width: calc(2.6vw + 30px);
   height: auto;
+}
+@media (max-width: 560px) {
+  .main-navbar #nav-logo img {
+    width: calc(3.5vw + 32px);
+  }
 }
 .main-navbar a {
   text-decoration: none;
   margin-right: 4.5vw;
 }
 .main-navbar a.navbar-element {
-  font-family: "Montserrat";
+  font-family: var(--ff-primary);
   font-style: normal;
   font-weight: 400;
-  font-size: calc(1vw + 12px);
+  font-size: calc(0.8vw + 12px);
+  margin-bottom: 0.25vw;
   color: #ffffff;
 }
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   .main-navbar a.navbar-element {
     font-size: calc(1vw + 16px);
     text-decoration: none;
