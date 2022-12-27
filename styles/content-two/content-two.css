@@ -1,0 +1,14 @@
+#content-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5%;
+}
+#content-two > h2 {
+  align-self: center;
+  margin-bottom: 2%;
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: 46px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=content-two.css.map */
