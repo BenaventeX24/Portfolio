@@ -11,7 +11,7 @@
   transform: translateX(-50%);
 
   width: 98vw;
-  height: clamp(36px, 30px + 2vw, 180px);
+  height: clamp(36px, 30px + 0.8vw, 180px);
   z-index: 999;
 
   background-color: #212529;
@@ -19,13 +19,14 @@
   border-radius: 0 0 1.5vw 1.5vw;
 
   @include phone-xl {
-    height: clamp(40px, 5.5vw + 2vh, 66px);
+    height: clamp(40px, 6vw + 25px, 66px);
     width: 96vw;
     border-radius: 0 0 20px 20px;
   }
 
   #nav-logo {
-    margin-left: calc(1.6vw + 18px);
+    margin-left: calc(1.4vw + 18px);
+    margin-top: 3px;
     margin-right: auto;
     img {
       width: calc(2.6vw + 30px);

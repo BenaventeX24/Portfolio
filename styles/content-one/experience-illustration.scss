@@ -2,63 +2,54 @@
 
 #experience {
   display: flex;
-  justify-content: center;
-  position: relative;
-  width: fit-content;
-  left: 0;
 
-  #experience-text {
-    display: flex;
-    h5 {
-      font-family: "Ubuntu";
-      font-weight: 400;
-      font-size: var(--exp-ill-h5-fs);
-      line-height: calc(12vw + 20px);
-      height: calc(12vw + 30px);
+  img#numberOne {
+    width: calc(3vw + 40px);
 
-      color: #212529;
-
-      @include phone-xl {
-        line-height: calc(16vw + 40px);
-        height: calc(20vw + 35px);
-      }
-      @media (max-width: 370px) {
-        width: 18vw;
-      }
+    @media (max-width: 1200px) {
+      width: calc(4vw + 20px);
     }
+    @include phone-xl {
+      width: 12vw;
+    }
+  }
+  #experience-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+
     p {
       position: relative;
-      left: -3vw;
       top: 0.5vw;
+      margin-left: 8px;
+
       font-family: "Ubuntu";
       font-weight: 400;
-      font-size: var(--exp-ill-p-fs);
+      font-size: var(--exp-ill-text);
 
       color: #212529;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-      @include phone-xl {
-        left: -4vw;
-        top: 0.5vw;
-      }
-      @media (max-width: 370px) {
-        left: -1vw;
-      }
     }
   }
 
   #experience-company-logos {
     display: flex;
-    position: absolute;
-    top: var(--exp-ill-imgs-top);
-    left: var(--exp-ill-imgs-left);
+    position: relative;
+    top: 0.5vw;
+    left: calc(1vw + 15px);
+
+    @media (max-width: 370px) {
+      top: 2.5px;
+    }
 
     img {
-      height: auto;
-      width: var(--exp-ill-imgs-width);
+      width: calc(7vw + 20px);
+
       @include phone-xl {
-        position: relative;
-        min-width: none;
+        width: calc(10vw + 30px);
+      }
+      &:nth-child(2) {
+        margin-left: 0.5vw;
       }
     }
   }

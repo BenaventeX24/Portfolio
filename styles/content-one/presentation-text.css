@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #presentation-text {
     height: 100%;
     margin: 0;
@@ -17,12 +17,12 @@
   text-align: right;
   align-self: center;
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #presentation-text p {
     text-align: center;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #presentation-text #tech-word {
     font-weight: bold;
   }
