@@ -3,7 +3,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: calc(2.2vw + 40px);
+  margin-top: calc(1.8vw + 40px);
   width: 94vw;
   border-radius: 1vw;
   border: 0.5vw solid #212529;
@@ -14,12 +14,12 @@
   height: fit-content;
   padding: 1vw 0;
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #hero-section {
-    margin-top: 140px;
+    margin-top: 155px;
     padding: 5px;
     width: 92vw;
-    height: clamp(140px, 32vw + 3vh, 370px);
+    height: clamp(140px, 30vw + 3vh, 370px);
     border-radius: 15px;
     border: 1vw solid #212529;
   }
@@ -52,7 +52,7 @@
   grid-template-columns: 0.6fr 4px 1fr;
   place-items: center;
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #hero-section #hero-profile {
     grid-template-columns: 1fr;
   }
@@ -69,7 +69,7 @@
     width: 4px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #hero-section #hero-profile #separator-hero {
     display: none;
   }
@@ -88,7 +88,7 @@
   height: auto;
   width: clamp(10vw + 80px, 18vw, 240px);
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #hero-section #hero-profile #profile-image-container img {
     height: auto;
     width: clamp(10vw + 115px, 35vw, 240px);
@@ -111,7 +111,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #hero-section #hero-profile #profile-info-container {
     align-self: flex-end;
   }
@@ -146,14 +146,14 @@
   align-items: center;
   margin-top: calc(0.8vw + 12px);
 }
-@media (max-width: 560px) {
+@media (max-width: 530px) {
   #hero-section #hero-profile #profile-info-container #profile-contact-section {
     display: none;
   }
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section p {
   font-family: var(--ff-secondary);
-  font-size: calc(0.5vw + 0.8rem);
+  font-size: calc(0.8vw + 0.6rem);
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos {
   margin-top: 1vw;
