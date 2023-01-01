@@ -1,10 +1,18 @@
-@import "./_queries";
+@import "./_mixins";
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Ubuntu&display=swap");
 
 :root {
+  /* Generical Font Sizes */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.75rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.5rem;
+  --fs-lg-xl: 2rem;
+  --fs-xl: 2.5rem;
+
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
   --ff-terciary: "Nunito Sans";
@@ -18,6 +26,17 @@
 
   /*presentation text*/
   --pres-text-fs: 1.625rem;
+
+  /*Path*/
+  --path-intro-title: 2.875rem;
+  --path-box-width: 630px;
+  --path-box-height: 230px;
+
+  /*
+  --path-type-fs:
+  --path-title-fs:
+  --path-keypoints-fs:
+  */
 }
 
 @media (max-width: 1600px) {
@@ -27,26 +46,47 @@
 
     /*presentation text*/
     --pres-text-fs: 1.406rem;
+
+    /*Path*/
+    --path-box-width: 610px;
+  }
+}
+
+@media (max-width: 1400px) {
+  :root {
+    /* Generical Font Sizes */
+    /*--fs-xs: 0.75rem;
+    --fs-sm: 0.75rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.3rem;
+    --fs-lg-xl: 1.8rem;
+    --fs-xl: 2.5rem;*/
+
+    /*Path*/
+    --path-box-width: 480px;
   }
 }
 
 @media (max-width: 1200px) {
   :root {
-    /*experience illustration*/
-    --exp-ill-text: 1.9rem;
-
     /*presentation text*/
     --pres-text-fs: 1.25rem;
+
+    /*Path*/
   }
 }
 
 @media (max-width: 1000px) {
   :root {
-    /*experience illustration*/
-    --exp-ill-text: 1.75rem;
-
     /*presentation text*/
     --pres-text-fs: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    /*Path*/
+    --path-box-width: 410px;
   }
 }
 
@@ -89,12 +129,6 @@
     /*hero*/
     --hero-name-fs: clamp(0.5rem, 1.1rem + 2.5vw, 16rem);
     --hero-profession-fs: clamp(0.5rem, 1rem + 1.6vw, 8rem);
-
-    /*experience illustration*/
-    --exp-ill-text: 1.03rem;
-
-    /*presentation text*/
-    --pres-text-fs: 0.75rem;
   }
 }
 
@@ -103,12 +137,6 @@
     /*hero*/
     --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
     --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
-
-    /*experience illustration*/
-    --exp-ill-text: 1.3rem;
-
-    /*presentation text*/
-    --pres-text-fs: 1.125rem;
   }
 }
 
@@ -117,12 +145,6 @@
     /*hero*/
     --hero-name-fs: clamp(0.5rem, 1.2rem + 2.8vw, 2rem);
     --hero-profession-fs: clamp(0.5rem, 1rem + 1.2vw, 8rem);
-
-    /*experience illustration*/
-    --exp-ill-text: 1.1rem;
-
-    /*presentation text*/
-    --pres-text-fs: 0.875rem;
   }
 }
 

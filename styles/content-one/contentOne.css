@@ -8,15 +8,13 @@
   height: fit-content;
   padding-right: calc(1.8vw + 40px);
 }
-
 @media (max-width: 530px) {
-  #content-section {
+  #content-one {
     margin-top: 15px;
     padding: 0;
     grid-template-columns: 1fr;
   }
 }
-
 #content-one #separator-content {
   width: 4px;
   height: 50%;
@@ -24,10 +22,8 @@
   border-radius: 30px;
   margin-right: auto;
 }
-
 @media (max-width: 530px) {
-  #content-section #separator-content {
-
+  #content-one #separator-content {
     width: 18.5vw;
     height: 4px;
     margin: calc(2vh - 5px);

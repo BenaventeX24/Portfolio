@@ -12,31 +12,55 @@
 #presentation-text p {
   width: 100%;
   font-family: "Nunito Sans";
-  font-size: var(--pres-text-fs);
-  line-height: var(--pres-text-lh);
   text-align: right;
   align-self: center;
 }
+
+@media (min-width: 1921px) {
+  #presentation-text p {
+    font-size: 1.85rem;
+    line-height: 40px;
+  }
+}
+@media (max-width: 1920px) {
+  #presentation-text p {
+    font-size: 1.65rem;
+    line-height: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  #presentation-text p {
+    font-size: 1.3rem;
+    line-height: 25px;
+  }
+}
+@media (max-width: 768px) {
+  #presentation-text p {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
 @media (max-width: 530px) {
   #presentation-text p {
+    font-size: 0.85rem;
     text-align: center;
   }
 }
 @media (max-width: 530px) {
-  #presentation-text #tech-word {
+  #tech-word {
     font-weight: bold;
   }
-  #presentation-text #sports-word {
+  #sports-word {
     font-weight: bold;
   }
-  #presentation-text #professional-word {
+  #professional-word {
     font-weight: bold;
   }
-  #presentation-text #frontend-word {
+  #frontend-word {
     font-weight: bold;
     color: #0e0c7b;
   }
-  #presentation-text #design-studio-word {
+  #design-studio-word {
     font-weight: bold;
     color: #0e0c7b;
   }

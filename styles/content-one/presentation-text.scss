@@ -1,4 +1,4 @@
-@import "../../_queries";
+@import "../../mixins";
 
 #presentation-text {
   display: flex;
@@ -9,37 +9,67 @@
     margin: 0;
     padding: 0 4vw;
   }
+
   p {
     width: 100%;
     font-family: "Nunito Sans";
-    font-size: var(--pres-text-fs);
-    line-height: var(--pres-text-lh);
     text-align: right;
 
     align-self: center;
-
-    @include phone-xl {
-      text-align: center;
-    }
   }
+}
 
-  @include phone-xl {
-    #tech-word {
-      font-weight: bold;
-    }
-    #sports-word {
-      font-weight: bold;
-    }
-    #professional-word {
-      font-weight: bold;
-    }
-    #frontend-word {
-      font-weight: bold;
-      color: #0e0c7b;
-    }
-    #design-studio-word {
-      font-weight: bold;
-      color: #0e0c7b;
-    }
+@include desktop-xl {
+  #presentation-text p {
+    font-size: 1.85rem;
+    line-height: 40px;
+  }
+}
+
+@include desktop-lg {
+  #presentation-text p {
+    font-size: 1.65rem;
+    line-height: 35px;
+  }
+}
+
+@include desktop-sm {
+  #presentation-text p {
+    font-size: 1.3rem;
+    line-height: 25px;
+  }
+}
+
+@include tablet {
+  #presentation-text p {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+
+@include phone-xl {
+  #presentation-text p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
+@include phone-xl {
+  #tech-word {
+    font-weight: bold;
+  }
+  #sports-word {
+    font-weight: bold;
+  }
+  #professional-word {
+    font-weight: bold;
+  }
+  #frontend-word {
+    font-weight: bold;
+    color: #0e0c7b;
+  }
+  #design-studio-word {
+    font-weight: bold;
+    color: #0e0c7b;
   }
 }

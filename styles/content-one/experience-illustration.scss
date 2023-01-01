@@ -1,4 +1,4 @@
-@import "../../_queries";
+@import "../../_mixins";
 
 #experience {
   display: flex;
@@ -6,8 +6,8 @@
   img#numberOne {
     width: calc(3vw + 40px);
 
-    @media (max-width: 1200px) {
-      width: calc(4vw + 20px);
+    @include tablet {
+      width: calc(2.8vw + 30px);
     }
     @include phone-xl {
       width: 12vw;
@@ -25,7 +25,7 @@
 
       font-family: "Ubuntu";
       font-weight: 400;
-      font-size: var(--exp-ill-text);
+      //bfont-size: var(--exp-ill-text);
 
       color: #212529;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -36,21 +36,81 @@
     display: flex;
     position: relative;
     top: 0.5vw;
-    left: calc(1vw + 15px);
+    left: calc(1.25vw + 10px);
 
     @media (max-width: 370px) {
       top: 2.5px;
     }
 
     img {
-      width: calc(7vw + 20px);
+      width: calc(6vw + 20px);
 
       @include phone-xl {
         width: calc(10vw + 30px);
       }
+
       &:nth-child(2) {
         margin-left: 0.5vw;
       }
     }
+  }
+}
+
+/* ----------------- Desktop LG ----------------- */
+
+@include desktop-xl {
+  #experience-text p {
+    font-size: clamp(2.7rem, 1rem + 1.5vw, 10rem);
+  }
+}
+
+@include desktop-lg {
+  #experience-text p {
+    font-size: 2.6rem;
+  }
+}
+
+/* ----------------- Desktop SM ----------------- */
+
+@include desktop-sm {
+  #experience-text p {
+    font-size: 1.9rem;
+  }
+  img#numberOne {
+    width: calc(4vw + 20px);
+  }
+}
+
+@media (max-width: 830px) {
+  #experience-text p {
+    font-size: 1.62rem;
+  }
+}
+
+/* ----------------- Tablet ----------------- */
+
+@include tablet {
+  #experience-text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #experience-text p {
+    font-size: 1.1rem;
+  }
+}
+
+/* ----------------- Phone ----------------- */
+
+@include phone-xl /* (530px) */ {
+  #experience-text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 370px) {
+  #experience-text p {
+    font-size: 1.1rem;
   }
 }
