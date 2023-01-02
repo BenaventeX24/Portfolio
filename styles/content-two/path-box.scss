@@ -21,7 +21,7 @@
   display: flex;
   align-self: center;
 
-  padding: 0;
+  padding: 10px;
 
   margin: 40px 40px;
   position: relative;
@@ -58,6 +58,7 @@
   .path-content-container {
     width: 100%;
     display: flex;
+
     .path-image-container {
       width: 40%;
       padding-left: 5%;
@@ -71,6 +72,7 @@
         border-radius: 50%;
       }
     }
+
     .path-content {
       display: flex;
       justify-content: flex-start;
@@ -87,6 +89,7 @@
 
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
+
       .path-keypoints-list {
         padding-left: 12%;
 
@@ -265,6 +268,7 @@
     }
 
     .path-image-container {
+      padding-left: 10px !important;
       img {
         width: 90px;
       }
@@ -282,14 +286,52 @@
 
 @include phone-xl {
   #internships.path {
-    padding: 22px;
+    width: 100%;
+    gap: 50px;
   }
+
   .path-box {
-    width: 360px;
-    height: 170px;
+    width: 340px;
+    height: 155px;
 
     .path-box-type {
-      font-size: 1.65rem;
+      font-size: 1.4rem;
+      h3 {
+        top: -25px;
+      }
+    }
+
+    .path-title {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .path-box {
+    width: 300px;
+    height: 145px;
+
+    .path-box-type {
+      font-size: 1.35rem;
+      h3 {
+        top: -25px;
+      }
+    }
+
+    .path-image-container {
+      padding-left: 5px !important;
+      img {
+        width: 80px;
+      }
+    }
+
+    .path-title {
+      font-size: 1.35rem;
+    }
+
+    .path-keypoints-list {
+      font-size: 0.95rem;
     }
   }
 }

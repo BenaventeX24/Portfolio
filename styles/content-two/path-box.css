@@ -16,7 +16,7 @@
 .path-box {
   display: flex;
   align-self: center;
-  padding: 0;
+  padding: 10px;
   margin: 40px 40px;
   position: relative;
   border: 2px solid black;
@@ -201,6 +201,9 @@
   .path-box .path-box-type {
     font-size: 1.6rem;
   }
+  .path-box .path-image-container {
+    padding-left: 10px !important;
+  }
   .path-box .path-image-container img {
     width: 90px;
   }
@@ -213,13 +216,44 @@
 }
 @media (max-width: 530px) {
   #internships.path {
-    padding: 22px;
+    width: 100%;
+    gap: 50px;
   }
   .path-box {
-    width: 360px;
-    height: 170px;
+    width: 340px;
+    height: 155px;
   }
   .path-box .path-box-type {
-    font-size: 1.65rem;
+    font-size: 1.4rem;
+  }
+  .path-box .path-box-type h3 {
+    top: -25px;
+  }
+  .path-box .path-title {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 380px) {
+  .path-box {
+    width: 300px;
+    height: 145px;
+  }
+  .path-box .path-box-type {
+    font-size: 1.35rem;
+  }
+  .path-box .path-box-type h3 {
+    top: -25px;
+  }
+  .path-box .path-image-container {
+    padding-left: 5px !important;
+  }
+  .path-box .path-image-container img {
+    width: 80px;
+  }
+  .path-box .path-title {
+    font-size: 1.35rem;
+  }
+  .path-box .path-keypoints-list {
+    font-size: 0.95rem;
   }
 }/*# sourceMappingURL=path-box.css.map */

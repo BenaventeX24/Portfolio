@@ -3,6 +3,8 @@
 #experience {
   display: flex;
 
+  margin-top: 15px;
+
   #experience-text {
     display: grid;
     grid-template-columns: 1fr;
@@ -15,7 +17,6 @@
 
       font-family: "Ubuntu";
       font-weight: 400;
-      //bfont-size: var(--exp-ill-text);
 
       color: #212529;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -25,19 +26,8 @@
   #experience-company-logos {
     display: flex;
     position: relative;
-    //top: 0.5vw;
-
-    @media (max-width: 370px) {
-      top: 2.5px;
-    }
 
     img {
-      //width: calc(6vw + 20px);
-
-      @include phone-xl {
-        width: calc(10vw + 30px);
-      }
-
       &:nth-child(2) {
         margin-left: 0.6vw;
       }
@@ -48,8 +38,21 @@
 /* ----------------- Desktop LG ----------------- */
 
 @include desktop-xl {
+  img#numberOne {
+    width: calc(2.2vw + 80px);
+    max-width: 150px;
+  }
   #experience-text p {
-    font-size: clamp(2.7rem, 1rem + 1.5vw, 10rem);
+    font-size: 3.5rem;
+  }
+  #experience-company-logos {
+    top: 0.5vw;
+    left: 0.8vw;
+
+    img {
+      width: calc(5vw + 80px);
+      max-width: 190px;
+    }
   }
 }
 
@@ -145,13 +148,43 @@
 /* ----------------- Phone ----------------- */
 
 @include phone-xl /* (530px) */ {
+  #experience {
+    margin-top: 5px;
+  }
+
+  img#numberOne {
+    width: 60px;
+  }
   #experience-text p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+  #experience-company-logos {
+    top: -4px;
+    left: 24px;
+
+    img {
+      width: 85px;
+    }
   }
 }
 
 @media (max-width: 370px) {
+  #experience {
+    margin-top: 5px;
+  }
+
+  img#numberOne {
+    width: 50px;
+  }
   #experience-text p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+  }
+  #experience-company-logos {
+    top: 0px;
+    left: 24px;
+
+    img {
+      width: 75px;
+    }
   }
 }

@@ -16,10 +16,10 @@
 }
 @media (max-width: 530px) {
   #hero-section {
-    margin-top: 155px;
+    margin-top: 150px;
     padding: 5px;
     width: 92vw;
-    height: clamp(140px, 30vw + 3vh, 370px);
+    height: clamp(160px, 17vw + 100px, 300px);
     border-radius: 15px;
     border: 1vw solid #212529;
   }
@@ -91,7 +91,7 @@
 @media (max-width: 530px) {
   #hero-section #hero-profile #profile-image-container img {
     height: auto;
-    width: clamp(10vw + 115px, 35vw, 240px);
+    width: clamp(165px, 12vw + 120px, 300px);
     position: absolute;
     top: -95px;
     left: 0;
@@ -102,7 +102,7 @@
 @media (max-width: 370px) {
   #hero-section #hero-profile #profile-image-container img {
     top: -70px;
-    width: clamp(140px, 38vw, 210px);
+    width: clamp(140px, 12.5vw + 100px, 210px);
   }
 }
 #hero-section #hero-profile #profile-info-container {

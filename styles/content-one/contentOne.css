@@ -2,12 +2,11 @@
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   place-items: center;
-  margin-top: 2vh;
+  margin-top: 15px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding-right: calc(1.8vw + 40px);
-  margin-bottom: calc(3.5vw + 20px);
 }
 @media (max-width: 530px) {
   #content-one {
@@ -18,15 +17,22 @@
 }
 #content-one #separator-content {
   width: 4px;
-  height: 50%;
+  height: 40%;
   background: rgba(0, 150, 150, 0.7);
   border-radius: 30px;
   margin-right: auto;
 }
+@media (max-width: 768px) {
+  #content-one #separator-content {
+    width: 3px;
+    height: 40%;
+    margin-left: 5px;
+  }
+}
 @media (max-width: 530px) {
   #content-one #separator-content {
-    width: 18.5vw;
+    width: 19vw;
     height: 4px;
-    margin: calc(2vh - 5px);
+    margin: 20px;
   }
 }/*# sourceMappingURL=contentOne.css.map */

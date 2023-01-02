@@ -1,5 +1,6 @@
 #experience {
   display: flex;
+  margin-top: 15px;
 }
 #experience #experience-text {
   display: grid;
@@ -19,24 +20,26 @@
   display: flex;
   position: relative;
 }
-@media (max-width: 370px) {
-  #experience #experience-company-logos {
-    top: 2.5px;
-  }
-}
-@media (max-width: 530px) {
-  #experience #experience-company-logos img {
-    width: calc(10vw + 30px);
-  }
-}
 #experience #experience-company-logos img:nth-child(2) {
   margin-left: 0.6vw;
 }
 
 /* ----------------- Desktop LG ----------------- */
 @media (min-width: 1921px) {
+  img#numberOne {
+    width: calc(2.2vw + 80px);
+    max-width: 150px;
+  }
   #experience-text p {
-    font-size: clamp(2.7rem, 1rem + 1.5vw, 10rem);
+    font-size: 3.5rem;
+  }
+  #experience-company-logos {
+    top: 0.5vw;
+    left: 0.8vw;
+  }
+  #experience-company-logos img {
+    width: calc(5vw + 80px);
+    max-width: 190px;
   }
 }
 @media (max-width: 1920px) {
@@ -118,12 +121,38 @@
 }
 /* ----------------- Phone ----------------- */
 @media (max-width: 530px) {
+  #experience {
+    margin-top: 5px;
+  }
+  img#numberOne {
+    width: 60px;
+  }
   #experience-text p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+  #experience-company-logos {
+    top: -4px;
+    left: 24px;
+  }
+  #experience-company-logos img {
+    width: 85px;
   }
 }
 @media (max-width: 370px) {
+  #experience {
+    margin-top: 5px;
+  }
+  img#numberOne {
+    width: 50px;
+  }
   #experience-text p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+  }
+  #experience-company-logos {
+    top: 0px;
+    left: 24px;
+  }
+  #experience-company-logos img {
+    width: 75px;
   }
 }/*# sourceMappingURL=experience-illustration.css.map */
