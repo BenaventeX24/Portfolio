@@ -11,7 +11,7 @@
 }
 
 @mixin desktop-sm {
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     @content;
   }
 }

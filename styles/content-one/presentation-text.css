@@ -28,7 +28,7 @@
     line-height: 35px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   #presentation-text p {
     font-size: 1.3rem;
     line-height: 25px;
@@ -37,6 +37,12 @@
 @media (max-width: 768px) {
   #presentation-text p {
     font-size: 1rem;
+    line-height: 20px;
+  }
+}
+@media (max-width: 650px) {
+  #presentation-text p {
+    font-size: 0.85rem;
     line-height: 20px;
   }
 }

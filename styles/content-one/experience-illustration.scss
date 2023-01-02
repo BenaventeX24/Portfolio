@@ -3,16 +3,6 @@
 #experience {
   display: flex;
 
-  img#numberOne {
-    width: calc(3vw + 40px);
-
-    @include tablet {
-      width: calc(2.8vw + 30px);
-    }
-    @include phone-xl {
-      width: 12vw;
-    }
-  }
   #experience-text {
     display: grid;
     grid-template-columns: 1fr;
@@ -35,22 +25,21 @@
   #experience-company-logos {
     display: flex;
     position: relative;
-    top: 0.5vw;
-    left: calc(1.25vw + 10px);
+    //top: 0.5vw;
 
     @media (max-width: 370px) {
       top: 2.5px;
     }
 
     img {
-      width: calc(6vw + 20px);
+      //width: calc(6vw + 20px);
 
       @include phone-xl {
         width: calc(10vw + 30px);
       }
 
       &:nth-child(2) {
-        margin-left: 0.5vw;
+        margin-left: 0.6vw;
       }
     }
   }
@@ -65,39 +54,91 @@
 }
 
 @include desktop-lg {
+  img#numberOne {
+    width: 80px;
+  }
   #experience-text p {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+  }
+  #experience-company-logos {
+    top: 5px;
+    left: 28px;
+
+    img {
+      width: 120px;
+    }
   }
 }
 
 /* ----------------- Desktop SM ----------------- */
 
 @include desktop-sm {
-  #experience-text p {
-    font-size: 1.9rem;
-  }
   img#numberOne {
-    width: calc(4vw + 20px);
+    width: 70px;
+  }
+  #experience-text p {
+    font-size: 1.8rem;
+  }
+  #experience-company-logos {
+    top: 5px;
+    left: 25px;
+
+    img {
+      width: 100px;
+    }
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 880px) {
+  img#numberOne {
+    width: 60px;
+  }
   #experience-text p {
-    font-size: 1.62rem;
+    font-size: 1.65rem;
+  }
+  #experience-company-logos {
+    top: 0px;
+    left: 24px;
+
+    img {
+      width: 85px;
+    }
   }
 }
 
 /* ----------------- Tablet ----------------- */
 
 @include tablet {
+  img#numberOne {
+    width: 45px;
+  }
   #experience-text p {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+  }
+  #experience-company-logos {
+    top: 0px;
+    left: 20px;
+
+    img {
+      width: 65px;
+    }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
+  img#numberOne {
+    width: 40px;
+  }
   #experience-text p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+  }
+  #experience-company-logos {
+    top: 0px;
+    left: 20px;
+
+    img {
+      width: 60px;
+    }
   }
 }
 

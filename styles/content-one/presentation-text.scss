@@ -47,6 +47,13 @@
   }
 }
 
+@media (max-width: 650px) {
+  #presentation-text p {
+    font-size: 0.85rem;
+    line-height: 20px;
+  }
+}
+
 @include phone-xl {
   #presentation-text p {
     font-size: 0.85rem;
