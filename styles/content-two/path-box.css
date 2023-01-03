@@ -1,7 +1,18 @@
+.scroll-right-message {
+  display: inline-block;
+  font-family: "Montserrat";
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .path {
   display: flex;
 }
-.path#internships #scroll-message {
+.path#internships .scroll-right-message {
   display: none;
 }
 .path .path-box-line {
@@ -214,18 +225,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
-  #internships.path #scroll-message {
+  #internships.path .scroll-right-message {
     display: inline-block;
-    font-family: "Montserrat";
     position: absolute;
     top: -21px;
     right: 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
   #internships.path .path-box {
     margin: 0;

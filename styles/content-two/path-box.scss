@@ -1,9 +1,16 @@
 @import "../../_mixins";
 
+.scroll-right-message {
+  display: inline-block;
+  font-family: "Montserrat";
+  width: fit-content;
+  height: fit-content;
+}
+
 .path {
   display: flex;
   &#internships {
-    #scroll-message {
+    .scroll-right-message {
       display: none;
     }
   }
@@ -274,14 +281,11 @@
 
 @media (max-width: 720px) {
   #internships.path {
-    #scroll-message {
+    .scroll-right-message {
       display: inline-block;
-      font-family: "Montserrat";
       position: absolute;
       top: -21px;
       right: 0;
-      width: fit-content;
-      height: fit-content;
     }
     padding: 18px;
 
