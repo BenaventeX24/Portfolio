@@ -82,14 +82,14 @@
 
 @include tablet {
   .main-navbar {
-    height: 39px;
+    height: 40px;
     width: 96.5vw;
   }
 }
 
 @include phone-xl {
   .main-navbar {
-    height: 40px;
+    height: 44px;
     width: 96vw;
     border-radius: 0 0 20px 20px;
   }

@@ -67,13 +67,13 @@
 }
 @media (max-width: 768px) {
   .main-navbar {
-    height: 39px;
+    height: 40px;
     width: 96.5vw;
   }
 }
 @media (max-width: 530px) {
   .main-navbar {
-    height: 40px;
+    height: 44px;
     width: 96vw;
     border-radius: 0 0 20px 20px;
   }

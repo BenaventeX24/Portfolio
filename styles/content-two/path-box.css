@@ -1,6 +1,9 @@
 .path {
   display: flex;
 }
+.path#internships #scroll-message {
+  display: none;
+}
 .path .path-box-line {
   display: flex;
   align-self: center;
@@ -181,14 +184,47 @@
   }
 }
 /* ----------------- Phone ----------------- */
+/* -------- Scrollbar No Firefox Support -------- */
+#internships.path::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+#internships.path::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: linear-gradient(left, #212121, #323232);
+  box-shadow: 0 0 1px 1px #111;
+}
+#internships.path::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #4a4a4a, #404040);
+  box-shadow: inset 0 0 1px 1px #191919;
+}
+#internships.path::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(left, #555555, #4e4e4e);
+}
+
+/* -------- Scrollbar -------- */
 @media (max-width: 720px) {
   #internships.path {
-    width: 100%;
     padding: 18px;
     overflow-x: scroll;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+  }
+  #internships.path #scroll-message {
+    display: inline-block;
+    font-family: "Montserrat";
+    position: absolute;
+    top: -21px;
+    right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #internships.path .path-box {
     margin: 0;
