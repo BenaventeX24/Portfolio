@@ -119,7 +119,7 @@
 #hero-section #hero-profile #profile-info-container h1 {
   text-align: center;
   font-family: var(--ff-primary);
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--hero-name-fs);
   color: #000000;
   text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);

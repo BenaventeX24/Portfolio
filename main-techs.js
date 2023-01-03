@@ -22,6 +22,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('[data-bs-toggle="popover"]').popover({
     placement: "top",
-    delay: { show: 100, hide: 200 },
+    delay: { show: 10, hide: 200 },
   });
 });
