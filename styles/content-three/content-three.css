@@ -1,0 +1,10 @@
+#content-three {
+  display: flex;
+}
+#content-three > h2 {
+  margin: 10px 0 20px 20px;
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=content-three.css.map */
