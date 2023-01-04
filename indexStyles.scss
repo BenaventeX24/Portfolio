@@ -1,9 +1,5 @@
 @import "./_mixins";
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Ubuntu&display=swap");
-
 :root {
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
@@ -13,6 +9,31 @@
   --hero-name-fs: clamp(0.5rem, 1.3rem + 2.5vw, 16rem);
   --hero-profession-fs: clamp(0.5rem, 1.2rem + 1.5vw, 8rem);
 }
+
+/* -------- Scrollbar No Firefox Support -------- */
+
+#internships.path,
+#technologies-list {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: linear-gradient(left, #212121, #323232);
+    box-shadow: 0 0 1px 1px #111;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(left, #4a4a4a, #404040);
+    box-shadow: inset 0 0 1px 1px #191919;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(left, #555555, #4e4e4e);
+  }
+}
+
+/* -------- Scrollbar -------- */
 
 @media (max-width: 600px) {
   :root {

@@ -1,3 +1,5 @@
+@import "../../_mixins";
+
 #technologies-list {
   width: 95%;
   border: 2px solid black;
@@ -13,5 +15,21 @@
     height: 100px;
     margin: 0 5px;
     width: auto;
+  }
+}
+
+@include tablet {
+  #technologies-list {
+    img {
+      height: 80px;
+    }
+  }
+}
+
+@include phone-xl {
+  #technologies-list {
+    img {
+      height: 70px;
+    }
   }
 }

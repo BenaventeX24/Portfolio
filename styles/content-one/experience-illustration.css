@@ -1,6 +1,5 @@
 #experience {
   display: flex;
-  margin-top: 15px;
 }
 #experience #experience-text {
   display: grid;
@@ -9,7 +8,6 @@
 }
 #experience #experience-text p {
   position: relative;
-  top: 0.5vw;
   margin-left: 8px;
   font-family: "Ubuntu";
   font-weight: 400;
@@ -34,7 +32,7 @@
     font-size: 3.5rem;
   }
   #experience-company-logos {
-    top: 0.5vw;
+    top: -10px;
     left: 0.8vw;
   }
   #experience-company-logos img {
@@ -50,8 +48,8 @@
     font-size: 2.2rem;
   }
   #experience-company-logos {
-    top: 5px;
-    left: 28px;
+    top: -10px;
+    left: 26px;
   }
   #experience-company-logos img {
     width: 120px;
@@ -66,8 +64,7 @@
     font-size: 1.8rem;
   }
   #experience-company-logos {
-    top: 5px;
-    left: 25px;
+    left: 24px;
   }
   #experience-company-logos img {
     width: 100px;
@@ -81,7 +78,6 @@
     font-size: 1.65rem;
   }
   #experience-company-logos {
-    top: 0px;
     left: 24px;
   }
   #experience-company-logos img {
@@ -97,7 +93,6 @@
     font-size: 1.35rem;
   }
   #experience-company-logos {
-    top: 0px;
     left: 20px;
   }
   #experience-company-logos img {
@@ -112,7 +107,6 @@
     font-size: 1.15rem;
   }
   #experience-company-logos {
-    top: 0px;
     left: 20px;
   }
   #experience-company-logos img {
@@ -131,8 +125,8 @@
     font-size: 1.5rem;
   }
   #experience-company-logos {
-    top: -4px;
-    left: 24px;
+    top: -10px;
+    left: 22px;
   }
   #experience-company-logos img {
     width: 85px;
@@ -149,8 +143,7 @@
     font-size: 1.4rem;
   }
   #experience-company-logos {
-    top: 0px;
-    left: 24px;
+    left: 22px;
   }
   #experience-company-logos img {
     width: 75px;
