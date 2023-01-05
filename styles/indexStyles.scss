@@ -4,10 +4,6 @@
   --ff-primary: "Montserrat";
   --ff-secondary: "Ubuntu";
   --ff-terciary: "Nunito Sans";
-
-  /*hero*/
-  --hero-name-fs: clamp(0.5rem, 1.3rem + 2.5vw, 16rem);
-  --hero-profession-fs: clamp(0.5rem, 1.2rem + 1.5vw, 8rem);
 }
 
 /* -------- Scrollbar No Firefox Support -------- */
@@ -35,33 +31,9 @@
 
 /* -------- Scrollbar -------- */
 
-@media (max-width: 600px) {
-  :root {
-    /*hero*/
-    --hero-name-fs: clamp(0.5rem, 1.1rem + 2.5vw, 16rem);
-    --hero-profession-fs: clamp(0.5rem, 1rem + 1.6vw, 8rem);
-  }
-}
-
-@include phone-xl /* (530px) */ {
-  :root {
-    /*hero*/
-    --hero-name-fs: clamp(0.5rem, 1.5rem + 2.8vw, 8rem);
-    --hero-profession-fs: clamp(0.5rem, 1.3rem + 1.5vw, 8rem);
-  }
-}
-
-@media (max-width: 370px) {
-  :root {
-    /*hero*/
-    --hero-name-fs: clamp(0.5rem, 1.2rem + 2.8vw, 2rem);
-    --hero-profession-fs: clamp(0.5rem, 1rem + 1.2vw, 8rem);
-  }
-}
-
 body {
   background-color: #f9f9f9;
-  padding: 0 50px;
+  padding: 0 8%;
 
   @include tablet {
     padding: 0;

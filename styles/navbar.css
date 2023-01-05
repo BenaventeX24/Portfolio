@@ -21,7 +21,7 @@
   width: calc(2.2vw + 30px);
   height: auto;
 }
-@media (max-width: 530px) {
+@media (max-width: 510px) {
   .main-navbar #nav-logo img {
     width: calc(3.5vw + 32px);
   }
@@ -38,7 +38,7 @@
   margin-bottom: 0.25vw;
   color: #ffffff;
 }
-@media (max-width: 530px) {
+@media (max-width: 510px) {
   .main-navbar a.navbar-element {
     font-size: calc(1vw + 16px);
     text-decoration: none;
@@ -70,7 +70,7 @@
     width: 96.5vw;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 510px) {
   .main-navbar {
     height: 44px;
     width: 96vw;

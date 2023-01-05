@@ -7,8 +7,9 @@
 
   @include phone-xl {
     height: 100%;
+    width: 100%;
     margin: 0;
-    padding: 0 4vw;
+    padding: 0;
   }
 
   p {
@@ -45,6 +46,13 @@
   }
 }
 
+@media (max-width: 900px) {
+  #presentation-text p {
+    font-size: 1.1rem;
+    line-height: 24px;
+  }
+}
+
 @include tablet {
   #presentation-text p {
     font-size: 1rem;
@@ -60,9 +68,13 @@
 }
 
 @include phone-xl {
-  #presentation-text p {
-    font-size: 1rem;
-    text-align: center;
+  #presentation-text {
+    margin-right: 0;
+    padding: 0 15px;
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
   }
 }
 

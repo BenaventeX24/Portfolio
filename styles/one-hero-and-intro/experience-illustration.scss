@@ -1,4 +1,4 @@
-@import "../../_mixins";
+@import "../_mixins";
 
 #experience {
   display: flex;
@@ -35,17 +35,17 @@
 
 /* ----------------- Desktop LG ----------------- */
 
-@include desktop-xl {
+@media (min-width: 2000px) {
   img#numberOne {
-    width: calc(2.2vw + 80px);
+    width: calc(2vw + 60px);
     max-width: 150px;
   }
   #experience-text p {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
   #experience-company-logos {
-    top: -10px;
-    left: 0.8vw;
+    top: -5px;
+    left: 0.9vw;
 
     img {
       width: calc(5vw + 80px);
@@ -53,6 +53,25 @@
     }
   }
 }
+
+@media (min-width: 1920px) {
+  img#numberOne {
+    width: 80px;
+  }
+  #experience-text p {
+    font-size: 2.2rem;
+  }
+  #experience-company-logos {
+    top: -10px;
+    left: 26px;
+
+    img {
+      width: 120px;
+    }
+  }
+}
+
+/* ----------------- Desktop LG ----------------- */
 
 @include desktop-lg {
   img#numberOne {
@@ -71,17 +90,16 @@
   }
 }
 
-/* ----------------- Desktop SM ----------------- */
-
-@include desktop-sm {
+@media (max-width: 1550px) {
   img#numberOne {
     width: 70px;
   }
   #experience-text p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   #experience-company-logos {
-    left: 24px;
+    top: -10px;
+    left: 28px;
 
     img {
       width: 100px;
@@ -89,15 +107,17 @@
   }
 }
 
-@media (max-width: 880px) {
+/* ----------------- Desktop SM ----------------- */
+
+@include desktop-sm {
   img#numberOne {
-    width: 60px;
+    width: 55px;
   }
   #experience-text p {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
   #experience-company-logos {
-    left: 24px;
+    left: 23px;
 
     img {
       width: 85px;
@@ -105,9 +125,29 @@
   }
 }
 
+@media (max-width: 880px) {
+  img#numberOne {
+    width: 45px;
+  }
+  #experience-text p {
+    font-size: 1.4rem;
+  }
+  #experience-company-logos {
+    left: 23px;
+
+    img {
+      width: 75px;
+    }
+  }
+}
+
 /* ----------------- Tablet ----------------- */
 
 @include tablet {
+  #experience {
+    margin-left: 30px;
+    width: 250px;
+  }
   img#numberOne {
     width: 45px;
   }
@@ -124,24 +164,34 @@
 }
 
 @media (max-width: 620px) {
+  #experience {
+    margin-left: 20px;
+    width: 210px;
+  }
+
   img#numberOne {
-    width: 40px;
+    width: 38px;
   }
   #experience-text p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   #experience-company-logos {
-    left: 20px;
+    left: 23px;
 
     img {
-      width: 60px;
+      width: 55px;
     }
   }
 }
 
 /* ----------------- Phone ----------------- */
 
-@include phone-xl /* (530px) */ {
+@include phone-xl /* (510px) */ {
+  #experience {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
   #experience {
     margin-top: 5px;
   }

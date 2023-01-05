@@ -20,7 +20,7 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 510px) {
   #facts-section {
     margin-top: 20px;
   }

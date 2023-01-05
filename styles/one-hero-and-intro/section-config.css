@@ -1,14 +1,15 @@
 #experience-and-presentation {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
+  gap: 10px;
   place-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding-right: calc(1.8vw + 40px);
 }
-@media (max-width: 530px) {
+@media (max-width: 510px) {
   #experience-and-presentation {
     margin-top: 15px;
     padding: 0;
@@ -29,7 +30,7 @@
     margin-left: 5px;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 510px) {
   #experience-and-presentation #separator-content {
     width: 19vw;
     height: 4px;

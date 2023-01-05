@@ -3,9 +3,10 @@
 #experience-and-presentation {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
+  gap: 10px;
   place-items: center;
 
-  margin-top: 30px;
+  margin-top: 20px;
   height: fit-content;
 
   padding-right: calc(1.8vw + 40px);
