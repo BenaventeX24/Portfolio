@@ -61,6 +61,11 @@
 
 body {
   background-color: #f9f9f9;
+  padding: 0 50px;
+
+  @include tablet {
+    padding: 0;
+  }
   & * {
     margin: 0;
     box-sizing: border-box;

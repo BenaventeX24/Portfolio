@@ -4,7 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   margin-top: calc(1.8vw + 40px);
-  width: 94vw;
+  width: 94%;
   border-radius: 1vw;
   border: 0.5vw solid #212529;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));

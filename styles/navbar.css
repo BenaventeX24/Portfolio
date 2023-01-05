@@ -6,7 +6,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 97.5vw;
+  width: 95%;
   height: clamp(36px, 32px + 0.85vw, 180px);
   z-index: 999;
   background-color: #212529;

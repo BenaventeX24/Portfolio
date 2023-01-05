@@ -1,32 +1,30 @@
-@import "../../_mixins";
+@import "../_mixins";
 
-#content-three {
+#main-tech-list {
   margin-top: 30px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  padding: 0 30px;
+
   #content-intro {
     align-self: flex-start;
     margin-left: 3.2vw;
-
-    p {
-      margin-left: 12px;
-    }
   }
 
   h2 {
     font-family: var(--ff-secondary);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   }
 }
 
 @include desktop-sm {
-  #content-three {
+  #main-tech-list {
     margin-top: 20px;
 
     p {
@@ -36,7 +34,7 @@
 }
 
 @include tablet {
-  #content-three {
+  #main-tech-list {
     margin-top: 20px;
 
     h2 {

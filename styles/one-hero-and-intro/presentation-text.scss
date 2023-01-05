@@ -1,58 +1,72 @@
+@import "../mixins";
+
 #presentation-text {
   display: flex;
   width: 100%;
-}
-@media (max-width: 530px) {
-  #presentation-text {
+  padding-right: 20px;
+
+  @include phone-xl {
     height: 100%;
     margin: 0;
     padding: 0 4vw;
   }
-}
-#presentation-text p {
-  width: 100%;
-  font-family: "Nunito Sans";
-  text-align: right;
-  align-self: center;
+
+  p {
+    width: 100%;
+    font-family: "Nunito Sans";
+    text-align: right;
+
+    align-self: flex-start;
+  }
 }
 
-@media (min-width: 1921px) {
+@include desktop-xl {
   #presentation-text p {
     font-size: 1.85rem;
     line-height: 40px;
   }
 }
-@media (max-width: 1920px) {
+
+@include desktop-lg {
   #presentation-text p {
     font-size: 1.65rem;
     line-height: 35px;
   }
 }
-@media (max-width: 1280px) {
+
+@include desktop-sm {
+  #presentation-text {
+    padding: 0;
+    margin-right: -30px;
+  }
   #presentation-text p {
     font-size: 1.3rem;
     line-height: 25px;
   }
 }
-@media (max-width: 768px) {
+
+@include tablet {
   #presentation-text p {
     font-size: 1rem;
     line-height: 20px;
   }
 }
+
 @media (max-width: 650px) {
   #presentation-text p {
     font-size: 0.9rem;
     line-height: 20px;
   }
 }
-@media (max-width: 530px) {
+
+@include phone-xl {
   #presentation-text p {
     font-size: 1rem;
     text-align: center;
   }
 }
-@media (max-width: 530px) {
+
+@include phone-xl {
   #tech-word {
     font-weight: bold;
   }
@@ -70,4 +84,4 @@
     font-weight: bold;
     color: #0e0c7b;
   }
-}/*# sourceMappingURL=presentation-text.css.map */
+}

@@ -11,20 +11,31 @@
       rel="stylesheet"
     />
 
-    <link href="./indexStyles.css" rel="stylesheet" />
-    <link href="./styles/hero_background.css" rel="stylesheet" />
+    <link href="./styles/indexStyles.css" rel="stylesheet" />
     <link href="./styles/navbar.css" rel="stylesheet" />
-    <link href="./styles/hero.css" rel="stylesheet" />
-    <link href="./styles/content-one/contentOne.css" rel="stylesheet" />
+    <link href="./styles/one-hero-and-intro/hero.css" rel="stylesheet" />
     <link
-      href="./styles/content-one/experience-illustration.css"
+      href="./styles/one-hero-and-intro/hero_background.css"
       rel="stylesheet"
     />
-    <link href="./styles/content-one/presentation-text.css" rel="stylesheet" />
-    <link href="./styles/content-two/path-box.css" rel="stylesheet" />
-    <link href="./styles/content-two/content-two.css" rel="stylesheet" />
-    <link href="./styles/content-three/content-three.css" rel="stylesheet" />
-    <link href="./styles/content-three/techs-list.css" rel="stylesheet" />
+    <link
+      href="./styles/one-hero-and-intro/section-config.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./styles/one-hero-and-intro/experience-illustration.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./styles/one-hero-and-intro/presentation-text.css"
+      rel="stylesheet"
+    />
+    <link href="./styles/two-path/section-config.css" rel="stylesheet" />
+    <link href="./styles/two-path/path-box.css" rel="stylesheet" />
+    <link href="./styles/three-tech-list/section-config.css" rel="stylesheet" />
+    <link href="./styles/three-tech-list/techs-list.css" rel="stylesheet" />
+    <link href="./styles/four-facts/section-config.css" rel="stylesheet" />
+    <link href="./styles/four-facts/facts.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -42,9 +53,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./logos-array.js"></script>
-    <script src="./main-techs.js"></script>
-    <script src="./hero-background.js"></script>
+    <script src="./scripts/logos-array.js"></script>
+    <script src="./scripts/main-techs.js"></script>
+    <script src="./scripts/hero-background.js"></script>
     <title>Matías Benavente Blog</title>
   </head>
   <body>
@@ -80,7 +91,7 @@
       <div id="hero-background"></div>
     </section>
 
-    <section id="content-one">
+    <section id="experience-and-presentation">
       <div id="experience">
         <img id="numberOne" src="./media/1.svg" />
         <div id="experience-text">
@@ -104,7 +115,7 @@
         </p>
       </div>
     </section>
-    <section id="content-two">
+    <section id="path-section">
       <h2>My path</h2>
       <div class="path" id="studies">
         <div class="path-box-line"></div>
@@ -165,12 +176,52 @@
         </div>
       </div>
     </section>
-    <section id="content-three">
+    <section id="main-tech-list">
       <div id="content-intro">
         <h2>Main technologies</h2>
         <p class="scroll-right-message">Scrollable list →</p>
       </div>
       <div id="technologies-list"></div>
+    </section>
+    <section id="facts-section">
+      <h2>Facts about me</h2>
+      <div id="facts-list">
+        <div class="fact">
+          <video
+            src="./media/Basketball.mp4"
+            autoplay
+            loop
+            muted
+            inline
+          ></video>
+          <p>Basketball player and 2018 3rd division champ</p>
+        </div>
+        <div class="fact">
+          <video src="./media/Website.mp4 " autoplay loop muted inline></video>
+          <p>
+            Fully committed to Frontend, great results leading the backend and
+            project management though.
+          </p>
+        </div>
+        <div class="fact">
+          <video
+            src="./media/Programming.mp4 "
+            autoplay
+            loop
+            muted
+            inline
+          ></video>
+          <p>First job experience in a tech company at 17 years old</p>
+        </div>
+
+        <div class="fact">
+          <video src="./media/Crypto.mp4 " autoplay loop muted inline></video>
+          <p>
+            My recently top increasing interests are crypto and open source
+            projects
+          </p>
+        </div>
+      </div>
     </section>
   </body>
 </html>

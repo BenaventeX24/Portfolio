@@ -1,26 +1,25 @@
-@import "../../_mixins";
+@import "../_mixins";
 
-#content-two {
-  margin-top: calc(2vw + 40px);
+#path-section {
+  margin-top: 45px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   & > h2 {
-    align-self: center;
     margin-bottom: 40px;
 
     font-family: var(--ff-secondary);
     font-weight: 400;
-    font-size: 2.875rem;
+    font-size: 2.4rem;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
 @include desktop-xl {
-  #content-two {
+  #path-section {
     & > h2 {
       font-size: 3rem;
     }
@@ -28,7 +27,7 @@
 }
 
 @media (max-width: 1080px) {
-  #content-two {
+  #path-section {
     & > h2 {
       font-size: 2.2rem;
     }
@@ -36,7 +35,7 @@
 }
 
 @include tablet {
-  #content-two {
+  #path-section {
     margin-top: 40px;
     & > h2 {
       font-size: 2rem;
