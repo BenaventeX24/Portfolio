@@ -32,8 +32,8 @@
 }
 @media (max-width: 510px) {
   #experience-and-presentation #separator-content {
-    width: 19vw;
+    width: 20vw;
     height: 4px;
-    margin: 20px;
+    margin: 15px;
   }
 }/*# sourceMappingURL=section-config.css.map */

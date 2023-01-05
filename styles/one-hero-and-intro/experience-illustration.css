@@ -136,7 +136,7 @@
 }
 @media (max-width: 620px) {
   #experience {
-    margin-left: 20px;
+    margin-left: 25px;
     width: 210px;
   }
   img#numberOne {
@@ -158,12 +158,13 @@
     margin-left: 0;
     width: 100%;
     justify-content: center;
+    margin-left: -10px;
   }
   #experience {
     margin-top: 5px;
   }
   img#numberOne {
-    width: 60px;
+    width: 55px;
   }
   #experience-text p {
     font-size: 1.5rem;

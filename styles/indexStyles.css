@@ -30,7 +30,7 @@
 /* -------- Scrollbar -------- */
 body {
   background-color: #f9f9f9;
-  padding: 0 8%;
+  padding: 0 6%;
 }
 @media (max-width: 768px) {
   body {
