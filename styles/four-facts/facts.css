@@ -79,6 +79,7 @@
 @media (max-width: 768px) {
   #facts-frame img#facts-image {
     height: 160px;
+    top: 70px;
   }
   #facts-list {
     gap: 30px;
@@ -100,7 +101,7 @@
 @media (max-width: 635px) {
   #facts-frame img#facts-image {
     height: 155px;
-    top: 135px;
+    top: 125px;
   }
   #facts-list {
     gap: 20px;

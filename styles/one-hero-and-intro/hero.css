@@ -3,7 +3,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: calc(1.8vw + 40px);
+  margin-top: 20px;
   width: 99%;
   border-radius: 1vw;
   border: 0.5vw solid #212529;
@@ -23,7 +23,7 @@
 }
 @media (max-width: 510px) {
   #hero-section {
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 5px;
     width: 92vw;
     height: clamp(160px, 17vw + 120px, 300px);
