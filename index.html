@@ -36,7 +36,7 @@
     <link href="./styles/three-tech-list/techs-list.css" rel="stylesheet" />
     <link href="./styles/four-facts/section-config.css" rel="stylesheet" />
     <link href="./styles/four-facts/facts.css" rel="stylesheet" />
-    
+
     <link href="./styles/four-facts/quote.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -55,30 +55,61 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./scripts/logos-array.js"></script>
     <script src="./scripts/main-techs.js"></script>
     <script src="./scripts/hero-background.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Matías Benavente Blog</title>
   </head>
   <body>
-
     <nav class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a id="nav-logo" href="#">
           <img src="./media/logos/Main-Logo.svg" />
         </a>
 
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Contact
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#"><img src="./media/icons/Linkedin.svg"/>LinkedIn</a></li>
-                <li><a class="dropdown-item" href="#"><img src="./media/icons/Email_Icon.svg"/>Mail</a></li>
-              </ul>
-            </li>
-          </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Contact
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
+                  target="_blank"
+                  ><img
+                    src="./media/icons/Linkedin.svg"
+                    alt="linkedin contact"
+                  />LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="mailto:benaventematias04@gmail.com"
+                  target="_blank"
+                  ><img
+                    src="./media/icons/Email_Icon.svg"
+                    alt="mail contact"
+                  />Mail</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -96,10 +127,20 @@
           >
           <div id="profile-contact-section">
             <p id="profile-contact-title">Contact me:</p>
-            <span id="profile-contact-logos">
-              <img src="./media/icons/Linkedin.svg" />
-              <img src="./media/icons/Email_Icon.svg" />
-            </span>
+            <div id="profile-contact-logos">
+              <a
+                class="dropdown-item"
+                href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
+                target="_blank"
+                ><img src="./media/icons/Linkedin.svg"
+              /></a>
+              <a
+                class="dropdown-item"
+                href="mailto:benaventematias04@gmail.com"
+                target="_blank"
+                ><img src="./media/icons/Email_Icon.svg"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -199,52 +240,72 @@
     <section id="facts-section">
       <h2>Facts about me</h2>
       <div id="facts-frame">
-      <img id="facts-image" src="./media/Profile_image.svg" alt="" />
-      <div id="facts-list">
-        <div class="fact">
-            <video
-              src="./media/Basketball.mp4"
-              autoplay
+        <img id="facts-image" src="./media/Profile_image.svg" alt="" />
+        <div id="facts-list">
+          <div class="fact">
+            <lottie-player
+              src="https://assets8.lottiefiles.com/packages/lf20_qgdcqwbg.json"
+              mode="bounce"
+              background="transparent"
+              speed="1"
               loop
-              muted
-              inline
-            ></video>
-          <p>Basketball player and 2018 third division champion</p>
-        </div>
-        <div class="fact">
-          <video src="./media/Website.mp4 " autoplay loop muted inline></video>
-          <p>
-            Fully committed to Frontend, but great results operating in backend and <abbr title="Project Management">PM</abbr> too.
-          </p>
-        </div>
-        <div class="fact">
-          <video
-            src="./media/Programming.mp4 "
-            autoplay
-            loop
-            muted
-            inline
-          ></video>
-          <p>First job experience in a tech company at 17 years old</p>
-        </div>
+              autoplay
+              class="fact-gif"
+            ></lottie-player>
+            <p>Basketball player and 2018 third division champion</p>
+          </div>
+          <div class="fact">
+            <lottie-player
+              class="fact-gif"
+              src="https://assets2.lottiefiles.com/packages/lf20_uzvwjpkq.json"
+              mode="bounce"
+              background="transparent"
+              speed="1.5"
+              loop
+              autoplay
+            ></lottie-player>
+            <p>
+              Fully committed to Frontend, but great results operating in
+              backend and <abbr title="Project Management">PM</abbr> too.
+            </p>
+          </div>
+          <div class="fact">
+            <lottie-player
+              class="fact-gif"
+              src="https://assets10.lottiefiles.com/packages/lf20_tfb3estd.json"
+              background="transparent"
+              speed="2"
+              loop
+              autoplay
+            ></lottie-player>
+            <p>First job experience in a tech company at 17 years old</p>
+          </div>
 
-        <div class="fact">
-          <video src="./media/Crypto.mp4 " autoplay loop muted inline></video>
-          <p>
-            My top increasing interests are crypto and open source
-            projects
-          </p>
+          <div class="fact">
+            <lottie-player
+              class="fact-gif"
+              src="https://assets8.lottiefiles.com/packages/lf20_tgkj7qnw.json"
+              background="transparent"
+              speed="1.5"
+              loop
+              mode="bounce"
+              autoplay
+            ></lottie-player>
+            <p>
+              My top increasing interests are crypto and open source projects
+            </p>
+          </div>
         </div>
       </div>
     </section>
-  </div>
-  <figure class="text-center">
-    <blockquote class="blockquote">
-      <p>When something is important enough, you do it even if the odds are not in your favor.</p>
-    </blockquote>
-    <figcaption class="blockquote-footer">
-      Elon Musk 
-    </figcaption>
-  </figure>
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>
+          When something is important enough, you do it even if the odds are not
+          in your favor.
+        </p>
+      </blockquote>
+      <figcaption class="blockquote-footer">Elon Musk</figcaption>
+    </figure>
   </body>
 </html>

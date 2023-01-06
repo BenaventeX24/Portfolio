@@ -211,8 +211,11 @@
         }
 
         #profile-contact-logos {
-          display: flex;
-          align-items: center;
+          display: grid;
+          place-items: center;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 30px;
 
           img {
             width: calc(3vw + 18px);
@@ -220,7 +223,7 @@
           }
 
           img:nth-child(1) {
-            margin-right: 35px;
+            margin-right: 0px;
           }
         }
       }

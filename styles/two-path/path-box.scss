@@ -1,4 +1,4 @@
-@import "../../_mixins";
+@import "../_mixins";
 
 .scroll-right-message {
   display: inline-block;
@@ -150,7 +150,7 @@
 
 @include desktop-lg {
   .path-box {
-    width: 630px;
+    width: 600px;
     height: 250px;
 
     .path-box-type {
@@ -200,6 +200,12 @@
     .path-keypoints-list {
       font-size: 1.25rem;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .path-box {
+    margin: 30px 20px;
   }
 }
 
@@ -288,7 +294,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 40px;
 
     .path-box {
       margin: 0;
@@ -327,7 +333,7 @@
 @include phone-xl {
   #internships.path {
     width: 100%;
-    gap: 50px;
+    gap: 25px;
   }
 
   .path-box {

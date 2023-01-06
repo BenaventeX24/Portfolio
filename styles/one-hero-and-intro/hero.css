@@ -209,13 +209,16 @@
   line-height: 1vw;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos {
-  display: flex;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img {
   width: calc(3vw + 18px);
   height: auto;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img:nth-child(1) {
-  margin-right: 35px;
+  margin-right: 0px;
 }/*# sourceMappingURL=hero.css.map */
