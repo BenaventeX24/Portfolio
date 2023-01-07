@@ -20,17 +20,17 @@
 }
 @media (max-width: 510px) {
   #hero-section {
-    margin-top: 100px;
+    margin-top: 110px;
     padding: 5px;
     width: 92vw;
-    height: clamp(160px, 17vw + 120px, 300px);
+    height: clamp(180px, 18vw + 160px, 300px);
     border-radius: 15px;
     border: 1vw solid #212529;
   }
 }
 @media (max-width: 350px) {
   #hero-section {
-    height: clamp(140px, 15vw + 115px, 300px);
+    height: clamp(140px, 16vw + 150px, 300px);
   }
 }
 #hero-section #hero-background {
@@ -143,12 +143,12 @@
 }
 @media (max-width: 510px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: clamp(1.5rem, 1rem + 4.8vw, 4rem);
+    font-size: clamp(1.5rem, 1rem + 4.6vw, 4rem);
   }
 }
 @media (max-width: 350px) {
   #hero-section #hero-profile #profile-info-container h1 {
-    font-size: clamp(1rem, 1rem + 3.8vw, 3rem);
+    font-size: clamp(1rem, 1rem + 3.6vw, 3rem);
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-profession {
@@ -174,12 +174,12 @@
 @media (max-width: 510px) {
   #hero-section #hero-profile #profile-info-container span#profile-profession h2 {
     margin-top: -5px;
-    font-size: clamp(1rem, 1.2rem + 2vw, 4rem);
+    font-size: clamp(1rem, 1.2rem + 1.8vw, 4rem);
   }
 }
 @media (max-width: 350px) {
   #hero-section #hero-profile #profile-info-container span#profile-profession h2 {
-    font-size: clamp(1rem, 1rem + 2vw, 2rem);
+    font-size: clamp(1rem, 1rem + 1.8vw, 2rem);
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-profession h2:nth-child(1) {
@@ -198,7 +198,10 @@
 }
 @media (max-width: 510px) {
   #hero-section #hero-profile #profile-info-container #profile-contact-section {
-    display: none;
+    flex-direction: row;
+    margin-top: 5px;
+    justify-content: center;
+    width: 300px;
   }
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section p {
@@ -207,17 +210,44 @@
   font-size: calc(0.8vw + 0.6rem);
   line-height: 1vw;
 }
+#hero-section #hero-profile #profile-info-container #profile-contact-section p#contact-title-mobile {
+  display: none;
+}
+@media (max-width: 510px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section p {
+    margin: auto 0;
+    font-size: 1rem;
+    line-height: normal;
+    width: 100%;
+  }
+  #hero-section #hero-profile #profile-info-container #profile-contact-section p#profile-contact-title {
+    display: none;
+  }
+  #hero-section #hero-profile #profile-info-container #profile-contact-section p#contact-title-mobile {
+    display: block;
+  }
+}
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 30px;
+  gap: 35px;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img {
   width: calc(3vw + 18px);
   height: auto;
 }
-#hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img:nth-child(1) {
-  margin-right: 0px;
+@media (max-width: 510px) {
+  #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+  #hero-section #hero-profile #profile-info-container #profile-contact-section #profile-contact-logos img {
+    width: 35px;
+    height: auto;
+  }
 }/*# sourceMappingURL=hero.css.map */

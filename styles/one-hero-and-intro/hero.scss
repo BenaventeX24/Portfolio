@@ -21,18 +21,18 @@
   }
 
   @include phone-xl {
-    margin-top: 100px;
+    margin-top: 110px;
     padding: 5px;
 
     width: 92vw;
-    height: clamp(160px, 17vw + 120px, 300px);
+    height: clamp(180px, 18vw + 160px, 300px);
 
     border-radius: 15px;
     border: 1vw solid #212529;
   }
 
   @media (max-width: 350px) {
-    height: clamp(140px, 15vw + 115px, 300px);
+    height: clamp(140px, 16vw + 150px, 300px);
   }
 
   #hero-background {
@@ -148,11 +148,11 @@
           font-size: clamp(0.5rem, 1.1rem + 2.5vw, 16rem);
         }
         @include phone-xl {
-          font-size: clamp(1.5rem, 1rem + 4.8vw, 4rem);
+          font-size: clamp(1.5rem, 1rem + 4.6vw, 4rem);
         }
 
         @media (max-width: 350px) {
-          font-size: clamp(1rem, 1rem + 3.8vw, 3rem);
+          font-size: clamp(1rem, 1rem + 3.6vw, 3rem);
         }
       }
 
@@ -175,10 +175,10 @@
           @include phone-xl {
             margin-top: -5px;
 
-            font-size: clamp(1rem, 1.2rem + 2vw, 4rem);
+            font-size: clamp(1rem, 1.2rem + 1.8vw, 4rem);
           }
           @media (max-width: 350px) {
-            font-size: clamp(1rem, 1rem + 2vw, 2rem);
+            font-size: clamp(1rem, 1rem + 1.8vw, 2rem);
           }
         }
 
@@ -200,7 +200,10 @@
         margin-bottom: 0.5vw;
 
         @include phone-xl {
-          display: none;
+          flex-direction: row;
+          margin-top: 5px;
+          justify-content: center;
+          width: 300px;
         }
 
         p {
@@ -208,6 +211,23 @@
           font-weight: 600;
           font-size: calc(0.8vw + 0.6rem);
           line-height: 1vw;
+
+          &#contact-title-mobile {
+            display: none;
+          }
+
+          @include phone-xl {
+            margin: auto 0;
+            font-size: 1rem;
+            line-height: normal;
+            width: 100%;
+            &#profile-contact-title {
+              display: none;
+            }
+            &#contact-title-mobile {
+              display: block;
+            }
+          }
         }
 
         #profile-contact-logos {
@@ -215,15 +235,24 @@
           place-items: center;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr;
-          gap: 30px;
+          gap: 35px;
 
           img {
             width: calc(3vw + 18px);
             height: auto;
           }
 
-          img:nth-child(1) {
-            margin-right: 0px;
+          @include phone-xl {
+            display: grid;
+            place-items: center;
+            grid-template-columns: 50px 1fr 50px;
+            grid-template-rows: 1fr;
+            gap: 10px;
+
+            img {
+              width: 35px;
+              height: auto;
+            }
           }
         }
       }
