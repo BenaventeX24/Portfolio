@@ -59,17 +59,20 @@
     <script src="./scripts/logos-array.js"></script>
     <script src="./scripts/main-techs.js"></script>
     <script src="./scripts/hero-background.js"></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
       integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script type="text/javascript" src="./scripts/animations.js"></script>
+
     <title>Matías Benavente Blog</title>
   </head>
   <body>
-    <nav class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark nav-animation"
+    >
       <div class="container-fluid">
         <a id="nav-logo" href="#">
           <img src="./media/logos/Main-Logo.svg" />
@@ -153,19 +156,24 @@
         <div id="experience-text">
           <p>year in the industry</p>
           <div id="experience-company-logos">
-            <img id="Arkano-logo" src="./media/logos/Arkano.svg" />
-            <img id="Arkano-logo" src="./media/logos/Globant.svg" />
+            <img class="experience-logo" src="./media/logos/Arkano.svg" />
+            <img class="experience-logo" src="./media/logos/Globant.svg" />
           </div>
         </div>
       </div>
       <div id="separator-content"></div>
       <div id="presentation-text">
         <p>
-          <span id="tech-word">Technology</span> and
-          <span id="sports-word">sports</span> lover, lucky to be part of
-          <span id="professional-word">professional</span> teams at a young age
-          in both fields. Working in the
-          <span id="frontend-word">Frontend</span> development at the moment.
+          <span class="presentation-text-division"
+            >Technology and sportslover,</span
+          >
+          <span class="presentation-text-division"
+            >lucky to be part of professional teams at a young age in both
+            fields.</span
+          >
+          <span class="presentation-text-division"
+            >Working in the Frontend development at the moment.</span
+          >
         </p>
       </div>
     </section>
@@ -280,7 +288,6 @@
             ></lottie-player>
             <p>First job experience in a tech company at 17 years old</p>
           </div>
-
           <div class="fact">
             <lottie-player
               class="fact-gif"
