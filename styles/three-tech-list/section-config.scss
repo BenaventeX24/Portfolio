@@ -3,6 +3,7 @@
 #main-tech-list {
   margin-top: 30px;
   width: 100%;
+  padding: 0 4%;
 
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@
     font-family: var(--ff-secondary);
     font-weight: 400;
     font-size: 1.8rem;
+    margin-bottom: 10px;
 
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   }
@@ -35,6 +37,7 @@
 @include tablet {
   #main-tech-list {
     margin-top: 20px;
+    padding: 0 0;
 
     h2 {
       font-size: 1.85rem;

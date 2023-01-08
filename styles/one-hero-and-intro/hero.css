@@ -20,6 +20,7 @@
 }
 @media (max-width: 510px) {
   #hero-section {
+    top: -60px;
     margin-top: 110px;
     padding: 5px;
     width: 92vw;
@@ -160,10 +161,11 @@
   font-weight: 600;
   font-size: clamp(0.5rem, 1.2rem + 1.5vw, 8rem);
   text-shadow: 2px 1px 2px white;
+  margin-top: 8px;
 }
 @media (max-width: 768px) {
   #hero-section #hero-profile #profile-info-container span#profile-profession h2 {
-    margin-top: -8px;
+    margin-top: 4px;
   }
 }
 @media (max-width: 600px) {
@@ -173,13 +175,13 @@
 }
 @media (max-width: 510px) {
   #hero-section #hero-profile #profile-info-container span#profile-profession h2 {
-    margin-top: -5px;
+    margin-top: 3px;
     font-size: clamp(1rem, 1.2rem + 1.8vw, 4rem);
   }
 }
 @media (max-width: 350px) {
   #hero-section #hero-profile #profile-info-container span#profile-profession h2 {
-    font-size: clamp(1rem, 1rem + 1.8vw, 2rem);
+    font-size: clamp(0.5rem, 1rem + 1.8vw, 2rem);
   }
 }
 #hero-section #hero-profile #profile-info-container span#profile-profession h2:nth-child(1) {
@@ -209,6 +211,7 @@
   font-weight: 600;
   font-size: calc(0.8vw + 0.6rem);
   line-height: 1vw;
+  margin-bottom: 12px;
 }
 #hero-section #hero-profile #profile-info-container #profile-contact-section p#contact-title-mobile {
   display: none;
@@ -219,6 +222,7 @@
     font-size: 1rem;
     line-height: normal;
     width: 100%;
+    margin-bottom: 0;
   }
   #hero-section #hero-profile #profile-info-container #profile-contact-section p#profile-contact-title {
     display: none;

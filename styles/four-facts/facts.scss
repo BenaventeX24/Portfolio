@@ -156,6 +156,7 @@
         height: 95px;
       }
       p {
+        margin: auto 0;
         font-size: 1rem;
         line-height: 18px;
       }
@@ -192,7 +193,7 @@
 
       border-radius: 20px;
 
-      padding: 4px 5px;
+      padding: 0 5px;
       margin-bottom: 20px;
 
       .fact-gif {

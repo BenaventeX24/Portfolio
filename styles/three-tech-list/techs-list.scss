@@ -1,4 +1,4 @@
-@import "../../_mixins";
+@import "../_mixins";
 
 #technologies-list {
   width: 100%;
@@ -17,12 +17,14 @@
 
 @include desktop-sm {
   #technologies-list {
-    width: 150%;
+    width: 100%;
   }
 }
 
 @include tablet {
   #technologies-list {
+    width: 80%;
+
     img {
       height: 80px;
     }

@@ -10,8 +10,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@400;600;700&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link href="./styles/indexStyles.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="./scripts/animations.js"></script>
     <link href="./styles/navbar.css" rel="stylesheet" />
     <link href="./styles/one-hero-and-intro/hero.css" rel="stylesheet" />
     <link
@@ -38,34 +61,11 @@
     <link href="./styles/four-facts/facts.css" rel="stylesheet" />
 
     <link href="./styles/four-facts/quote.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./scripts/logos-array.js"></script>
     <script src="./scripts/main-techs.js"></script>
     <script src="./scripts/hero-background.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="text/javascript" src="./scripts/animations.js"></script>
 
     <title>Matías Benavente Blog</title>
   </head>
@@ -105,7 +105,7 @@
                   href="mailto:benaventematias04@gmail.com"
                   target="_blank"
                   ><img
-                    src="./media/icons/Email_Icon.svg"
+                    src="./media/icons/Mail.svg"
                     alt="mail contact"
                   />Mail</a
                 >
@@ -160,81 +160,186 @@
       </div>
       <div id="separator-content"></div>
       <div id="presentation-text">
-        <p>
-          <span class="presentation-text-division"
-            >Technology and sportslover,</span
-          >
-          <span class="presentation-text-division"
-            >lucky to be part of professional teams at a young age in both
-            fields.</span
-          >
-          <span class="presentation-text-division"
-            >Working in the Frontend development at the moment.</span
-          >
+        <p id="presentation-text-p">
+          Technology and sportslover, lucky to be part of professional teams at
+          a young age in both fields. Working in the Frontend development at the
+          moment.
         </p>
       </div>
     </section>
     <section id="path-section">
       <h2>My path</h2>
       <div class="path" id="studies">
-        <div class="path-box-line"></div>
-        <div class="path-box">
-          <div class="path-box-type">
-            <h3 class="">Studies</h3>
-          </div>
-          <div class="path-content-container">
-            <div class="path-image-container">
-              <img class="path-image" src="./media/logos/Anima.svg" />
+        <div class="accordion" id="path-accordion">
+          <div class="accordion-item path-box">
+            <div class="path-box-type">
+              <h4 class="">Studies</h4>
             </div>
-            <div class="path-content">
-              <h3 class="path-title">Anima</h3>
-              <ul class="path-keypoints-list">
-                <li>Junior Web Developer</li>
-                <li>ICT</li>
-              </ul>
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                <img class="path-image" src="./media/logos/Anima.svg" />
+                Anima
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <p>
+                    Anima is an educational organization and high school located
+                    in the downtown of Montevideo, Uruguay. It's one of the very
+                    few institution that offer the 'dual vocational training’
+                    (work in a real company as you study).
+                  </p>
+                  <a
+                    class="accordion-webpage"
+                    href="https://anima.edu.uy"
+                    target="_blank"
+                    >Website<img
+                      src="./media/icons/External.svg"
+                      class="external-icon"
+                  /></a>
+                </div>
+                <div class="accordion-body-division">
+                  <ul class="accordion-keypoints-list">
+                    <li>Web Developer Junior</li>
+                    <li>ICT</li>
+                  </ul>
+                  <div class="accordion-body-sub-division">
+                    <div class="path-date">03/2021-11/2022</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="path" id="internships">
-        <div class="path-box-line"></div>
-        <div class="path-box">
-          <div class="scroll-right-message">Scroll →</div>
-          <div class="path-box-type">
-            <h3 class="">Internship</h3>
-          </div>
-          <div class="path-content-container">
-            <div class="path-image-container">
-              <img class="path-image" src="./media/logos/Arkano.svg" />
+        <div class="path" id="internships">
+          <div id="path-union-line"></div>
+          <div class="accordion" id="path-accordion">
+            <div class="accordion-item path-box">
+              <div class="scroll-right-message">Scroll →</div>
+              <div class="path-box-type">
+                <h4 class="">Internship</h4>
+              </div>
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <img class="path-image" src="./media/logos/Arkano.svg" />
+                  Arkano
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div>
+                    <p>
+                      As a trainee I worked in different kinds of Microsoft
+                      solutions, with an enfasis in Power Platform. This
+                      internship had an orientation on bot construction and
+                      deployment using Microsoft approaches.
+                    </p>
+                    <a
+                      class="accordion-webpage"
+                      href="https://arkano.com"
+                      target="_blank"
+                      >Website<img
+                        src="./media/icons/External.svg"
+                        class="external-icon"
+                    /></a>
+                  </div>
+                  <div class="accordion-body-division">
+                    <ul class="accordion-keypoints-list">
+                      <li>Power Platform development</li>
+                      <li>Bot development</li>
+                    </ul>
+                    <div class="accordion-body-sub-division">
+                      <div class="path-date">03/2021-11/2022</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="path-content">
-              <h3 class="path-title">Arkano Software</h3>
-              <ul class="path-keypoints-list">
-                <li>Power Platform development</li>
-                <li>Bot development</li>
-              </ul>
-            </div>
           </div>
-        </div>
-        <div class="path-box">
-          <div class="path-box-type">
-            <h3 class="">Internship</h3>
-          </div>
-          <div class="path-content-container">
-            <div class="path-image-container">
-              <img class="path-image" src="./media/logos/Globant.svg" />
-            </div>
-            <div class="path-content">
-              <h3 class="path-title">Globant</h3>
-              <ul class="path-keypoints-list">
-                <li>UX/UI Development</li>
-                <li>Frontender</li>
-              </ul>
+          <div class="accordion" id="path-accordion">
+            <div class="accordion-item path-box">
+              <div class="path-box-type">
+                <h4 class="">Internship</h4>
+              </div>
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <img class="path-image" src="./media/logos/Globant.svg" />
+                  Globant
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div>
+                    <p>
+                      In Globant I had the opportunity to find out how much I
+                      enjoy working in the Frontend area, not only by exchanging
+                      knowledge with remarkable UX-UI/Frontend seniors but to
+                      actually develop a real world project from scratch.
+                    </p>
+                    <a
+                      class="accordion-webpage"
+                      href="https://globant.com"
+                      target="_blank"
+                      >Website<img
+                        src="./media/icons/External.svg"
+                        class="external-icon"
+                    /></a>
+                  </div>
+                  <div class="accordion-body-division">
+                    <ul class="accordion-keypoints-list">
+                      <li>UX/UI Development</li>
+                      <li>Frontender</li>
+                    </ul>
+                    <div class="accordion-body-sub-division">
+                      <div class="path-date">03/2021-11/2022</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="main-tech-list">
       <div id="content-intro">
         <h2>Main technologies</h2>
@@ -309,7 +414,6 @@
           in your favor.
         </p>
       </blockquote>
-      <figcaption class="blockquote-footer">Elon Musk</figcaption>
     </figure>
   </body>
 </html>
