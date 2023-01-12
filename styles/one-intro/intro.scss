@@ -1,0 +1,85 @@
+#intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 30px;
+
+  height: 100%;
+
+  & > p {
+    font-family: var(--ff-secondary);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    text-align: left;
+
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 4.5rem;
+    color: #000000;
+
+    margin-left: -5px;
+
+    text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
+  }
+
+  span#intro-profession {
+    display: flex;
+    flex-direction: row;
+
+    h2 {
+      font-family: var(--ff-secondary);
+      font-weight: 600;
+      font-size: 3.275rem;
+      text-shadow: 2px 1px 2px white;
+      margin-top: 8px;
+
+      &:nth-child(1) {
+        color: #0e0c7b;
+        margin-right: 0.6vw;
+      }
+
+      &:nth-child(2) {
+        color: #057a26;
+      }
+    }
+  }
+  #presentation-text {
+    font-family: var(--ff-terciary);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+
+    font-size: 1.75rem;
+
+    margin: 20px 5px;
+    width: 450px;
+  }
+}
+
+#get-to-know-me-container {
+  position: relative;
+}
+#get-to-know-me {
+  display: flex;
+  position: absolute;
+
+  font-size: 1.08rem;
+
+  .scroll-illustration {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    margin-bottom: -5px;
+
+    div {
+      font-size: 12px;
+      margin-top: -4px;
+    }
+  }
+}

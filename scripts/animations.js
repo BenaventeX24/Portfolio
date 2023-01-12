@@ -32,8 +32,9 @@ $(window).on("load", function () {
     /*--- Experience Illustration ---*/
 
     /*--- Presentation text ---*/
+
     // Wrap every letter in a span
-    var textWrapper = document.querySelector("#presentation-text-p");
+    /*var textWrapper = document.querySelector("#presentation-text-p");
     textWrapper.innerHTML = textWrapper.textContent.replace(
       /\S/g,
       "<span class='letter'>$&</span>"
@@ -44,7 +45,7 @@ $(window).on("load", function () {
       opacity: [0, 1],
       easing: "easeInOutQuad",
       delay: (el, i) => 12 * (i + 1),
-    });
+    });*/
 
     /*------------- Content One -------------*/
 
