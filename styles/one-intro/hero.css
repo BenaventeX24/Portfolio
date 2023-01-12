@@ -2,17 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   margin-top: 80px;
   width: 100%;
 }
 
 #photo-frame {
+  grid-area: "photo-frame";
   display: flex;
   flex-direction: column;
   border: 3px solid #212529;
   border-radius: 20px;
-  width: 470px;
-  height: 550px;
 }
 #photo-frame #photo-title-bar {
   display: flex;
@@ -64,8 +64,8 @@
   clip-path: polygon(0 0, 100% 0%, 100% 100%);
 }
 #photo-frame #photo-container img {
-  width: 380px;
-  height: 380px;
+  width: auto;
+  height: 80%;
   margin: auto auto;
   border-radius: 50%;
   outline: 2.5px solid #000000;
@@ -87,6 +87,107 @@
   border-radius: 15px;
 }
 #photo-frame #photo-social-buttons .social-button img {
-  width: 45px;
+  width: 43px;
   margin: auto auto;
+}
+
+@media (min-width: 1921px) {
+  #photo-frame {
+    width: 490px;
+    height: 580px;
+  }
+}
+@media (max-width: 1920px) {
+  #photo-frame {
+    width: 470px;
+    height: 550px;
+  }
+}
+@media (max-width: 1280px) {
+  #photo-frame {
+    width: 350px;
+    height: 410px;
+  }
+  #photo-frame #photo-social-buttons .social-button {
+    margin: 0 10px;
+    height: 44px;
+  }
+  #photo-frame #photo-social-buttons .social-button img {
+    width: 38px;
+  }
+}
+@media (max-width: 960px) {
+  #photo-frame {
+    width: 300px;
+    height: 345px;
+  }
+  #photo-frame #photo-social-buttons .social-button {
+    margin: 0 10px;
+    height: 38px;
+  }
+  #photo-frame #photo-social-buttons .social-button img {
+    width: 32px;
+  }
+}
+@media (max-width: 768px) {
+  #photo-frame {
+    width: 260px;
+    height: 310px;
+  }
+  #photo-frame #photo-social-buttons {
+    padding: 4px 0;
+  }
+  #photo-frame #photo-social-buttons .social-button {
+    margin: 0 6px;
+    width: 100%;
+    height: 35px;
+  }
+  #photo-frame #photo-social-buttons .social-button img {
+    width: 28px;
+  }
+}
+@media (max-width: 580px) {
+  #hero-section {
+    flex-direction: column-reverse;
+    padding-bottom: 105px;
+    margin-top: 25px !important;
+  }
+  #photo-frame {
+    width: 310px;
+    height: 350px;
+  }
+  #photo-frame #photo-container img {
+    height: 80%;
+  }
+  #photo-frame #photo-social-buttons {
+    padding: 4px 0;
+  }
+  #photo-frame #photo-social-buttons .social-button {
+    margin: 0 8px;
+    width: 100%;
+    height: 35px;
+  }
+  #photo-frame #photo-social-buttons .social-button img {
+    width: 28px;
+  }
+}
+@media (max-width: 340px) {
+  #photo-frame {
+    width: 240px;
+    height: 290px;
+  }
+  #photo-frame #photo-container img {
+    height: 80%;
+  }
+  #photo-frame #photo-social-buttons {
+    padding: 4px 0;
+  }
+  #photo-frame #photo-social-buttons .social-button {
+    margin: 0 8px;
+    width: 100%;
+    height: 35px;
+  }
+  #photo-frame #photo-social-buttons .social-button img {
+    width: 28px;
+  }
 }/*# sourceMappingURL=hero.css.map */

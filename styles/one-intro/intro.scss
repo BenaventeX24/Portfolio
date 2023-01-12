@@ -1,7 +1,10 @@
+@import "../_mixins";
+
 #intro {
   display: flex;
   flex-direction: column;
   position: relative;
+
   margin-left: 30px;
 
   height: 100%;
@@ -9,7 +12,7 @@
   & > p {
     font-family: var(--ff-secondary);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
   }
 
@@ -17,13 +20,13 @@
     text-align: left;
 
     font-family: var(--ff-primary);
-    font-weight: 500;
-    font-size: 4.5rem;
+    font-weight: 600;
+    font-size: 4.34rem;
     color: #000000;
 
-    margin-left: -5px;
+    margin-left: -2.5px;
 
-    text-shadow: 6px 6px 6px rgba(141, 141, 141, 0.35);
+    text-shadow: 3px 3px 1px rgba(141, 141, 141, 0.35);
   }
 
   span#intro-profession {
@@ -32,9 +35,11 @@
 
     h2 {
       font-family: var(--ff-secondary);
-      font-weight: 600;
+      font-weight: 500;
       font-size: 3.275rem;
-      text-shadow: 2px 1px 2px white;
+
+      text-shadow: 2px 1px 1px white;
+
       margin-top: 8px;
 
       &:nth-child(1) {
@@ -57,6 +62,8 @@
 
     margin: 20px 5px;
     width: 450px;
+
+    //border: 1px solid black;
   }
 }
 
@@ -66,6 +73,7 @@
 #get-to-know-me {
   display: flex;
   position: absolute;
+  top: 25px;
 
   font-size: 1.08rem;
 
@@ -80,6 +88,225 @@
     div {
       font-size: 12px;
       margin-top: -4px;
+    }
+  }
+}
+
+@include desktop-xl {
+  #intro {
+    & > p {
+      font-size: 1.75rem;
+    }
+
+    h1 {
+      font-size: 4.75rem;
+    }
+
+    span#intro-profession {
+      h2 {
+        font-size: 3.75rem;
+      }
+    }
+    #presentation-text {
+      font-size: 1.75rem;
+      line-height: 38px;
+
+      margin: 20px 5px;
+      width: 430px;
+    }
+  }
+}
+
+@include desktop-sm {
+  #intro {
+    margin-left: 20px;
+    & > p {
+      font-size: 1.3rem;
+    }
+
+    h1 {
+      font-size: 3.22rem;
+    }
+
+    span#intro-profession {
+      h2 {
+        font-size: 2.65rem;
+      }
+    }
+    #presentation-text {
+      font-size: 1.4rem;
+      line-height: 32px;
+
+      width: 380px;
+    }
+  }
+
+  #get-to-know-me {
+    font-size: 1rem;
+
+    .scroll-illustration {
+      font-size: 0.75rem;
+      margin: 0 8px;
+
+      div {
+        font-size: 0.75rem;
+        margin-top: -4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #intro {
+    margin-left: 15px;
+
+    & > p {
+      font-size: 1.125rem;
+    }
+
+    h1 {
+      font-size: 2.35rem;
+    }
+
+    span#intro-profession {
+      h2 {
+        font-size: 1.85rem;
+      }
+    }
+    #presentation-text {
+      font-size: 1.125rem;
+      line-height: 24px;
+
+      margin: 15px 0px;
+      width: 300px;
+    }
+  }
+}
+
+@include tablet {
+  #intro {
+    margin-left: 2vw;
+
+    & > p {
+      font-size: 1.125rem;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+    }
+
+    span#intro-profession {
+      h2 {
+        font-size: 1.85rem;
+      }
+    }
+    #presentation-text {
+      font-size: 1.1rem;
+      line-height: 24px;
+
+      margin: 15px 0px;
+      width: 270px;
+    }
+
+    #get-to-know-me {
+      top: 18px;
+      font-size: 0.85rem;
+
+      .scroll-illustration {
+        font-size: 0.5rem;
+        margin: 0 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  #get-to-know-me {
+    display: none;
+  }
+
+  #intro {
+    margin: 0;
+    margin-bottom: 15px;
+
+    position: static;
+
+    & > p {
+      font-size: 1.125rem;
+      font-weight: 400;
+
+      margin: 0;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+
+      margin: 0 auto;
+    }
+
+    span#intro-profession {
+      margin: 0 auto;
+      margin-top: -5px;
+
+      h2 {
+        font-size: 1.9rem;
+      }
+    }
+    #presentation-text {
+      display: flex;
+      align-self: center;
+
+      position: absolute;
+      bottom: 0;
+
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 24px;
+
+      text-align: center;
+
+      margin: 15px auto;
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  #intro {
+    & > p {
+      font-size: 1.125rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+
+      margin: 0 auto;
+    }
+
+    span#intro-profession {
+      margin: 0 auto;
+      margin-top: -5px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    #presentation-text {
+      display: flex;
+      align-self: center;
+
+      position: absolute;
+      bottom: 0;
+
+      font-weight: 600;
+      font-size: 1.05rem;
+      line-height: 24px;
+
+      text-align: center;
+
+      margin: 15px auto;
+      width: 230px;
     }
   }
 }
