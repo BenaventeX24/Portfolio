@@ -141,15 +141,6 @@
   .path-box {
     width: 500px;
   }
-  .path-box .path-box-type h3 {
-    font-size: 1.7rem;
-  }
-  .path-box .path-image-container img {
-    width: 130px;
-  }
-  .path-box .path-title {
-    font-size: 2rem;
-  }
   .path-box .path-keypoints-list {
     font-size: 1.25rem;
   }

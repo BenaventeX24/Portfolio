@@ -22,7 +22,7 @@
 @include desktop-xl {
   #path-section {
     & > h2 {
-      font-size: 3rem;
+      font-size: 2.45rem;
     }
   }
 }
@@ -30,7 +30,7 @@
 @media (max-width: 1080px) {
   #path-section {
     & > h2 {
-      font-size: 2.2rem;
+      font-size: 2.125rem;
     }
   }
 }
@@ -40,7 +40,7 @@
     margin-top: 30px;
 
     & > h2 {
-      font-size: 2rem;
+      font-size: 1.85rem;
       margin-bottom: 35px;
     }
   }

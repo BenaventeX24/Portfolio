@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@400;600;700&family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&family=Ubuntu:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -36,23 +38,7 @@
     ></script>
     <script type="text/javascript" src="./scripts/animations.js"></script>
     <link href="./styles/navbar.css" rel="stylesheet" />
-    <link href="./styles/one-hero-and-intro/hero.css" rel="stylesheet" />
-    <link
-      href="./styles/one-hero-and-intro/hero_background.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./styles/one-hero-and-intro/section-config.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./styles/one-hero-and-intro/experience-illustration.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./styles/one-hero-and-intro/presentation-text.css"
-      rel="stylesheet"
-    />
+
     <link href="./styles/two-path/section-config.css" rel="stylesheet" />
     <link href="./styles/two-path/path-box.css" rel="stylesheet" />
     <link href="./styles/three-tech-list/section-config.css" rel="stylesheet" />
@@ -62,10 +48,13 @@
 
     <link href="./styles/four-facts/quote.css" rel="stylesheet" />
 
+    <link href="./styles/one-intro/hero.css" rel="stylesheet" />
+    <link href="./styles/one-intro/intro.css" rel="stylesheet" />
+    <link href="./styles/one-intro/grid-config.css" rel="stylesheet" />
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./scripts/logos-array.js"></script>
     <script src="./scripts/main-techs.js"></script>
-    <script src="./scripts/hero-background.js"></script>
 
     <title>Matías Benavente Blog</title>
   </head>
@@ -94,7 +83,7 @@
                   href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
                   target="_blank"
                   ><img
-                    src="./media/icons/Linkedin.svg"
+                    src="./media/icons/LinkedIn.svg"
                     alt="linkedin contact"
                   />LinkedIn</a
                 >
@@ -116,6 +105,63 @@
       </div>
     </nav>
 
+    <section id="hero-section">
+      <div id="photo-frame">
+        <div id="photo-title-bar">
+          <p>Me :)</p>
+          <div id="control-buttons-bar">
+            <p id="minimize-button-bar">-</p>
+            <p id="maximize-button-bar">□</p>
+            <p id="close-button-bar">X</p>
+          </div>
+        </div>
+        <div id="photo-container">
+          <div id="photo-background-container">
+            <div class="photo-background"></div>
+            <div class="photo-background"></div>
+          </div>
+          <img src="./media/Profile_image.svg" />
+        </div>
+        <div id="photo-social-buttons">
+          <a class="social-button" href="#">
+            <img src="./media/icons/LinkedIn.svg" />
+          </a>
+          <a class="social-button" href="#">
+            <img src="./media/icons/Github.svg" />
+          </a>
+          <a class="social-button" href="#">
+            <img src="./media/icons/Mail.svg" />
+          </a>
+        </div>
+      </div>
+      <div id="intro">
+        <p id="welcome">Hey there! I'm...</p>
+        <h1 id="intro-title">Matías Benavente</h1>
+        <span id="intro-profession">
+          <h2>Full-Stack</h2>
+          <h2>Developer</h2>
+        </span>
+        <p id="presentation-text">
+          Technology and sports lover, part of professional teams in both fields
+          from a young age.
+        </p>
+        <div id="get-to-know-me-container">
+          <div id="get-to-know-me">
+            <div class="scroll-illustration">
+              scroll
+              <div>↓</div>
+            </div>
+            get to know me in this blog
+            <div class="scroll-illustration">
+              scroll
+              <div>↓</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
     <section id="hero-section">
       <div id="hero-profile">
         <div id="profile-image-container">
@@ -167,6 +213,7 @@
         </p>
       </div>
     </section>
+    -->
     <section id="path-section">
       <h2>My path</h2>
       <div class="path" id="studies">
@@ -225,112 +272,111 @@
           </div>
         </div>
       </div>
-        <div class="path" id="internships">
-          <div id="path-union-line"></div>
-          <div class="accordion" id="path-accordion">
-            <div class="accordion-item path-box">
-              <div class="scroll-right-message">Scroll →</div>
-              <div class="path-box-type">
-                <h4 class="">Internship</h4>
-              </div>
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  <img class="path-image" src="./media/logos/Arkano.svg" />
-                  Arkano
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
+      <div class="path" id="internships">
+        <div id="path-union-line"></div>
+        <div class="accordion" id="path-accordion">
+          <div class="accordion-item path-box">
+            <div class="scroll-right-message">Scroll →</div>
+            <div class="path-box-type">
+              <h4 class="">Internship</h4>
+            </div>
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
               >
-                <div class="accordion-body">
-                  <div>
-                    <p>
-                      As a trainee I worked in different kinds of Microsoft
-                      solutions, with an enfasis in Power Platform. This
-                      internship had an orientation on bot construction and
-                      deployment using Microsoft approaches.
-                    </p>
-                    <a
-                      class="accordion-webpage"
-                      href="https://arkano.com"
-                      target="_blank"
-                      >Website<img
-                        src="./media/icons/External.svg"
-                        class="external-icon"
-                    /></a>
-                  </div>
-                  <div class="accordion-body-division">
-                    <ul class="accordion-keypoints-list">
-                      <li>Power Platform development</li>
-                      <li>Bot development</li>
-                    </ul>
-                    <div class="accordion-body-sub-division">
-                      <div class="path-date">03/2021-11/2022</div>
-                    </div>
+                <img class="path-image" src="./media/logos/Arkano.svg" />
+                Arkano
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <p>
+                    As a trainee I worked in different kinds of Microsoft
+                    solutions, with an enfasis in Power Platform. This
+                    internship had an orientation on bot construction and
+                    deployment using Microsoft approaches.
+                  </p>
+                  <a
+                    class="accordion-webpage"
+                    href="https://arkano.com"
+                    target="_blank"
+                    >Website<img
+                      src="./media/icons/External.svg"
+                      class="external-icon"
+                  /></a>
+                </div>
+                <div class="accordion-body-division">
+                  <ul class="accordion-keypoints-list">
+                    <li>Power Platform development</li>
+                    <li>Bot development</li>
+                  </ul>
+                  <div class="accordion-body-sub-division">
+                    <div class="path-date">03/2021-11/2022</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="accordion" id="path-accordion">
-            <div class="accordion-item path-box">
-              <div class="path-box-type">
-                <h4 class="">Internship</h4>
-              </div>
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <img class="path-image" src="./media/logos/Globant.svg" />
-                  Globant
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
+        </div>
+        <div class="accordion" id="path-accordion">
+          <div class="accordion-item path-box">
+            <div class="path-box-type">
+              <h4 class="">Internship</h4>
+            </div>
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
               >
-                <div class="accordion-body">
-                  <div>
-                    <p>
-                      In Globant I had the opportunity to find out how much I
-                      enjoy working in the Frontend area, not only by exchanging
-                      knowledge with remarkable UX-UI/Frontend seniors but to
-                      actually develop a real world project from scratch.
-                    </p>
-                    <a
-                      class="accordion-webpage"
-                      href="https://globant.com"
-                      target="_blank"
-                      >Website<img
-                        src="./media/icons/External.svg"
-                        class="external-icon"
-                    /></a>
-                  </div>
-                  <div class="accordion-body-division">
-                    <ul class="accordion-keypoints-list">
-                      <li>UX/UI Development</li>
-                      <li>Frontender</li>
-                    </ul>
-                    <div class="accordion-body-sub-division">
-                      <div class="path-date">03/2021-11/2022</div>
-                    </div>
+                <img class="path-image" src="./media/logos/Globant.svg" />
+                Globant
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <p>
+                    In Globant I had the opportunity to find out how much I
+                    enjoy working in the Frontend area, not only by exchanging
+                    knowledge with remarkable UX-UI/Frontend seniors but to
+                    actually develop a real world project from scratch.
+                  </p>
+                  <a
+                    class="accordion-webpage"
+                    href="https://globant.com"
+                    target="_blank"
+                    >Website<img
+                      src="./media/icons/External.svg"
+                      class="external-icon"
+                  /></a>
+                </div>
+                <div class="accordion-body-division">
+                  <ul class="accordion-keypoints-list">
+                    <li>UX/UI Development</li>
+                    <li>Frontender</li>
+                  </ul>
+                  <div class="accordion-body-sub-division">
+                    <div class="path-date">03/2021-11/2022</div>
                   </div>
                 </div>
               </div>
