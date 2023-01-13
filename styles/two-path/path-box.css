@@ -67,23 +67,20 @@
   font-family: var(--ff-terciary);
   grid-template-areas: "text keypoints" "webpage date";
 }
-.path-box .accordion-body .path-date {
-  grid-area: date;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 4px;
-}
 .path-box .accordion-body .body-text {
   grid-area: text;
+  margin-bottom: 20px;
 }
 .path-box .accordion-body a.accordion-webpage {
   grid-area: webpage;
-  margin-top: 5px;
   text-decoration: none;
   font-weight: 600;
   color: black;
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 3px;
+  margin-left: 3px;
 }
 .path-box .accordion-body a.accordion-webpage img {
   width: 16px;
@@ -96,6 +93,14 @@
 }
 .path-box .accordion-body .accordion-keypoints-list li:nth-child(n+2) {
   margin-top: 5%;
+}
+.path-box .accordion-body .path-date {
+  grid-area: date;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+  margin-right: 3px;
 }
 
 @media (min-width: 1921px) {
@@ -111,10 +116,6 @@
   .path-box .path-image-container img {
     width: 200px;
   }
-  .path-box .path-title {
-    margin-top: 15px;
-    font-size: 3rem;
-  }
   .path-box .path-keypoints-list {
     font-size: 1.9rem;
   }
@@ -128,9 +129,6 @@
   }
   .path-box .path-image-container img {
     width: 150px;
-  }
-  .path-box .path-title {
-    font-size: 2.25rem;
   }
   .path-box .path-keypoints-list {
     font-size: 1.5rem;
@@ -165,9 +163,6 @@
   .path-box .path-image-container img {
     width: 110px;
   }
-  .path-box .path-title {
-    font-size: 1.8rem;
-  }
   .path-box .path-keypoints-list {
     font-size: 1rem;
   }
@@ -191,9 +186,6 @@
   .path-box .path-image-container img {
     width: 92px;
   }
-  .path-box .path-title {
-    font-size: 1.55rem;
-  }
   .path-box .path-keypoints-list {
     font-size: 1rem;
     margin-top: -10px !important;
@@ -202,6 +194,13 @@
 }
 /* ----------------- Phone ----------------- */
 @media (max-width: 720px) {
+  .accordion-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "text text" "keypoints keypoints" "webpage date" !important;
+  }
+  .accordion-body .body-text {
+    margin-bottom: 0 !important;
+  }
   #internships.path {
     padding: 18px;
     overflow-x: scroll;
@@ -215,7 +214,6 @@
   }
   #internships.path .path-box {
     margin: 0 30px;
-    position: relative;
   }
   .path-box {
     width: 360px;
@@ -233,12 +231,16 @@
   .path-box .path-image-container img {
     width: 90px;
   }
-  .path-box .path-title {
-    font-size: 1.7rem;
-  }
-  .path-box .path-keypoints-list {
-    margin-left: -5px;
+  .path-box .accordion-body .accordion-keypoints-list {
+    padding-left: 15px;
+    padding-bottom: 20px;
     font-size: 1rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .path-box .accordion-body .accordion-keypoints-list li {
+    margin: 0 !important;
   }
 }
 @media (max-width: 510px) {
@@ -255,14 +257,13 @@
     font-size: 1.4rem;
     top: -18px;
   }
-  .path-box .path-title {
-    font-size: 1.6rem;
-  }
 }
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   #internships.path {
     padding: 18px 0;
   }
+}
+@media (max-width: 390px) {
   .path-box {
     width: 300px;
   }
@@ -276,10 +277,7 @@
   .path-box .path-image-container img {
     width: 80px;
   }
-  .path-box .path-title {
-    font-size: 1.35rem;
-  }
-  .path-box .path-keypoints-list {
+  .path-box .accordion-body .accordion-keypoints-list {
     font-size: 0.95rem;
   }
 }
@@ -298,11 +296,5 @@
   }
   .path-box .path-image-container img {
     width: 80px;
-  }
-  .path-box .path-title {
-    font-size: 1.35rem;
-  }
-  .path-box .path-keypoints-list {
-    font-size: 0.95rem;
   }
 }/*# sourceMappingURL=path-box.css.map */

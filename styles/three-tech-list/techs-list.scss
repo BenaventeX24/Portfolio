@@ -21,9 +21,19 @@
   }
 }
 
+@media (max-width: 960px) {
+  #technologies-list {
+    width: 90%;
+
+    img {
+      height: 90px;
+    }
+  }
+}
+
 @include tablet {
   #technologies-list {
-    width: 80%;
+    width: 90%;
 
     img {
       height: 80px;

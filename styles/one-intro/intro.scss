@@ -67,13 +67,10 @@
   }
 }
 
-#get-to-know-me-container {
-  position: relative;
-}
 #get-to-know-me {
   display: flex;
-  position: absolute;
-  bottom: 0;
+  justify-content: center;
+  margin: 60px 0;
 
   font-size: 1.08rem;
 
@@ -253,6 +250,7 @@
         font-size: 1.9rem;
       }
     }
+
     #presentation-text {
       display: flex;
       align-self: center;
@@ -261,7 +259,7 @@
       bottom: 0;
 
       font-weight: 600;
-      font-size: 1.125rem;
+      font-size: 1.225rem;
       line-height: 24px;
 
       text-align: center;

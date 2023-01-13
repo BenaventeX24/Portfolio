@@ -17,9 +17,17 @@
     width: 100%;
   }
 }
+@media (max-width: 960px) {
+  #technologies-list {
+    width: 90%;
+  }
+  #technologies-list img {
+    height: 90px;
+  }
+}
 @media (max-width: 768px) {
   #technologies-list {
-    width: 80%;
+    width: 90%;
   }
   #technologies-list img {
     height: 80px;
