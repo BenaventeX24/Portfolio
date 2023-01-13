@@ -3,9 +3,13 @@ const logosArray = [
   { name: "HTML", acronym: "html", src: "./media/logos/HTML.svg" },
   { name: "CSS", acronym: "css", src: "./media/logos/CSS.svg" },
   { name: "React", acronym: "react", src: "./media/logos/React.svg" },
-  { name: "Java", acronym: "java", src: "./media/logos/Java.svg" },
-  { name: "C#", acronym: "csharp", src: "./media/logos/CSharp.svg" },
+  {
+    name: "Jquery",
+    acronym: "jquery",
+    src: "./media/logos/JQuery.svg",
+  },
   { name: "Typescript", acronym: "ts", src: "./media/logos/TS.svg" },
+  { name: "Java", acronym: "java", src: "./media/logos/Java.svg" },
   {
     name: "MySQL",
     acronym: "sql",
@@ -16,6 +20,7 @@ const logosArray = [
     acronym: "linux",
     src: "./media/logos/LinuxSV.svg",
   },
+  { name: "C#", acronym: "csharp", src: "./media/logos/CSharp.svg" },
   { name: "Material UI", acronym: "mui", src: "./media/logos/MUI.svg" },
   { name: "Jest", acronym: "jest", src: "./media/logos/Jest.svg" },
   {
@@ -29,7 +34,6 @@ const logosArray = [
     acronym: "formik",
     src: "./media/logos/Formik.svg",
   },
-  { name: "Axios", acronym: "axios", src: "./media/logos/Axios.svg" },
   { name: "Power Apps", acronym: "papps", src: "./media/logos/Power-Apps.svg" },
   {
     name: "Power Automate",
@@ -41,6 +45,7 @@ const logosArray = [
     acronym: "vite",
     src: "./media/logos/Vite.svg",
   },
+  { name: "ExpressJS", acronym: "express", src: "./media/logos/ExpressJS.svg" },
   {
     name: "Prisma ORM",
     acronym: "prisma",

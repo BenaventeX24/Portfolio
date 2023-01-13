@@ -1,15 +1,14 @@
+.blockquote {
+  font-style: italic;
+  margin: 40px 30px;
+}
+
 @media (min-width: 768px) {
-  .blockquote {
-    margin-top: 40px;
-  }
   .blockquote p {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 768px) {
-  .blockquote {
-    margin: 0 30px;
-  }
   .blockquote p {
     font-size: 1rem;
   }
