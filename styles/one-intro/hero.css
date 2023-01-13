@@ -45,6 +45,9 @@
 }
 #photo-frame #photo-container #photo-background-container {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
 }

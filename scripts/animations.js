@@ -6,69 +6,66 @@ $(window).on("load", function () {
       translateY: [-100, 0],
       opacity: [0, 1],
       easing: "easeOutExpo",
+      delay: 1000,
     });
     /*------------- NAVBAR -------------*/
 
-    /*------------- Content One -------------*/
-    var experienceElements = document.querySelectorAll(".experience-logo");
+    anime.timeline().add({
+      targets: "#photo-frame",
+      scale: [0, 1],
+      delay: 500,
+      easing: "easeOutBack",
+      complete: () => {
+        anime({
+          targets: ".photo-background",
+          rotate: "360deg",
+          easing: "linear",
+          duration: 8000,
+          loop: true,
+          changeComplete: (anim) => setTimeout(() => anim.restart()),
+        });
+      },
+    });
 
     anime
-      .timeline({})
+      .timeline()
       .add({
-        targets: "#experience-text",
-        translateX: [90, 0],
-        opacity: [0, 1],
-        easing: "easeInElastic",
+        targets: "#photo-frame",
+        scale: [0, 1],
+        delay: 500,
+        easing: "easeOutBack",
       })
-      .add(
-        {
-          targets: experienceElements,
-          translateX: [90, 0],
-          opacity: [0, 1],
-          easing: "easeInOutElastic",
+      .add({
+        targets: "#profile-image",
+        scale: [0, 1],
+        rotate: "360deg",
+        duration: 2000,
+        easing: "easeOutSine",
+        complete: () => {
+          anime({
+            targets: ".photo-background",
+            rotate: "360deg",
+            easing: "linear",
+            duration: 8000,
+            loop: true,
+            changeComplete: (anim) => setTimeout(() => anim.restart()),
+          });
         },
-        "-=300"
-      );
-    /*--- Experience Illustration ---*/
+      });
 
-    /*--- Presentation text ---*/
-
-    // Wrap every letter in a span
-    /*var textWrapper = document.querySelector("#presentation-text-p");
-    textWrapper.innerHTML = textWrapper.textContent.replace(
-      /\S/g,
-      "<span class='letter'>$&</span>"
-    );
-
-    anime.timeline().add({
-      targets: "#presentation-text-p .letter",
+    anime({
+      targets: ".scroll-illustration",
+      delay: 500,
       opacity: [0, 1],
-      easing: "easeInOutQuad",
-      delay: (el, i) => 12 * (i + 1),
-    });*/
+      easing: "easeOutBack",
+      translateY: [-15, 10],
+      loop: true,
+      changeComplete: (anim) => setTimeout(() => anim.restart()),
+    });
 
     /*------------- Content One -------------*/
 
     /*------------- Hero -------------*/
-
-    anime({
-      targets: "#profile-info-container h1",
-      translateX: [-200, 0],
-      opacity: [0, 1],
-      easing: "easeInOutElastic",
-    });
-    anime({
-      targets: "#profile-info-container h2",
-      translateX: [200, 0],
-      opacity: [0, 1],
-      easing: "easeInOutElastic",
-    });
-    anime({
-      targets: "#profile-contact-section",
-      opacity: [0, 1],
-      duration: 8000,
-      delay: 1000,
-    });
 
     /*
     const heroObs = document.querySelector("#hero-profile");

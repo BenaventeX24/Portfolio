@@ -4,7 +4,7 @@ const logosArray = [
   { name: "CSS", acronym: "css", src: "./media/logos/CSS.svg" },
   { name: "React", acronym: "react", src: "./media/logos/React.svg" },
   {
-    name: "Jquery",
+    name: "JQuery",
     acronym: "jquery",
     src: "./media/logos/JQuery.svg",
   },
