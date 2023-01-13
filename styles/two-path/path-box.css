@@ -65,8 +65,21 @@
   display: grid;
   grid-template-columns: 62% 38%;
   font-family: var(--ff-terciary);
+  grid-template-areas: "text keypoints" "webpage date";
+}
+.path-box .accordion-body .path-date {
+  grid-area: date;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+}
+.path-box .accordion-body .body-text {
+  grid-area: text;
 }
 .path-box .accordion-body a.accordion-webpage {
+  grid-area: webpage;
+  margin-top: 5px;
   text-decoration: none;
   font-weight: 600;
   color: black;
@@ -76,26 +89,13 @@
   width: 16px;
   margin-left: 3px;
 }
-.path-box .accordion-body .accordion-body-division {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-.path-box .accordion-body .accordion-body-division .accordion-keypoints-list {
+.path-box .accordion-body .accordion-keypoints-list {
+  grid-area: keypoints;
   list-style: disc;
   padding-left: 18%;
 }
-.path-box .accordion-body .accordion-body-division .accordion-keypoints-list li:nth-child(n+2) {
+.path-box .accordion-body .accordion-keypoints-list li:nth-child(n+2) {
   margin-top: 5%;
-}
-.path-box .accordion-body .accordion-body-division .accordion-body-sub-division {
-  margin-left: auto;
-  margin-top: auto;
-  text-align: right;
-  padding-right: 10px;
-}
-.path-box .accordion-body .accordion-body-division .accordion-body-sub-division * {
-  margin: 5px 0;
 }
 
 @media (min-width: 1921px) {
@@ -104,7 +104,7 @@
     border: 4px solid black;
     border-radius: 16px;
   }
-  .path-box .path-box-type h3 {
+  .path-box .path-box-type h4 {
     top: -35px;
     font-size: 2.2rem;
   }
@@ -123,7 +123,7 @@
   .path-box {
     width: 600px;
   }
-  .path-box .path-box-type h3 {
+  .path-box .path-box-type h4 {
     font-size: 2rem;
   }
   .path-box .path-image-container img {
@@ -159,7 +159,7 @@
   .path-box .external-icon {
     width: 25px;
   }
-  .path-box .path-box-type h3 {
+  .path-box .path-box-type h4 {
     font-size: 1.5rem;
   }
   .path-box .path-image-container img {
@@ -184,7 +184,7 @@
   .path-box .path-image-container {
     padding-left: 5px !important;
   }
-  .path-box .path-box-type h3 {
+  .path-box .path-box-type h4 {
     font-size: 1.4rem;
     top: -18px;
   }
@@ -220,8 +220,12 @@
   .path-box {
     width: 360px;
   }
-  .path-box .path-box-type h3 {
-    font-size: 1.55rem;
+  .path-box .accordion-button {
+    font-size: 1.4rem;
+  }
+  .path-box .path-box-type h4 {
+    font-size: 1.2rem;
+    top: -17px;
   }
   .path-box .path-image-container {
     padding-left: 10px !important;
@@ -240,30 +244,54 @@
 @media (max-width: 510px) {
   #internships.path {
     width: 100%;
-    gap: 25px;
+  }
+  #internships.path:first-child {
+    margin-right: -20px;
   }
   .path-box {
     width: 340px;
   }
-  .path-box .path-box-type {
+  .path-box .path-box-type h4 {
     font-size: 1.4rem;
-  }
-  .path-box .path-box-type h3 {
-    top: -25px;
+    top: -18px;
   }
   .path-box .path-title {
     font-size: 1.6rem;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 390px) {
+  #internships.path {
+    padding: 18px 0;
+  }
   .path-box {
     width: 300px;
   }
-  .path-box .path-box-type {
+  .path-box .path-box-type h4 {
+    font-size: 1.2rem;
+    top: -18px;
+  }
+  .path-box .path-image-container {
+    padding-left: 5px !important;
+  }
+  .path-box .path-image-container img {
+    width: 80px;
+  }
+  .path-box .path-title {
     font-size: 1.35rem;
   }
-  .path-box .path-box-type h3 {
-    top: -25px;
+  .path-box .path-keypoints-list {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 355px) {
+  #internships.path {
+    padding: 18px 0;
+  }
+  .path-box {
+    width: 260px;
+  }
+  .path-box .path-box-type h4 {
+    font-size: 1.2rem;
   }
   .path-box .path-image-container {
     padding-left: 5px !important;
