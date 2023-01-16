@@ -54,366 +54,369 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./scripts/logos-array.js"></script>
     <script src="./scripts/main-techs.js"></script>
-
+    <link rel="icon" href="./media/logos/Main-Logo.ico" type="image/x-icon" />
     <title>Matías Benavente Blog</title>
   </head>
   <body>
-    <nav
-      class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark nav-animation"
-    >
-      <div class="container-fluid">
-        <a id="nav-logo" href="#">
-          <img src="./media/logos/Main-Logo.svg" />
-        </a>
+    <div id="wrapper">
+      <nav
+        class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark nav-animation"
+      >
+        <div class="container-fluid">
+          <a id="nav-logo" href="#">
+            <img src="./media/logos/Main-Logo.svg" />
+          </a>
 
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <button
-              class="btn btn-dark dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-dark dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
+                    target="_blank"
+                    ><img
+                      src="./media/icons/LinkedIn.svg"
+                      alt="linkedin contact"
+                    />LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="mailto:benaventematias04@gmail.com"
+                    target="_blank"
+                    ><img
+                      src="./media/icons/Mail.svg"
+                      alt="mail contact"
+                    />Mail</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section id="hero-section">
+        <div id="photo-frame">
+          <div id="photo-title-bar">
+            <p>Me :)</p>
+            <div id="control-buttons-bar">
+              <p id="minimize-button-bar">-</p>
+              <p id="maximize-button-bar">□</p>
+              <p id="close-button-bar">X</p>
+            </div>
+          </div>
+          <div id="photo-container">
+            <div id="photo-background-container">
+              <div class="photo-background"></div>
+              <div class="photo-background"></div>
+            </div>
+            <img src="./media/Profile_image.svg" id="profile-image" />
+          </div>
+          <div id="photo-social-buttons">
+            <a
+              class="social-button"
+              href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
             >
-              Contact
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
-                  target="_blank"
-                  ><img
-                    src="./media/icons/LinkedIn.svg"
-                    alt="linkedin contact"
-                  />LinkedIn</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="mailto:benaventematias04@gmail.com"
-                  target="_blank"
-                  ><img
-                    src="./media/icons/Mail.svg"
-                    alt="mail contact"
-                  />Mail</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
+              <img src="./media/icons/LinkedIn.svg" />
+            </a>
+            <a class="social-button" href="https://github.com/BenaventeX24">
+              <img src="./media/icons/Github.svg" />
+            </a>
+            <a class="social-button" href="mailto:benaventematias04@gmail.com">
+              <img src="./media/icons/Mail.svg" />
+            </a>
+          </div>
+        </div>
+        <div id="intro">
+          <p id="welcome">Hey there! I'm</p>
+          <h1 id="intro-title">Matías Benavente</h1>
+          <span id="intro-profession">
+            <h2>Full-Stack</h2>
+            <h2>Developer</h2>
+          </span>
+          <p id="presentation-text">
+            Technology and sports lover, part of professional teams in both
+            fields from a young age.
+          </p>
+        </div>
+      </section>
+      <div id="get-to-know-me">
+        <div class="scroll-illustration">
+          scroll
+          <div>↓</div>
+        </div>
+        GET TO KNOW MORE ABOUT ME
+        <div class="scroll-illustration">
+          scroll
+          <div>↓</div>
+        </div>
       </div>
-    </nav>
+      <section id="path-section">
+        <h3>My path</h3>
+        <div class="path" id="studies">
+          <div class="accordion" id="path-accordion">
+            <div class="accordion-item path-box">
+              <div class="path-box-type">
+                <h4 class="">Studies</h4>
+              </div>
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <img class="path-image" src="./media/logos/Anima.svg" />
+                  Anima
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="body-text">
+                    Anima is an educational organization and high school located
+                    in the downtown of Montevideo, Uruguay. It's one of the very
+                    few institution that offer the 'dual vocational training’
+                    (work in a real company as you study).
+                  </p>
+                  <a
+                    class="accordion-webpage"
+                    href="https://anima.edu.uy"
+                    target="_blank"
+                    >Website<img
+                      src="./media/icons/External.svg"
+                      class="external-icon"
+                  /></a>
+                  <ul class="accordion-keypoints-list">
+                    <li>Web Developer Junior</li>
+                    <li>ICT</li>
+                  </ul>
+                  <div class="path-date">03/2021 - 11/2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="path" id="internships">
+          <div id="path-union-line"></div>
+          <div class="accordion" id="path-accordion">
+            <div class="accordion-item path-box">
+              <div class="scroll-right-message">Scroll →</div>
+              <div class="path-box-type">
+                <h4 class="">Internship</h4>
+              </div>
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <img class="path-image" src="./media/logos/Arkano.svg" />
+                  Arkano Software
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="body-text">
+                    As a trainee I worked in different kinds of Microsoft
+                    solutions, with an enfasis in Power Platform. This
+                    internship had an orientation on bot construction and
+                    deployment.
+                  </p>
+                  <a
+                    class="accordion-webpage"
+                    href="https://arkano.com"
+                    target="_blank"
+                    >Website<img
+                      src="./media/icons/External.svg"
+                      class="external-icon"
+                  /></a>
+                  <ul class="accordion-keypoints-list">
+                    <li>Power Platform development</li>
+                    <li>Bot development</li>
+                  </ul>
+                  <div class="path-date">09/2021 - 12/2021</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="path-accordion">
+            <div class="accordion-item path-box">
+              <div class="path-box-type">
+                <h4 class="">Internship</h4>
+              </div>
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <img class="path-image" src="./media/logos/Globant.svg" />
+                  Globant
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="body-text">
+                    In Globant I had the opportunity to find out how much I
+                    enjoy working in the Frontend area, not only by exchanging
+                    knowledge with remarkable UX-UI/Frontend seniors but by
+                    actually develop a client project from scratch.
+                  </p>
+                  <a
+                    class="accordion-webpage"
+                    href="https://globant.com"
+                    target="_blank"
+                    >Website<img
+                      src="./media/icons/External.svg"
+                      class="external-icon"
+                  /></a>
+                  <ul class="accordion-keypoints-list">
+                    <li>UX/UI Development</li>
+                    <li>Frontender</li>
+                  </ul>
+                  <div class="path-date">04/2022 - 11/2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="hero-section">
-      <div id="photo-frame">
-        <div id="photo-title-bar">
-          <p>Me :)</p>
-          <div id="control-buttons-bar">
-            <p id="minimize-button-bar">-</p>
-            <p id="maximize-button-bar">□</p>
-            <p id="close-button-bar">X</p>
+      <section id="main-tech-list">
+        <div id="content-intro">
+          <h3>Main technologies</h3>
+          <p class="scroll-right-message">Scrollable list →</p>
+        </div>
+        <div id="technologies-list"></div>
+      </section>
+
+      <section id="facts-section">
+        <h2>Facts about me</h2>
+        <div id="facts-list">
+          <div class="fact">
+            <lottie-player
+              src="https://assets8.lottiefiles.com/packages/lf20_qgdcqwbg.json"
+              mode="bounce"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+              class="fact-gif"
+            ></lottie-player>
+            <p>Basketball player and 2018 third division champion.</p>
+          </div>
+
+          <div class="fact">
+            <lottie-player
+              class="fact-gif"
+              src="https://assets8.lottiefiles.com/packages/lf20_tgkj7qnw.json"
+              background="transparent"
+              speed="1.5"
+              loop
+              mode="bounce"
+              autoplay
+            ></lottie-player>
+            <p>
+              My top increasing interests are crypto and open source projects.
+            </p>
+          </div>
+          <div class="fact">
+            <lottie-player
+              class="fact-gif"
+              src="https://assets3.lottiefiles.com/packages/lf20_LSp1cEDmFy.json"
+              background="transparent"
+              speed="1.4"
+              loop
+              autoplay
+            ></lottie-player>
+            <p>
+              Founded my first company and real solution 'Faro' alongside a
+              wonderful team for Anima's final project.
+            </p>
+          </div>
+          <div class="fact">
+            <lottie-player
+              class="fact-gif"
+              src="https://assets10.lottiefiles.com/packages/lf20_tfb3estd.json"
+              background="transparent"
+              speed="2"
+              loop
+              autoplay
+            ></lottie-player>
+            <p>First job experience in a tech company at 17 years old.</p>
+          </div>
+
+          <div class="fact">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              class="fact-gif"
+              src="https://assets5.lottiefiles.com/packages/lf20_0mn8N7UbiE.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></lottie-player>
+            <p>Born and raised in Montevideo, capital city of Uruguay.</p>
+          </div>
+
+          <div class="fact">
+            <lottie-player
+              class="fact-gif"
+              src="https://assets2.lottiefiles.com/packages/lf20_uzvwjpkq.json"
+              mode="bounce"
+              background="transparent"
+              speed="1.5"
+              loop
+              autoplay
+            ></lottie-player>
+            <p>
+              Decided to become Full-Stack after being designated for backend
+              leader in Anima's final project.
+            </p>
           </div>
         </div>
-        <div id="photo-container">
-          <div id="photo-background-container">
-            <div class="photo-background"></div>
-            <div class="photo-background"></div>
-          </div>
-          <img src="./media/Profile_image.svg" id="profile-image" />
-        </div>
-        <div id="photo-social-buttons">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
-          >
-            <img src="./media/icons/LinkedIn.svg" />
-          </a>
-          <a class="social-button" href="https://github.com/BenaventeX24">
-            <img src="./media/icons/Github.svg" />
-          </a>
-          <a class="social-button" href="mailto:benaventematias04@gmail.com">
-            <img src="./media/icons/Mail.svg" />
-          </a>
-        </div>
-      </div>
-      <div id="intro">
-        <p id="welcome">Hey there! I'm</p>
-        <h1 id="intro-title">Matías Benavente</h1>
-        <span id="intro-profession">
-          <h2>Full-Stack</h2>
-          <h2>Developer</h2>
-        </span>
-        <p id="presentation-text">
-          Technology and sports lover, part of professional teams in both fields
-          from a young age.
-        </p>
-      </div>
-    </section>
-    <div id="get-to-know-me">
-      <div class="scroll-illustration">
-        scroll
-        <div>↓</div>
-      </div>
-      GET TO KNOW MORE ABOUT ME
-      <div class="scroll-illustration">
-        scroll
-        <div>↓</div>
-      </div>
+      </section>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>
+            "When something is important enough, you do it even if the odds are
+            not in your favor."
+          </p>
+        </blockquote>
+      </figure>
     </div>
-    <section id="path-section">
-      <h3>My path</h3>
-      <div class="path" id="studies">
-        <div class="accordion" id="path-accordion">
-          <div class="accordion-item path-box">
-            <div class="path-box-type">
-              <h4 class="">Studies</h4>
-            </div>
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                <img class="path-image" src="./media/logos/Anima.svg" />
-                Anima
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <p class="body-text">
-                  Anima is an educational organization and high school located
-                  in the downtown of Montevideo, Uruguay. It's one of the very
-                  few institution that offer the 'dual vocational training’
-                  (work in a real company as you study).
-                </p>
-                <a
-                  class="accordion-webpage"
-                  href="https://anima.edu.uy"
-                  target="_blank"
-                  >Website<img
-                    src="./media/icons/External.svg"
-                    class="external-icon"
-                /></a>
-                <ul class="accordion-keypoints-list">
-                  <li>Web Developer Junior</li>
-                  <li>ICT</li>
-                </ul>
-                <div class="path-date">03/2021 - 11/2022</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="path" id="internships">
-        <div id="path-union-line"></div>
-        <div class="accordion" id="path-accordion">
-          <div class="accordion-item path-box">
-            <div class="scroll-right-message">Scroll →</div>
-            <div class="path-box-type">
-              <h4 class="">Internship</h4>
-            </div>
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                <img class="path-image" src="./media/logos/Arkano.svg" />
-                Arkano Software
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <p class="body-text">
-                  As a trainee I worked in different kinds of Microsoft
-                  solutions, with an enfasis in Power Platform. This internship
-                  had an orientation on bot construction and deployment.
-                </p>
-                <a
-                  class="accordion-webpage"
-                  href="https://arkano.com"
-                  target="_blank"
-                  >Website<img
-                    src="./media/icons/External.svg"
-                    class="external-icon"
-                /></a>
-                <ul class="accordion-keypoints-list">
-                  <li>Power Platform development</li>
-                  <li>Bot development</li>
-                </ul>
-                <div class="path-date">09/2021 - 12/2021</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion" id="path-accordion">
-          <div class="accordion-item path-box">
-            <div class="path-box-type">
-              <h4 class="">Internship</h4>
-            </div>
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                <img class="path-image" src="./media/logos/Globant.svg" />
-                Globant
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <p class="body-text">
-                  In Globant I had the opportunity to find out how much I enjoy
-                  working in the Frontend area, not only by exchanging knowledge
-                  with remarkable UX-UI/Frontend seniors but by actually develop
-                  a client project from scratch.
-                </p>
-                <a
-                  class="accordion-webpage"
-                  href="https://globant.com"
-                  target="_blank"
-                  >Website<img
-                    src="./media/icons/External.svg"
-                    class="external-icon"
-                /></a>
-                <ul class="accordion-keypoints-list">
-                  <li>UX/UI Development</li>
-                  <li>Frontender</li>
-                </ul>
-                <div class="path-date">04/2022 - 11/2022</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="main-tech-list">
-      <div id="content-intro">
-        <h3>Main technologies</h3>
-        <p class="scroll-right-message">Scrollable list →</p>
-      </div>
-      <div id="technologies-list"></div>
-    </section>
-
-    <section id="facts-section">
-      <h2>Facts about me</h2>
-      <div id="facts-list">
-        <div class="fact">
-          <lottie-player
-            src="https://assets8.lottiefiles.com/packages/lf20_qgdcqwbg.json"
-            mode="bounce"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay
-            class="fact-gif"
-          ></lottie-player>
-          <p>Basketball player and 2018 third division champion.</p>
-        </div>
-
-        <div class="fact">
-          <lottie-player
-            class="fact-gif"
-            src="https://assets8.lottiefiles.com/packages/lf20_tgkj7qnw.json"
-            background="transparent"
-            speed="1.5"
-            loop
-            mode="bounce"
-            autoplay
-          ></lottie-player>
-          <p>
-            My top increasing interests are crypto and open source projects.
-          </p>
-        </div>
-        <div class="fact">
-          <lottie-player
-            class="fact-gif"
-            src="https://assets3.lottiefiles.com/packages/lf20_LSp1cEDmFy.json"
-            background="transparent"
-            speed="1.4"
-            loop
-            autoplay
-          ></lottie-player>
-          <p>
-            Founded my first company and real solution 'Faro' alongside a
-            wonderful team for Anima's final project.
-          </p>
-        </div>
-        <div class="fact">
-          <lottie-player
-            class="fact-gif"
-            src="https://assets10.lottiefiles.com/packages/lf20_tfb3estd.json"
-            background="transparent"
-            speed="2"
-            loop
-            autoplay
-          ></lottie-player>
-          <p>First job experience in a tech company at 17 years old.</p>
-        </div>
-
-        <div class="fact">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player
-            class="fact-gif"
-            src="https://assets5.lottiefiles.com/packages/lf20_0mn8N7UbiE.json"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay
-          ></lottie-player>
-          <p>Born and raised in Montevideo, capital city of Uruguay.</p>
-        </div>
-
-        <div class="fact">
-          <lottie-player
-            class="fact-gif"
-            src="https://assets2.lottiefiles.com/packages/lf20_uzvwjpkq.json"
-            mode="bounce"
-            background="transparent"
-            speed="1.5"
-            loop
-            autoplay
-          ></lottie-player>
-          <p>
-            Decided to become Full-Stack after being designated for backend
-            leader in Anima's final project.
-          </p>
-        </div>
-      </div>
-    </section>
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p>
-          "When something is important enough, you do it even if the odds are
-          not in your favor."
-        </p>
-      </blockquote>
-    </figure>
   </body>
 </html>

@@ -8,7 +8,7 @@
 
 /* -------- Scrollbar No Firefox Support -------- */
 
-#internships.path,
+cinternships.path,
 #technologies-list {
   &::-webkit-scrollbar {
     width: 10px;
@@ -31,9 +31,19 @@
 
 /* -------- Scrollbar -------- */
 
+#wrapper {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  max-width: 1070px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
+}
+
 body {
   background-color: #f0f0f0 !important;
-  padding: 0 6%;
+  padding: 0 8%;
 
   @include tablet {
     padding: 0 1%;

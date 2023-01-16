@@ -12,23 +12,15 @@
   width: auto;
 }
 
-@media (max-width: 1280px) {
-  #technologies-list {
-    width: 100%;
-  }
-}
 @media (max-width: 960px) {
   #technologies-list {
-    width: 90%;
+    width: 95%;
   }
   #technologies-list img {
     height: 90px;
   }
 }
 @media (max-width: 768px) {
-  #technologies-list {
-    width: 90%;
-  }
   #technologies-list img {
     height: 80px;
   }

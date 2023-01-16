@@ -1,7 +1,7 @@
 $(window).on("load", function () {
   /*------------- NAVBAR -------------*/
   const animations = () => {
-    anime.timeline({}).add({
+    /*anime.timeline({}).add({
       targets: ".nav-animation",
       translateY: [-100, 0],
       opacity: [0, 1],
@@ -15,16 +15,6 @@ $(window).on("load", function () {
       scale: [0, 1],
       delay: 500,
       easing: "easeOutBack",
-      complete: () => {
-        anime({
-          targets: ".photo-background",
-          rotate: "360deg",
-          easing: "linear",
-          duration: 8000,
-          loop: true,
-          changeComplete: (anim) => setTimeout(() => anim.restart()),
-        });
-      },
     });
 
     anime
@@ -39,18 +29,8 @@ $(window).on("load", function () {
         targets: "#profile-image",
         scale: [0, 1],
         rotate: "360deg",
-        duration: 2000,
+        duration: 1200,
         easing: "easeOutSine",
-        complete: () => {
-          anime({
-            targets: ".photo-background",
-            rotate: "360deg",
-            easing: "linear",
-            duration: 8000,
-            loop: true,
-            changeComplete: (anim) => setTimeout(() => anim.restart()),
-          });
-        },
       });
 
     anime({
