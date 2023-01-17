@@ -43,53 +43,71 @@
   </head>
   <body>
     <div id="wrapper">
-      <nav class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a id="nav-logo" href="#">
-            <img src="./media/logos/Main-Logo.svg" />
-          </a>
-
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <button id="navbar-home" class="btn btn-dark">Home</button>
-              <button id="navbar-projects" class="btn btn-dark">
-                Projects
-              </button>
-              <button
-                class="btn btn-dark dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Contact
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
-                    target="_blank"
-                    ><img
-                      src="./media/icons/LinkedIn.svg"
-                      alt="linkedin contact"
-                    />LinkedIn</a
-                  >
+      <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="nav-logo" href="./index.html"
+              ><img src="./media/logos/Main-Logo.svg"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
                 </li>
-                <li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Projects</a>
+                </li>
+                <li class="nav-item dropdown">
                   <a
-                    class="dropdown-item"
-                    href="mailto:benaventematias04@gmail.com"
-                    target="_blank"
-                    ><img
-                      src="./media/icons/Mail.svg"
-                      alt="mail contact"
-                    />Mail</a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
+                    Contact
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
+                        target="_blank"
+                        ><img
+                          src="./media/icons/LinkedIn.svg"
+                          alt="linkedin contact"
+                        />LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="mailto:benaventematias04@gmail.com"
+                        target="_blank"
+                        ><img
+                          src="./media/icons/Mail.svg"
+                          alt="mail contact"
+                        />Mail</a
+                      >
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            </div>
+          </div>
+        </nav>
+      </header>
       <div id="projects">
         <h1>My projects</h1>
         <div id="projects-list">
@@ -114,7 +132,14 @@
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Development: 5 months</li>
-                <li class="list-group-item">Technologies: See readme</li>
+                <li class="list-group-item">
+                  Technologies:
+                  <a
+                    href="https://github.com/BenaventeX24/Faro-Public-Copy/blob/develop/readme.md"
+                    target="__blank"
+                    >See readme</a
+                  >
+                </li>
                 <li class="list-group-item">
                   Release day:
                   <a
@@ -138,12 +163,12 @@
           </div>
           <div class="card" style="width: 18rem">
             <img
-              src="./media/logos/Enigma.svg"
+              src="./media/logos/Riddle.svg"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Next update on this project: June 2023</h5>
+              <h5 class="card-title">Next update on projects: May 2023</h5>
               <p class="card-text"></p>
             </div>
             <ul class="list-group list-group-flush">
@@ -161,10 +186,8 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      document.getElementById("navbar-home").onclick = function () {
-        location.href = "./index.html";
-      };
-    </script>
+    <div class="end-page">
+      <img src="./media/logos/Main-Logo.svg" />
+    </div>
   </body>
 </html>

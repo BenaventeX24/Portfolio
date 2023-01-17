@@ -59,54 +59,71 @@
   </head>
   <body>
     <div id="wrapper">
-      <nav class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a id="nav-logo" href="#">
-            <img src="./media/logos/Main-Logo.svg" />
-          </a>
-
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <button id="navbar-home" class="btn btn-dark">Home</button>
-              <button id="navbar-projects" class="btn btn-dark">
-                Projects
-              </button>
-              <button
-                class="btn btn-dark dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Contact
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
-                    target="_blank"
-                    ><img
-                      src="./media/icons/LinkedIn.svg"
-                      alt="linkedin contact"
-                    />LinkedIn</a
-                  >
+      <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="nav-logo" href="#"
+              ><img src="./media/logos/Main-Logo.svg"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link disabled">Home</a>
                 </li>
-                <li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item dropdown">
                   <a
-                    class="dropdown-item"
-                    href="mailto:benaventematias04@gmail.com"
-                    target="_blank"
-                    ><img
-                      src="./media/icons/Mail.svg"
-                      alt="mail contact"
-                    />Mail</a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
+                    Contact
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
+                        target="_blank"
+                        ><img
+                          src="./media/icons/LinkedIn.svg"
+                          alt="linkedin contact"
+                        />LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="mailto:benaventematias04@gmail.com"
+                        target="_blank"
+                        ><img
+                          src="./media/icons/Mail.svg"
+                          alt="mail contact"
+                        />Mail</a
+                      >
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+            </div>
+          </div>
+        </nav>
+      </header>
       <section id="hero-section">
         <div id="photo-frame">
           <div id="photo-title-bar">
@@ -431,10 +448,8 @@
         </blockquote>
       </figure>
     </div>
-    <script type="text/javascript">
-      document.getElementById("navbar-projects").onclick = function () {
-        location.href = "./projects.html";
-      };
-    </script>
+    <div class="end-page">
+      <img src="./media/logos/Main-Logo.svg" />
+    </div>
   </body>
 </html>

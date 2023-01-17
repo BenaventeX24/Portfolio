@@ -10,7 +10,7 @@ $(window).on("load", function () {
     });*/
 
     anime({
-      targets: ".nav-item",
+      targets: ".nav-item, .navbar-toggler",
       translateX: [100, 0],
       opacity: [0, 1],
       easing: "easeOutBack",
@@ -47,8 +47,7 @@ $(window).on("load", function () {
       easing: "easeOutBack",
 
       translateY: [-10, 10],
-      opacity: [1, 0.5, 0],
-      duration: 2500,
+      duration: 3000,
       loop: true,
       changeComplete: (anim) => setTimeout(() => anim.restart()),
     });

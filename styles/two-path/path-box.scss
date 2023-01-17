@@ -130,27 +130,7 @@
   }
 }
 
-@include desktop-xl {
-  .path-box {
-    width: 520px;
-
-    border: 4px solid black;
-    border-radius: 16px;
-
-    .path-box-type {
-      h4 {
-        top: -35px;
-        font-size: 2.2rem;
-      }
-    }
-
-    .path-keypoints-list {
-      font-size: 1.9rem;
-    }
-  }
-}
-
-@include desktop-lg {
+@media (min-width: 1440px) {
   .path-box {
     width: 520px;
 
