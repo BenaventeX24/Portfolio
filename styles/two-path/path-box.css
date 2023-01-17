@@ -200,6 +200,7 @@
   #internships.path {
     overflow-x: scroll;
     width: 100%;
+    padding: 18px 0;
   }
   #internships.path .scroll-illustration-path {
     display: inline-block;
@@ -231,19 +232,19 @@
   .path-box {
     width: 330px;
   }
+  .path-box .accordion-button {
+    font-size: 1.35rem !important;
+  }
+  .path-box .accordion-button img {
+    margin-right: 15px !important;
+    margin-left: -12px !important;
+  }
   .path-box .path-box-type h4 {
     font-size: 1.4rem;
     top: -18px;
   }
 }
 @media (max-width: 440px) {
-  .accordion-button {
-    font-size: 1.35rem !important;
-  }
-  .accordion-button img {
-    margin-right: 15px !important;
-    margin-left: -12px !important;
-  }
   #internships.path {
     padding: 18px 0;
   }
