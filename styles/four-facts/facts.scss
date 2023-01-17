@@ -1,8 +1,6 @@
 @import "../mixins";
 
 #facts-frame {
-  display: flex;
-  align-items: center;
   width: 100%;
 
   border-radius: 25px;
@@ -11,22 +9,6 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
-  img#facts-image {
-    position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-
-    height: 220px;
-    width: auto;
-
-    border-radius: 50%;
-
-    border: 2px solid rgb(255, 255, 255, 0.5);
-    outline: 2px solid black;
-  }
 }
 
 #facts-list {
@@ -49,6 +31,7 @@
     padding: 0 10px;
     border: 2px solid black;
     border-radius: 20px 0 0 20px;
+    background-color: white;
 
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
 
@@ -78,11 +61,6 @@
 }
 
 @media (max-width: 1100px) {
-  #facts-frame {
-    img#facts-image {
-      height: 185px;
-    }
-  }
   #facts-list {
     gap: 30px;
 
@@ -102,12 +80,6 @@
 }
 
 @media (max-width: 825px) {
-  #facts-frame {
-    img#facts-image {
-      height: 160px;
-      top: 70px;
-    }
-  }
   #facts-list {
     gap: 30px;
 
@@ -130,12 +102,6 @@
 }
 
 @media (max-width: 635px) {
-  #facts-frame {
-    img#facts-image {
-      height: 155px;
-      top: 125px;
-    }
-  }
   #facts-list {
     gap: 10px;
 
@@ -145,11 +111,11 @@
       align-items: center;
 
       width: 190px;
-      height: 200px;
+      height: 230px;
 
       border-radius: 20px;
 
-      padding: 5px;
+      padding: 8px;
 
       .fact-gif {
         width: 190px;
@@ -173,12 +139,6 @@
 }
 
 @media (max-width: 408px) {
-  #facts-frame {
-    img#facts-image {
-      height: 140px;
-      top: 120px;
-    }
-  }
   #facts-list {
     gap: 10px;
 
@@ -199,6 +159,7 @@
         width: 100%;
         height: 85px;
       }
+
       p {
         font-size: 0.9rem;
       }
@@ -212,16 +173,18 @@
 
 @media (max-width: 330px) {
   #facts-list {
-    gap: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  #facts-list {
+    gap: 15px;
 
     .fact {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-
-      width: 140px;
-      height: 230px;
+      width: 200px;
+      height: 200px;
+      justify-self: unset !important;
 
       border-radius: 20px;
 

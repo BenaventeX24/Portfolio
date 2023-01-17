@@ -39,10 +39,11 @@ cinternships.path,
 
   padding-right: 10px; /* 3 */
   padding-left: 10px; /* 3 */
+
+  height: 100%;
 }
 
 body {
-  background-color: #f0f0f0 !important;
   padding: 0 8%;
 
   @include tablet {

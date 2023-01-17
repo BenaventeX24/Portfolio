@@ -2,20 +2,29 @@ $(window).on("load", function () {
   /*------------- NAVBAR -------------*/
   const animations = () => {
     /*anime.timeline({}).add({
-      targets: ".nav-animation",
-      translateY: [-100, 0],
+      targets: ".container-fluid",
+      translateX: [-100, 0],
       opacity: [0, 1],
       easing: "easeOutExpo",
       delay: 1000,
+    });*/
+
+    anime({
+      targets: ".nav-item",
+      translateX: [100, 0],
+      opacity: [0, 1],
+      easing: "easeOutBack",
+      delay: 1000,
+    });
+
+    anime({
+      targets: "#nav-logo",
+      translateX: [-100, 0],
+      opacity: [0, 1],
+      easing: "easeOutBack",
+      delay: 1000,
     });
     /*------------- NAVBAR -------------*/
-
-    anime.timeline().add({
-      targets: "#photo-frame",
-      scale: [0, 1],
-      delay: 500,
-      easing: "easeOutBack",
-    });
 
     anime
       .timeline()
@@ -23,26 +32,61 @@ $(window).on("load", function () {
         targets: "#photo-frame",
         scale: [0, 1],
         delay: 500,
-        easing: "easeOutBack",
+        easing: "easeOutElastic",
       })
       .add({
         targets: "#profile-image",
         scale: [0, 1],
         rotate: "360deg",
-        duration: 1200,
-        easing: "easeOutSine",
+        duration: 1250,
+        easing: "easeOutQuart",
       });
 
     anime({
-      targets: ".scroll-illustration",
-      delay: 500,
-      opacity: [0, 1],
+      targets: "#get-to-know-me",
       easing: "easeOutBack",
-      translateY: [-15, 10],
+
+      translateY: [-10, 10],
+      opacity: [1, 0.5, 0],
+      duration: 2500,
       loop: true,
       changeComplete: (anim) => setTimeout(() => anim.restart()),
     });
 
+    let scrollPath = anime({
+      targets: ".scroll-illustration-path",
+      easing: "easeOutBack",
+      translateX: [0, 30, 0],
+      delay: 800,
+      duration: 1500,
+      direction: "alternate",
+      loop: true,
+      changeComplete: (anim) => setTimeout(() => anim.restart()),
+    });
+
+    $("#internships").on("scroll", () => {
+      $(".scroll-illustration-path").css({
+        transition: "visibility 0s, opacity 0.5s linear",
+        visibility: "visible",
+        opacity: 0,
+      });
+      scrollPath.pause();
+    });
+
+    let scrollTechs = anime({
+      targets: ".scroll-illustration-techs",
+      easing: "easeOutBack",
+      translateX: [0, 30, 0],
+      delay: 900,
+      duration: 1500,
+      direction: "alternate",
+      loop: true,
+      changeComplete: (anim) => setTimeout(() => anim.restart()),
+    });
+
+    $("#technologies-list").on("scroll", () => {
+      scrollTechs.pause();
+    });
     /*------------- Content One -------------*/
 
     /*------------- Hero -------------*/

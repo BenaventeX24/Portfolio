@@ -1,6 +1,6 @@
 @import "../_mixins";
 
-.scroll-right-message {
+.scroll-illustration {
   display: inline-block;
   font-family: "Montserrat";
   width: fit-content;
@@ -12,14 +12,14 @@
   display: flex;
 
   &#internships {
-    .scroll-right-message {
+    .scroll-illustration-path {
       display: none;
     }
   }
 }
 
 .path-box {
-  margin: 40px 40px;
+  margin: 40px 10px;
   position: relative;
 
   border: 2px solid black;
@@ -132,7 +132,7 @@
 
 @include desktop-xl {
   .path-box {
-    width: 730px;
+    width: 520px;
 
     border: 4px solid black;
     border-radius: 16px;
@@ -144,12 +144,6 @@
       }
     }
 
-    .path-image-container {
-      img {
-        width: 200px;
-      }
-    }
-
     .path-keypoints-list {
       font-size: 1.9rem;
     }
@@ -158,17 +152,11 @@
 
 @include desktop-lg {
   .path-box {
-    width: 600px;
+    width: 520px;
 
     .path-box-type {
       h4 {
         font-size: 2rem;
-      }
-    }
-
-    .path-image-container {
-      img {
-        width: 150px;
       }
     }
 
@@ -182,7 +170,7 @@
 
 @media (max-width: 1440px) {
   .path-box {
-    width: 500px;
+    width: 440px;
 
     .path-keypoints-list {
       font-size: 1.25rem;
@@ -192,15 +180,43 @@
 
 @media (max-width: 1200px) {
   .path-box {
-    margin: 30px 20px;
+    margin: 30px 10px;
   }
 }
 
 /* ----------------- Tablet ----------------- */
 
 @media (max-width: 1080px) {
+  .accordion-body {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "text text"
+      "keypoints keypoints"
+      "webpage date" !important;
+
+    .body-text {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .accordion-body {
+    .accordion-keypoints-list {
+      padding-left: 15px;
+      padding-bottom: 20px;
+      font-size: 1rem;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      li {
+        margin: 0 !important;
+      }
+    }
+  }
+
   .path-box {
-    width: 400px;
+    width: 360px;
 
     margin: 30px 20px;
 
@@ -211,12 +227,6 @@
     .path-box-type {
       h4 {
         font-size: 1.5rem;
-      }
-    }
-
-    .path-image-container {
-      img {
-        width: 110px;
       }
     }
 
@@ -237,20 +247,10 @@
 
     margin: 30px 10px;
 
-    .path-image-container {
-      padding-left: 5px !important;
-    }
-
     .path-box-type {
       h4 {
         font-size: 1.4rem;
         top: -18px;
-      }
-    }
-
-    .path-image-container {
-      img {
-        width: 92px;
       }
     }
 
@@ -265,28 +265,13 @@
 /* ----------------- Phone ----------------- */
 
 @media (max-width: 720px) {
-  .accordion-body {
-    grid-template-columns: 1fr;
-
-    grid-template-areas:
-      "text text"
-      "keypoints keypoints"
-      "webpage date" !important;
-
-    .body-text {
-      margin-bottom: 0 !important;
-    }
-  }
-
   #internships.path {
-    .scroll-right-message {
+    .scroll-illustration-path {
       display: inline-block;
       position: absolute;
       top: -22px;
       right: 0;
     }
-
-    padding: 18px;
 
     overflow-x: scroll;
     width: 100%;
@@ -300,35 +285,13 @@
     width: 360px;
 
     .accordion-button {
-      font-size: 1.4rem;
+      font-size: 1.4rem !important;
     }
 
     .path-box-type {
       h4 {
         font-size: 1.2rem;
         top: -17px;
-      }
-    }
-
-    .path-image-container {
-      padding-left: 10px !important;
-      img {
-        width: 90px;
-      }
-    }
-
-    .accordion-body {
-      .accordion-keypoints-list {
-        padding-left: 15px;
-        padding-bottom: 20px;
-        font-size: 1rem;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-
-        li {
-          margin: 0 !important;
-        }
       }
     }
   }
@@ -344,7 +307,7 @@
   }
 
   .path-box {
-    width: 340px;
+    width: 330px;
 
     .path-box-type {
       h4 {
@@ -356,6 +319,14 @@
 }
 
 @media (max-width: 440px) {
+  .accordion-button {
+    font-size: 1.35rem !important;
+    img {
+      margin-right: 15px !important;
+      margin-left: -12px !important;
+    }
+  }
+
   #internships.path {
     padding: 18px 0;
   }
@@ -372,13 +343,6 @@
       }
     }
 
-    .path-image-container {
-      padding-left: 5px !important;
-      img {
-        width: 80px;
-      }
-    }
-
     .accordion-body {
       .accordion-keypoints-list {
         font-size: 0.95rem;
@@ -392,18 +356,11 @@
     padding: 18px 0;
   }
   .path-box {
-    width: 260px;
+    width: 250px;
 
     .path-box-type {
       h4 {
         font-size: 1.2rem;
-      }
-    }
-
-    .path-image-container {
-      padding-left: 5px !important;
-      img {
-        width: 80px;
       }
     }
   }

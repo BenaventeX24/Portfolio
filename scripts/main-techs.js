@@ -5,23 +5,15 @@ $(document).ready(function () {
     }
     $("#technologies-list").append(
       `
-        <img id="tech-list-${item.acronym}" 
-        src=${item.src}
-        title="${item.name}"
-        tabindex="0"
-        data-bs-toggle="popover"
-        data-bs-trigger="hover focus"
-        data-bs-content="${item.content}"
-        />`
+      <div class="card">
+        <img id="tech-list-${item.acronym}" src=${item.src} />
+        <div class="card-body">
+          ${item.name}
+        </div>
+      </div>
+      `
     );
   });
 });
 
 /*--------------------- Popover --------------------- */
-
-$(document).ready(function () {
-  $('[data-bs-toggle="popover"]').popover({
-    placement: "top",
-    delay: { show: 10, hide: 200 },
-  });
-});

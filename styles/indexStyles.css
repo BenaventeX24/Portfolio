@@ -34,10 +34,10 @@ cinternships.path::-webkit-scrollbar-thumb:hover,
   max-width: 1070px; /* 2 */
   padding-right: 10px; /* 3 */
   padding-left: 10px; /* 3 */
+  height: 100%;
 }
 
 body {
-  background-color: #f0f0f0 !important;
   padding: 0 8%;
 }
 @media (max-width: 768px) {
