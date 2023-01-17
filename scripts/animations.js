@@ -1,14 +1,6 @@
 $(window).on("load", function () {
   /*------------- NAVBAR -------------*/
   const animations = () => {
-    /*anime.timeline({}).add({
-      targets: ".container-fluid",
-      translateX: [-100, 0],
-      opacity: [0, 1],
-      easing: "easeOutExpo",
-      delay: 1000,
-    });*/
-
     anime({
       targets: ".nav-item, .navbar-toggler",
       translateX: [100, 0],
@@ -86,24 +78,6 @@ $(window).on("load", function () {
     $("#technologies-list").on("scroll", () => {
       scrollTechs.pause();
     });
-    /*------------- Content One -------------*/
-
-    /*------------- Hero -------------*/
-
-    /*
-    const heroObs = document.querySelector("#hero-profile");
-    const contentOneObs = document.querySelector(
-      "#experience-and-presentation"
-    );
-    const pathObs = document.querySelector("#path-section");
-
-    hero.observe(heroObs);
-    contentOne.observe(contentOneObs);
-    path.observe(pathObs);
-*/
-    /*$(window).on("resize", function () {
-      animations();
-    });*/
   };
 
   animations();
