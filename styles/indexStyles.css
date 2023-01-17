@@ -5,24 +5,20 @@
 }
 
 /* -------- Scrollbar No Firefox Support -------- */
-cinternships.path::-webkit-scrollbar,
 #technologies-list::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
-cinternships.path::-webkit-scrollbar-track,
 #technologies-list::-webkit-scrollbar-track {
   border-radius: 10px;
   background: linear-gradient(left, #212121, #323232);
   box-shadow: 0 0 1px 1px #111;
 }
-cinternships.path::-webkit-scrollbar-thumb,
 #technologies-list::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: linear-gradient(left, #4a4a4a, #404040);
   box-shadow: inset 0 0 1px 1px #191919;
 }
-cinternships.path::-webkit-scrollbar-thumb:hover,
 #technologies-list::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(left, #555555, #4e4e4e);
 }
