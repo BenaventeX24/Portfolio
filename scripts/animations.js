@@ -34,14 +34,18 @@ $(window).on("load", function () {
         easing: "easeOutQuart",
       });
 
-    anime({
+    let getToKnowMe = anime({
       targets: "#get-to-know-me",
       easing: "easeOutBack",
 
       translateY: [-10, 10],
-      duration: 3000,
+      duration: 1500,
       loop: true,
       changeComplete: (anim) => setTimeout(() => anim.restart()),
+    });
+
+    $(window).on("scroll", () => {
+      getToKnowMe.pause();
     });
 
     let scrollPath = anime({

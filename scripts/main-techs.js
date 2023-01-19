@@ -20,7 +20,6 @@ const logosArray = [
     acronym: "linux",
     src: "./media/logos/LinuxSV.svg",
   },
-  { name: "C#", acronym: "csharp", src: "./media/logos/CSharp.svg" },
   { name: "Material UI", acronym: "mui", src: "./media/logos/MUI.svg" },
   { name: "Jest", acronym: "jest", src: "./media/logos/Jest.svg" },
   {
@@ -34,12 +33,7 @@ const logosArray = [
     acronym: "formik",
     src: "./media/logos/Formik.svg",
   },
-  { name: "Power Apps", acronym: "papps", src: "./media/logos/Power-Apps.svg" },
-  {
-    name: "Power Automate",
-    acronym: "pautomate",
-    src: "./media/logos/Power-Automate.svg",
-  },
+
   {
     name: "Vite",
     acronym: "vite",
@@ -50,6 +44,13 @@ const logosArray = [
     name: "Prisma ORM",
     acronym: "prisma",
     src: "./media/logos/Prisma.svg",
+  },
+  { name: "C#", acronym: "csharp", src: "./media/logos/CSharp.svg" },
+  { name: "Power Apps", acronym: "papps", src: "./media/logos/Power-Apps.svg" },
+  {
+    name: "Power Automate",
+    acronym: "pautomate",
+    src: "./media/logos/Power-Automate.svg",
   },
   {
     name: "Spring Boot",

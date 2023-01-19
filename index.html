@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Analytics tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y5YQ45DVP2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y5YQ45DVP2");
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -154,17 +169,7 @@
           </p>
         </div>
       </section>
-      <div id="get-to-know-me">
-        <div class="scroll-illustration-intro">
-          scroll
-          <div>↓</div>
-        </div>
-        GET TO KNOW MORE ABOUT ME
-        <div class="scroll-illustration-intro">
-          scroll
-          <div>↓</div>
-        </div>
-      </div>
+
       <section id="path-section">
         <h3>My path</h3>
         <div class="path" id="studies">
@@ -175,11 +180,11 @@
               </div>
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseOne"
                 >
                   <img class="path-image" src="./media/logos/Anima.svg" />
@@ -229,11 +234,11 @@
               </div>
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseTwo"
                 >
                   <img class="path-image" src="./media/logos/Arkano.svg" />
@@ -277,11 +282,11 @@
               </div>
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseThree"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseThree"
                 >
                   <img class="path-image" src="./media/logos/Globant.svg" />
