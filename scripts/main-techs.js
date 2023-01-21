@@ -72,7 +72,7 @@ $(document).ready(function () {
     $("#technologies-list").append(
       `
       <div class="card">
-        <img id="tech-list-${item.acronym}" src=${item.src} />
+        <img id="tech-list-${item.acronym}" src=${item.src} alt="${item.name}">
         <div class="card-body">
           ${item.name}
         </div>
