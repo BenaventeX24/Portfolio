@@ -726,8 +726,8 @@ header nav {
 .path-box .accordion-button {
   height: 100px;
   background-color: #fff;
-  font-size: 1.8rem;
   position: relative !important;
+  font-size: 1.8rem;
 }
 .path-box .accordion-button:hover {
   position: relative !important;
@@ -900,6 +900,10 @@ header nav {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
   }
+  .path-box .accordion-button {
+    font-weight: 500;
+    font-size: 1.65rem;
+  }
 }
 @media (max-width: 870px) {
   .path-box {
@@ -929,8 +933,9 @@ header nav {
   #internships.path .scroll-illustration-path {
     display: inline-block;
     position: absolute;
-    top: -22px;
+    top: -27px;
     right: 0;
+    font-size: 1.25rem;
   }
   #internships.path .path-box {
     margin: 0 30px;
@@ -942,7 +947,7 @@ header nav {
     font-size: 1.4rem !important;
   }
   .path-box .path-box-type h4 {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
     top: -18px;
   }
 }
