@@ -62,7 +62,6 @@ const logosArray = [
     acronym: "pautomate",
     src: "./media/logos/Power-Automate.svg",
   },
-
   {
     name: "Spring Boot",
     acronym: "spring",
@@ -83,7 +82,7 @@ $(document).ready(function () {
     $("#technologies-list").append(
       `
       <div class="card">
-        <img id="tech-list-${item.acronym}" src=${item.src} />
+        <img id="tech-list-${item.acronym}" src=${item.src} alt="${item.name}">
         <div class="card-body">
           ${item.name}
         </div>
