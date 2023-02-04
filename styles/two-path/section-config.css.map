@@ -1,1 +1,0 @@
-{"version":3,"sources":["section-config.scss","section-config.css","../_mixins.scss"],"names":[],"mappings":"AAEA;EACE,WAAA;EAEA,aAAA;EACA,sBAAA;EACA,mBAAA;ACFF;ADIE;EACE,mBAAA;EAEA,gCAAA;EACA,gBAAA;EACA,kBAAA;EAEA,4CAAA;ACJJ;;ADQA;EAEI;IACE,kBAAA;ECNJ;AACF;ACXE;EFsBA;IACE,gBAAA;ECRF;EDUE;IACE,kBAAA;IACA,mBAAA;ECRJ;AACF","file":"section-config.css"}

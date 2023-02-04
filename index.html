@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Analytics tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y5YQ45DVP2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y5YQ45DVP2");
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The portfolio and virtual CV of a Full-Stack JS Developer"
+    />
+    <meta name="keywords" content="portfolio, cv, full-stack, developer" />
+    <meta name="author" content="Matias Benavente" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://matibenavente.com/" />
+    <meta property="og:title" content="Matías Benavente Portfolio" />
+    <meta
+      property="og:description"
+      content="The portfolio and virtual CV of a Full-Stack JS Developer"
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/zG7gXcB/Screenshot-from-2023-02-04-02-07-26.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://matibenavente.com/" />
+    <meta property="twitter:title" content="Matías Benavente Portfolio" />
+    <meta
+      property="twitter:description"
+      content="The portfolio and virtual CV of a Full-Stack JS Developer"
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.ibb.co/zG7gXcB/Screenshot-from-2023-02-04-02-07-26.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,26 +82,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script type="text/javascript" src="./scripts/animations.js"></script>
-    <link href="./styles/navbar.css" rel="stylesheet" />
-
-    <link href="./styles/two-path/section-config.css" rel="stylesheet" />
-    <link href="./styles/two-path/path-box.css" rel="stylesheet" />
-    <link href="./styles/three-tech-list/section-config.css" rel="stylesheet" />
-    <link href="./styles/three-tech-list/techs-list.css" rel="stylesheet" />
-    <link href="./styles/four-facts/section-config.css" rel="stylesheet" />
-    <link href="./styles/four-facts/facts.css" rel="stylesheet" />
-
-    <link href="./styles/four-facts/quote.css" rel="stylesheet" />
-
-    <link href="./styles/one-intro/hero.css" rel="stylesheet" />
-    <link href="./styles/one-intro/intro.css" rel="stylesheet" />
-    <link href="./styles/one-intro/grid-config.css" rel="stylesheet" />
-
+    <script src="./scripts/animations.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="./scripts/logos-array.js"></script>
     <script src="./scripts/main-techs.js"></script>
     <link rel="icon" href="./media/logos/Main-Logo.ico" type="image/x-icon" />
+
+    <link href="./styles/navbar.css" rel="stylesheet" />
+
+    <link href="./styles/path/section-config-path.css" rel="stylesheet" />
+    <link href="./styles/path/path-box.css" rel="stylesheet" />
+    <link href="./styles/tech-list/section-config-techs.css" rel="stylesheet" />
+    <link href="./styles/tech-list/techs-list.css" rel="stylesheet" />
+    <link href="./styles/facts/section-config-facts.css" rel="stylesheet" />
+    <link href="./styles/facts/facts.css" rel="stylesheet" />
+
+    <link href="./styles/facts/quote.css" rel="stylesheet" />
+
+    <link href="./styles/intro/hero.css" rel="stylesheet" />
+    <link href="./styles/intro/intro.css" rel="stylesheet" />
+    <link href="./styles/pres-text/pres-text.css" rel="stylesheet" />
+
     <title>Matías Benavente Portfolio</title>
   </head>
   <body>
@@ -62,9 +109,9 @@
       <header>
         <nav class="navbar navbar-expand-lg bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" id="nav-logo" href="#"
-              ><img src="./media/logos/Main-Logo.svg"
-            /></a>
+            <a class="navbar-brand" id="nav-logo" href="#">
+              <img src="./media/logos/Main-Logo.svg" alt="main logo MB" />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -139,20 +186,27 @@
               <div class="photo-background"></div>
               <div class="photo-background"></div>
             </div>
-            <img src="./media/Profile-image.svg" id="profile-image" />
+            <img
+              src="./media/Profile-image.svg"
+              id="profile-image"
+              alt="profile image"
+            />
           </div>
           <div id="photo-social-buttons">
             <a
               class="social-button"
               href="https://www.linkedin.com/in/mat%C3%ADas-benavente-a8398123a"
             >
-              <img src="./media/icons/LinkedIn.svg" />
+              <img
+                src="./media/icons/LinkedIn.svg"
+                alt="linkedin contact button"
+              />
             </a>
             <a class="social-button" href="https://github.com/BenaventeX24">
-              <img src="./media/icons/Github.svg" />
+              <img src="./media/icons/Github.svg" alt="github profile button" />
             </a>
             <a class="social-button" href="mailto:benaventematias04@gmail.com">
-              <img src="./media/icons/Mail.svg" />
+              <img src="./media/icons/Mail.svg" alt="mail contact button" />
             </a>
           </div>
         </div>
@@ -160,26 +214,21 @@
           <p id="welcome">Hey there! I'm</p>
           <h1 id="intro-title">Matías Benavente</h1>
           <span id="intro-profession">
-            <h2>Full-Stack</h2>
-            <h2>Developer</h2>
+            <h4>Full-Stack</h4>
+            <h4>JS</h2>
+            <h4>Developer</h4>
           </span>
-          <p id="presentation-text">
-            Technology and sports lover, part of professional teams in both
-            fields from a young age.
-          </p>
         </div>
       </section>
-      <div id="get-to-know-me">
-        <div class="scroll-illustration-intro">
-          scroll
-          <div>↓</div>
-        </div>
-        GET TO KNOW MORE ABOUT ME
-        <div class="scroll-illustration-intro">
-          scroll
-          <div>↓</div>
-        </div>
-      </div>
+      <section id="presentation-text">
+        <h3>Who am I</h3>
+        <p>
+          A <b>technology</b> and <b>sports</b> lover, part of professional
+          teams in both fields from a <b>young age</b>. Currently a full-stack
+          <span id="js-word">JavaScript</span> developer, having in mind to be part of
+          great <b>engineering software development</b> someday soon.
+        </p>
+      </section>
       <section id="path-section">
         <h3>My path</h3>
         <div class="path" id="studies">
@@ -190,14 +239,18 @@
               </div>
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <img class="path-image" src="./media/logos/Anima.svg" />
+                  <img
+                    class="path-image"
+                    src="./media/logos/Anima.svg"
+                    alt="anima bachillerato logo"
+                  />
                   Anima
                 </button>
               </h2>
@@ -221,6 +274,7 @@
                     >Website<img
                       src="./media/icons/External.svg"
                       class="external-icon"
+                      alt="external button"
                   /></a>
                   <ul class="accordion-keypoints-list">
                     <li>Web Developer Junior</li>
@@ -244,14 +298,18 @@
               </div>
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseTwo"
                 >
-                  <img class="path-image" src="./media/logos/Arkano.svg" />
+                  <img
+                    class="path-image"
+                    src="./media/logos/Arkano.svg"
+                    alt="arkano soft logo"
+                  />
                   Arkano Software
                 </button>
               </h2>
@@ -264,17 +322,18 @@
                 <div class="accordion-body">
                   <p class="body-text">
                     As a trainee I worked in different kinds of Microsoft
-                    solutions, with an enfasis in Power Platform. This
+                    solutions, with an emphasis in Power Platform. This
                     internship had an orientation on bot construction and
-                    deployment.
+                    deployment using Power Automate as database.
                   </p>
                   <a
                     class="accordion-webpage"
-                    href="https://arkano.com"
+                    href="https://arkanosoft.com"
                     target="_blank"
                     >Website<img
                       src="./media/icons/External.svg"
                       class="external-icon"
+                      alt="external button"
                   /></a>
                   <ul class="accordion-keypoints-list">
                     <li>Power Platform development</li>
@@ -292,14 +351,18 @@
               </div>
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseThree"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseThree"
                 >
-                  <img class="path-image" src="./media/logos/Globant.svg" />
+                  <img
+                    class="path-image"
+                    src="./media/logos/Globant.svg"
+                    alt="globant logo"
+                  />
                   Globant
                 </button>
               </h2>
@@ -323,6 +386,7 @@
                     >Website<img
                       src="./media/icons/External.svg"
                       class="external-icon"
+                      alt="external button"
                   /></a>
                   <ul class="accordion-keypoints-list">
                     <li>UX/UI Development</li>
@@ -448,8 +512,8 @@
         </blockquote>
       </figure>
     </div>
-    <div class="end-page">
-      <img src="./media/logos/Main-Logo.svg" />
-    </div>
+    <footer class="end-page">
+      <img src="./media/logos/Main-Logo.svg" alt="main logo MB" />
+    </footer>
   </body>
 </html>
