@@ -1,5 +1,6 @@
 #projects {
   margin-top: 80px;
+  height: 100vh;
 }
 #projects > h1 {
   font-family: var(--ff-secondary);
@@ -46,4 +47,4 @@
   #projects-list .card {
     margin: 0 auto;
   }
-}/*# sourceMappingURL=projects.css.map */
+} /*# sourceMappingURL=projects.css.map */

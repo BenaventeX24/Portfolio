@@ -32,6 +32,7 @@
   padding-left: 10px; /* 3 */
   position: relative;
   height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -56,4 +57,4 @@ body .end-page img {
   left: 50%;
   transform: translateX(-50%);
   filter: invert(10%) saturate(70%) brightness(0%) contrast(60%);
-}/*# sourceMappingURL=indexStyles.css.map */
+} /*# sourceMappingURL=indexStyles.css.map */
