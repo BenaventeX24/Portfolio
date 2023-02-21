@@ -1,10 +1,8 @@
 .scroll-illustration {
   display: inline-block;
   font-family: "Montserrat";
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
