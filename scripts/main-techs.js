@@ -45,6 +45,7 @@ const logosArray = [
   },
   { name: "Material UI", acronym: "mui", src: "./media/logos/MUI.svg" },
   { name: "Jest", acronym: "jest", src: "./media/logos/Jest.svg" },
+  { name: "RTL", acronym: "rtl", src: "./media/logos/RTL.svg" },
   {
     name: "Styled",
     acronym: "styled",
@@ -56,6 +57,7 @@ const logosArray = [
     acronym: "vite",
     src: "./media/logos/Vite.svg",
   },
+  { name: "Docker", acronym: "docker", src: "./media/logos/Docker.svg" },
   { name: "Power Apps", acronym: "papps", src: "./media/logos/Power-Apps.svg" },
   {
     name: "Power Automate",

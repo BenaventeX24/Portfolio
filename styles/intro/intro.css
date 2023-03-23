@@ -28,12 +28,6 @@
   margin-top: 6px;
   color: #0e0c7b;
 }
-#intro span#intro-profession h4:nth-child(2) {
-  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-  color: #80e469;
-  margin: 0 5px;
-  margin-top: 9px;
-}
 
 #get-to-know-me {
   display: flex;
@@ -60,14 +54,12 @@
   #intro h1 {
     font-size: 3.725rem;
   }
+  #intro span#intro-profession #node-intro {
+    width: 120px;
+    margin: 0 8px;
+  }
   #intro span#intro-profession h4 {
     font-size: 2.85rem;
-  }
-  #intro span#intro-profession h4:nth-child(2) {
-    font-size: 2.35rem;
-    margin-left: 6px;
-    margin-right: 6px;
-    margin-top: 10px;
   }
   #get-to-know-me {
     font-size: 1.08rem;
@@ -91,11 +83,12 @@
   #intro h1 {
     font-size: 2.83rem;
   }
+  #intro span#intro-profession #node-intro {
+    width: 98px;
+    margin: 0 8px;
+  }
   #intro span#intro-profession h4 {
     font-size: 2.35rem;
-  }
-  #intro span#intro-profession h4:nth-child(2) {
-    font-size: 2.05rem;
   }
   #get-to-know-me {
     font-size: 1rem;
@@ -119,11 +112,12 @@
   #intro h1 {
     font-size: 2.1rem;
   }
+  #intro span#intro-profession #node-intro {
+    width: 78px;
+    margin: 0 6px;
+  }
   #intro span#intro-profession h4 {
     font-size: 1.75rem;
-  }
-  #intro span#intro-profession h4:nth-child(2) {
-    font-size: 1.48rem;
   }
 }
 @media (max-width: 768px) {
@@ -139,12 +133,13 @@
   #intro span#intro-profession {
     margin-left: -2px;
   }
+  #intro span#intro-profession #node-intro {
+    width: 62px;
+    margin: 0 4.5px;
+    margin-top: 2px;
+  }
   #intro span#intro-profession h4 {
     font-size: 1.46rem;
-  }
-  #intro span#intro-profession h4:nth-child(2) {
-    font-size: 1.31rem;
-    text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
   }
   #intro #presentation-text {
     font-size: 1.1rem;
@@ -181,27 +176,30 @@
     margin: 0 auto;
     margin-top: -5px;
   }
-  #intro span#intro-profession h4 {
-    font-size: 1.73rem;
+  #intro span#intro-profession #node-intro {
+    width: 67px;
+    margin: 0 5px;
+    margin-top: 4px;
   }
-  #intro span#intro-profession h4:nth-child(2) {
-    font-size: 1.5rem;
+  #intro span#intro-profession h4 {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 358px) {
   #intro h1 {
-    font-size: 1.75rem;
+    font-size: 1.72rem;
     margin: 0 auto;
   }
   #intro span#intro-profession {
     margin: 0 auto;
     margin-top: -5px;
   }
-  #intro span#intro-profession h4 {
-    font-size: 1.33rem;
+  #intro span#intro-profession #node-intro {
+    width: 52px;
+    margin: 0 4px;
+    margin-top: 4px;
   }
-  #intro span#intro-profession h4:nth-child(2) {
-    font-size: 1.2rem;
-    margin-top: 7.5px;
+  #intro span#intro-profession h4 {
+    font-size: 1.28rem;
   }
 }/*# sourceMappingURL=intro.css.map */

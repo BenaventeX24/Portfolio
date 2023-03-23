@@ -165,7 +165,7 @@
     height: 350px;
   }
   #photo-frame #photo-container img {
-    height: 80%;
+    height: 85%;
   }
   #photo-frame #photo-social-buttons {
     padding: 4px 0;
@@ -179,13 +179,13 @@
     width: 28px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 358px) {
   #photo-frame {
     width: 240px;
     height: 290px;
   }
   #photo-frame #photo-container img {
-    height: 80%;
+    height: 85%;
   }
   #photo-frame #photo-social-buttons {
     padding: 4px 0;

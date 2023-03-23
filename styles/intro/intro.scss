@@ -40,14 +40,6 @@
       margin-top: 6px;
 
       color: #0e0c7b;
-
-      &:nth-child(2) {
-        text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
-          1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-        color: #80e469;
-        margin: 0 5px;
-        margin-top: 9px;
-      }
     }
   }
 }
@@ -83,14 +75,12 @@
     }
 
     span#intro-profession {
+      #node-intro {
+        width: 120px;
+        margin: 0 8px;
+      }
       h4 {
         font-size: 2.85rem;
-      }
-      h4:nth-child(2) {
-        font-size: 2.35rem;
-        margin-left: 6px;
-        margin-right: 6px;
-        margin-top: 10px;
       }
     }
   }
@@ -122,11 +112,12 @@
     }
 
     span#intro-profession {
+      #node-intro {
+        width: 98px;
+        margin: 0 8px;
+      }
       h4 {
         font-size: 2.35rem;
-      }
-      h4:nth-child(2) {
-        font-size: 2.05rem;
       }
     }
   }
@@ -159,11 +150,12 @@
     }
 
     span#intro-profession {
+      #node-intro {
+        width: 78px;
+        margin: 0 6px;
+      }
       h4 {
         font-size: 1.75rem;
-      }
-      h4:nth-child(2) {
-        font-size: 1.48rem;
       }
     }
   }
@@ -183,13 +175,13 @@
 
     span#intro-profession {
       margin-left: -2px;
+      #node-intro {
+        width: 62px;
+        margin: 0 4.5px;
+        margin-top: 2px;
+      }
       h4 {
         font-size: 1.46rem;
-      }
-      h4:nth-child(2) {
-        font-size: 1.31rem;
-        text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
-          1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
       }
     }
     #presentation-text {
@@ -237,11 +229,14 @@
       margin: 0 auto;
       margin-top: -5px;
 
-      h4 {
-        font-size: 1.73rem;
+      #node-intro {
+        width: 67px;
+        margin: 0 5px;
+        margin-top: 4px;
       }
-      h4:nth-child(2) {
-        font-size: 1.5rem;
+
+      h4 {
+        font-size: 1.7rem;
       }
     }
   }
@@ -250,7 +245,7 @@
 @media (max-width: 358px) {
   #intro {
     h1 {
-      font-size: 1.75rem;
+      font-size: 1.72rem;
 
       margin: 0 auto;
     }
@@ -259,12 +254,14 @@
       margin: 0 auto;
       margin-top: -5px;
 
-      h4 {
-        font-size: 1.33rem;
+      #node-intro {
+        width: 52px;
+        margin: 0 4px;
+        margin-top: 4px;
       }
-      h4:nth-child(2) {
-        font-size: 1.2rem;
-        margin-top: 7.5px;
+
+      h4 {
+        font-size: 1.28rem;
       }
     }
   }

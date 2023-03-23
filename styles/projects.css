@@ -20,13 +20,16 @@
   font-family: var(--ff-secondary);
   font-size: 1.45rem;
 }
+#projects #projects-list .card video {
+  border-bottom: 1px solid #d2d2d2;
+}
 #projects #projects-list .card img.card-img-top {
   border-bottom: 1px solid #d2d2d2;
   padding-bottom: 6px;
   height: 160px;
 }
-#projects #projects-list .card .list-group {
-  border: 1px solid #d2d2d2;
+#projects #projects-list .card .project-info {
+  margin-top: auto;
 }
 #projects #projects-list .card .card-body {
   font-family: var(--ff-terciary);
