@@ -54,13 +54,21 @@ body {
     font-family: var(--ff-terciary);
   }
 
-  .end-page {
+  footer {
     margin-top: 20px;
     border-top: 1px solid #d2d2d2;
     background-color: #ececec;
 
     display: flex;
     justify-content: center;
+
+    p {
+      margin-left: 10px;
+      align-self: center;
+      a {
+        text-decoration: none;
+      }
+    }
 
     img {
       width: 60px;

@@ -16,6 +16,10 @@
   flex-wrap: wrap;
   justify-items: center;
 }
+#projects #projects-list .card {
+  margin: 55px;
+  height: 622px;
+}
 #projects #projects-list .card h5.card-title {
   font-family: var(--ff-secondary);
   font-size: 1.45rem;
@@ -31,14 +35,23 @@
 #projects #projects-list .card .project-info {
   margin-top: auto;
 }
+#projects #projects-list .card .project-info ul li:last-child {
+  margin-bottom: 5px;
+}
+#projects #projects-list .card .project-info ul.links li {
+  border: none;
+}
+#projects #projects-list .card .project-info ul.links a {
+  margin-bottom: 12px;
+}
+#projects #projects-list .card .project-info ul.links a img {
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
 #projects #projects-list .card .card-body {
   font-family: var(--ff-terciary);
   font-size: 1rem;
-}
-#projects #projects-list .card .card-body a img {
-  width: 30px;
-  margin-right: 10px;
-  margin-left: -10px;
 }
 
 @media (max-width: 620px) {

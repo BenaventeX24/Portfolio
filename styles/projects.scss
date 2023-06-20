@@ -18,7 +18,11 @@
     place-content: center;
     flex-wrap: wrap;
     justify-items: center;
+
     .card {
+      margin: 55px;
+      height: 622px;
+
       h5.card-title {
         font-family: var(--ff-secondary);
         font-size: 1.45rem;
@@ -36,18 +40,32 @@
 
       .project-info {
         margin-top: auto;
+
+        ul {
+          li:last-child {
+            margin-bottom: 5px;
+          }
+
+          &.links {
+            li {
+              border: none;
+            }
+            a {
+              margin-bottom: 12px;
+
+              img {
+                width: 30px;
+                margin-right: 10px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
       }
 
       .card-body {
         font-family: var(--ff-terciary);
         font-size: 1rem;
-        a {
-          img {
-            width: 30px;
-            margin-right: 10px;
-            margin-left: -10px;
-          }
-        }
       }
     }
   }
