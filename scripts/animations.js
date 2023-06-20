@@ -1,4 +1,4 @@
-$(window).on("load", function () {
+$(document).ready(function () {
   /*------------- NAVBAR -------------*/
   const animations = () => {
     anime({

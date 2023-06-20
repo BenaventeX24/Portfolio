@@ -64,7 +64,6 @@ const logosArray = [
     acronym: "pautomate",
     src: "./media/logos/Power-Automate.svg",
   },
-
   {
     name: "Spring Boot",
     acronym: "spring",
